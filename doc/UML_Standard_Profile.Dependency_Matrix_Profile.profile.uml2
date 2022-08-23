@@ -1,0 +1,2088 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<uml:Profile xmi:version="2.0" xmlns:xmi="http://www.omg.org/XMI" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns:DSLCustomization_0="http:///DSLCustomization_0_Rnvs0EeEEeWlKfVTs-HO8g.profile.uml2" xmlns:ecore="http://www.eclipse.org/emf/2002/Ecore" xmlns:uml="http://www.eclipse.org/uml2/1.0.0/UML" xsi:schemaLocation="http:///DSLCustomization_0_Rnvs0EeEEeWlKfVTs-HO8g.profile.uml2 UML_Standard_Profile.MagicDraw_Profile.DSL_Customization.profile.uml2#_SNffQEeEEeWlKfVTs-HO8g" xmi:id="_17_0_4beta_8ca0285_1361349406965_180847_3086" name="Dependency Matrix Profile" appliedProfile="_11_5_be00301_1153310565718_226811_161profileApplicationDependency_Matrix_Profile" metamodelReference="_17_0_4beta_8ca0285_1361349406966_337106_3087">
+  <eAnnotations xmi:id="_SNmMb0eEEeWlKfVTs-HO8g" source="attributes">
+    <details xmi:id="_SNmMcEeEEeWlKfVTs-HO8g" key="version" value="0"/>
+  </eAnnotations>
+  <eAnnotations xmi:id="_SNmMcUeEEeWlKfVTs-HO8g" source="ePackages">
+    <contents xmi:type="ecore:EPackage" xmi:id="_SNmMckeEEeWlKfVTs-HO8g" name="DependencyMatrixProfile_0" nsURI="http:///DependencyMatrixProfile_0_Rn2agEeEEeWlKfVTs-HO8g.profile.uml2" nsPrefix="DependencyMatrixProfile_0">
+      <eAnnotations xmi:id="_SNmMc0eEEeWlKfVTs-HO8g" source="http://www.eclipse.org/emf/2002/GenModel">
+        <details xmi:id="_SNmMdEeEEeWlKfVTs-HO8g" key="documentation" value="MagicDraw Profile contains UML extensions used in MagicDraw internal mechanisms and some features based on UML extensions."/>
+      </eAnnotations>
+      <eClassifiers xmi:type="ecore:EClass" xmi:id="_SNmMdUeEEeWlKfVTs-HO8g" name="DependencyMatrixProfile__CustomizationOfDependencyMatrix"/>
+      <eClassifiers xmi:type="ecore:EClass" xmi:id="_SNmMdkeEEeWlKfVTs-HO8g" name="DependencyMatrixProfile__DependencyMatrix" eSuperTypes="_SNm0JEeEEeWlKfVTs-HO8g">
+        <eAnnotations xmi:id="_SNmMd0eEEeWlKfVTs-HO8g" source="stereotype" references="_17_0_3beta_8e10289_1348753189236_873942_2915"/>
+        <eStructuralFeatures xmi:type="ecore:EAttribute" xmi:id="_SNmMeEeEEeWlKfVTs-HO8g" name="columnTextDirection" ordered="false" lowerBound="1" eType="_SNm0R0eEEeWlKfVTs-HO8g" defaultValueLiteral="Vertical">
+          <eAnnotations xmi:id="_SNmMeUeEEeWlKfVTs-HO8g" source="http://www.eclipse.org/emf/2002/GenModel">
+            <details xmi:id="_SNmMekeEEeWlKfVTs-HO8g" key="documentation" value="Specifies the text direction of the Matrix column headers."/>
+          </eAnnotations>
+        </eStructuralFeatures>
+        <eStructuralFeatures xmi:type="ecore:EAttribute" xmi:id="_SNmMe0eEEeWlKfVTs-HO8g" name="columnOwnerDisplayMode" ordered="false" lowerBound="1" eType="_SNm0WkeEEeWlKfVTs-HO8g" defaultValueLiteral="Compact tree">
+          <eAnnotations xmi:id="_SNmMfEeEEeWlKfVTs-HO8g" source="http://www.eclipse.org/emf/2002/GenModel">
+            <details xmi:id="_SNmMfUeEEeWlKfVTs-HO8g" key="documentation" value="Select Compact tree mode to show only direct and common element owners in the nested mode. Select Complete tree to show all owners in the nested mode. Select Hidden or Full qualified name to shown a regular elements list."/>
+          </eAnnotations>
+        </eStructuralFeatures>
+        <eStructuralFeatures xmi:type="ecore:EAttribute" xmi:id="_SNmMfkeEEeWlKfVTs-HO8g" name="showInnerDependencies" ordered="false" lowerBound="1" defaultValueLiteral="true">
+          <eAnnotations xmi:id="_SNmMf0eEEeWlKfVTs-HO8g" source="http://www.eclipse.org/emf/2002/GenModel">
+            <details xmi:id="_SNmMgEeEEeWlKfVTs-HO8g" key="documentation" value="Set to true to show the number of dependencies in the owner element on cell."/>
+          </eAnnotations>
+          <eType xmi:type="ecore:EDataType" href="http://www.eclipse.org/emf/2002/Ecore#//EBoolean"/>
+        </eStructuralFeatures>
+        <eStructuralFeatures xmi:type="ecore:EAttribute" xmi:id="_SNmMgUeEEeWlKfVTs-HO8g" name="showElements" ordered="false" lowerBound="1" eType="_SNm0TEeEEeWlKfVTs-HO8g" defaultValueLiteral="All">
+          <eAnnotations xmi:id="_SNmMgkeEEeWlKfVTs-HO8g" source="http://www.eclipse.org/emf/2002/GenModel">
+            <details xmi:id="_SNmMg0eEEeWlKfVTs-HO8g" key="documentation" value="Select All to show all elements from the selected scope. Select With relations to show the elements that have dependency criteria. Select Without relations to show the elements that have no dependency criteria."/>
+          </eAnnotations>
+        </eStructuralFeatures>
+        <eStructuralFeatures xmi:type="ecore:EAttribute" xmi:id="_SNmMhEeEEeWlKfVTs-HO8g" name="columnHeaderHeight" ordered="false" lowerBound="1" defaultValueLiteral="150">
+          <eAnnotations xmi:id="_SNmMhUeEEeWlKfVTs-HO8g" source="http://www.eclipse.org/emf/2002/GenModel">
+            <details xmi:id="_SNmMhkeEEeWlKfVTs-HO8g" key="documentation" value="Specifies the height of the column header in pixels."/>
+          </eAnnotations>
+          <eType xmi:type="ecore:EDataType" href="http://www.eclipse.org/emf/2002/Ecore#//EInt"/>
+        </eStructuralFeatures>
+        <eStructuralFeatures xmi:type="ecore:EAttribute" xmi:id="_SNmMh0eEEeWlKfVTs-HO8g" name="rowHeaderWidth" ordered="false" lowerBound="1" defaultValueLiteral="150">
+          <eAnnotations xmi:id="_SNmMiEeEEeWlKfVTs-HO8g" source="http://www.eclipse.org/emf/2002/GenModel">
+            <details xmi:id="_SNmMiUeEEeWlKfVTs-HO8g" key="documentation" value="Specifies the width of the row header in pixels."/>
+          </eAnnotations>
+          <eType xmi:type="ecore:EDataType" href="http://www.eclipse.org/emf/2002/Ecore#//EInt"/>
+        </eStructuralFeatures>
+        <eStructuralFeatures xmi:type="ecore:EAttribute" xmi:id="_SNmMikeEEeWlKfVTs-HO8g" name="dependencyCriteria" upperBound="-1" defaultValueLiteral="">
+          <eAnnotations xmi:id="_SNmMi0eEEeWlKfVTs-HO8g" source="http://www.eclipse.org/emf/2002/GenModel">
+            <details xmi:id="_SNmMjEeEEeWlKfVTs-HO8g" key="documentation" value="Select an expression type and specify the expression to be used as the relation criteria."/>
+          </eAnnotations>
+          <eType xmi:type="ecore:EDataType" href="http://www.eclipse.org/emf/2002/Ecore#//EString"/>
+        </eStructuralFeatures>
+        <eStructuralFeatures xmi:type="ecore:EAttribute" xmi:id="_SNmMjUeEEeWlKfVTs-HO8g" name="columnCollapsedNodes" ordered="false" upperBound="-1" defaultValueLiteral="">
+          <eAnnotations xmi:id="_SNmMjkeEEeWlKfVTs-HO8g" source="http://www.eclipse.org/emf/2002/GenModel">
+            <details xmi:id="_SNmMj0eEEeWlKfVTs-HO8g" key="documentation" value="Specifies the collapsed nodes of the Dependency Matrix."/>
+          </eAnnotations>
+          <eType xmi:type="ecore:EDataType" href="http://www.eclipse.org/emf/2002/Ecore#//EString"/>
+        </eStructuralFeatures>
+        <eStructuralFeatures xmi:type="ecore:EAttribute" xmi:id="_SNmMkEeEEeWlKfVTs-HO8g" name="rowCollapsedNodes" ordered="false" upperBound="-1" defaultValueLiteral="">
+          <eAnnotations xmi:id="_SNmMkUeEEeWlKfVTs-HO8g" source="http://www.eclipse.org/emf/2002/GenModel">
+            <details xmi:id="_SNmMkkeEEeWlKfVTs-HO8g" key="documentation" value="Specifies the collapsed nodes of the Dependency Matrix."/>
+          </eAnnotations>
+          <eType xmi:type="ecore:EDataType" href="http://www.eclipse.org/emf/2002/Ecore#//EString"/>
+        </eStructuralFeatures>
+        <eStructuralFeatures xmi:type="ecore:EAttribute" xmi:id="_SNmy8EeEEeWlKfVTs-HO8g" name="rowOwnerDisplayMode" ordered="false" lowerBound="1" eType="_SNm0WkeEEeWlKfVTs-HO8g" defaultValueLiteral="Compact tree">
+          <eAnnotations xmi:id="_SNmy8UeEEeWlKfVTs-HO8g" source="http://www.eclipse.org/emf/2002/GenModel">
+            <details xmi:id="_SNmy8keEEeWlKfVTs-HO8g" key="documentation" value="Select Compact tree mode to show only direct and common element owners in the nested mode. Select Complete tree to show all owners in the nested mode. Select Hidden or Full qualified name to shown a regular elements list."/>
+          </eAnnotations>
+        </eStructuralFeatures>
+        <eStructuralFeatures xmi:type="ecore:EAttribute" xmi:id="_SNmy80eEEeWlKfVTs-HO8g" name="direction" ordered="false" lowerBound="1" eType="_SNm0U0eEEeWlKfVTs-HO8g" defaultValueLiteral="Both">
+          <eAnnotations xmi:id="_SNmy9EeEEeWlKfVTs-HO8g" source="http://www.eclipse.org/emf/2002/GenModel">
+            <details xmi:id="_SNmy9UeEEeWlKfVTs-HO8g" key="documentation" value="Select Row to column or Column to row to filter the displayed dependencies by direction. Select Both to show all dependencies."/>
+          </eAnnotations>
+        </eStructuralFeatures>
+        <eStructuralFeatures xmi:type="ecore:EAttribute" xmi:id="_SNmy9keEEeWlKfVTs-HO8g" name="suppressCriteriaArea" ordered="false" lowerBound="1" defaultValueLiteral="false">
+          <eAnnotations xmi:id="_SNmy90eEEeWlKfVTs-HO8g" source="http://www.eclipse.org/emf/2002/GenModel">
+            <details xmi:id="_SNmy-EeEEeWlKfVTs-HO8g" key="documentation" value="Set to false to show the Criteria area."/>
+          </eAnnotations>
+          <eType xmi:type="ecore:EDataType" href="http://www.eclipse.org/emf/2002/Ecore#//EBoolean"/>
+        </eStructuralFeatures>
+        <eStructuralFeatures xmi:type="ecore:EAttribute" xmi:id="_SNmy-UeEEeWlKfVTs-HO8g" name="descriptionArea" ordered="false" defaultValueLiteral="">
+          <eAnnotations xmi:id="_SNmy-keEEeWlKfVTs-HO8g" source="http://www.eclipse.org/emf/2002/GenModel">
+            <details xmi:id="_SNmy-0eEEeWlKfVTs-HO8g" key="documentation" value="Specify the description of the Dependency Matrix."/>
+          </eAnnotations>
+          <eType xmi:type="ecore:EDataType" href="http://www.eclipse.org/emf/2002/Ecore#//EString"/>
+        </eStructuralFeatures>
+        <eStructuralFeatures xmi:type="ecore:EAttribute" xmi:id="_SNmy_EeEEeWlKfVTs-HO8g" name="hideTypes" ordered="false" lowerBound="1" defaultValueLiteral="false">
+          <eAnnotations xmi:id="_SNmy_UeEEeWlKfVTs-HO8g" source="http://www.eclipse.org/emf/2002/GenModel">
+            <details xmi:id="_SNmy_keEEeWlKfVTs-HO8g" key="documentation" value="Set to false to show the types filter."/>
+          </eAnnotations>
+          <eType xmi:type="ecore:EDataType" href="http://www.eclipse.org/emf/2002/Ecore#//EBoolean"/>
+        </eStructuralFeatures>
+        <eStructuralFeatures xmi:type="ecore:EAttribute" xmi:id="_SNmy_0eEEeWlKfVTs-HO8g" name="hideScope" ordered="false" lowerBound="1" defaultValueLiteral="false">
+          <eAnnotations xmi:id="_SNmzAEeEEeWlKfVTs-HO8g" source="http://www.eclipse.org/emf/2002/GenModel">
+            <details xmi:id="_SNmzAUeEEeWlKfVTs-HO8g" key="documentation" value="Set to false to show the scope filter."/>
+          </eAnnotations>
+          <eType xmi:type="ecore:EDataType" href="http://www.eclipse.org/emf/2002/Ecore#//EBoolean"/>
+        </eStructuralFeatures>
+        <eStructuralFeatures xmi:type="ecore:EAttribute" xmi:id="_SNmzAkeEEeWlKfVTs-HO8g" name="hideDependencyCriteria" ordered="false" lowerBound="1" defaultValueLiteral="false">
+          <eAnnotations xmi:id="_SNmzA0eEEeWlKfVTs-HO8g" source="http://www.eclipse.org/emf/2002/GenModel">
+            <details xmi:id="_SNmzBEeEEeWlKfVTs-HO8g" key="documentation" value="Set to false to show the Dependency Criteria filter."/>
+          </eAnnotations>
+          <eType xmi:type="ecore:EDataType" href="http://www.eclipse.org/emf/2002/Ecore#//EBoolean"/>
+        </eStructuralFeatures>
+        <eStructuralFeatures xmi:type="ecore:EAttribute" xmi:id="_SNmzBUeEEeWlKfVTs-HO8g" name="rowSortingMode" ordered="false" lowerBound="1" eType="_SNm0Y0eEEeWlKfVTs-HO8g" defaultValueLiteral="Ascending">
+          <eAnnotations xmi:id="_SNmzBkeEEeWlKfVTs-HO8g" source="http://www.eclipse.org/emf/2002/GenModel">
+            <details xmi:id="_SNmzB0eEEeWlKfVTs-HO8g" key="documentation" value="Select Ascending or Descending to sort elements alphabetically. Select Custom sorting mode to use your own order."/>
+          </eAnnotations>
+        </eStructuralFeatures>
+        <eStructuralFeatures xmi:type="ecore:EAttribute" xmi:id="_SNmzCEeEEeWlKfVTs-HO8g" name="columnSortingMode" ordered="false" lowerBound="1" eType="_SNm0Y0eEEeWlKfVTs-HO8g" defaultValueLiteral="Ascending">
+          <eAnnotations xmi:id="_SNmzCUeEEeWlKfVTs-HO8g" source="http://www.eclipse.org/emf/2002/GenModel">
+            <details xmi:id="_SNmzCkeEEeWlKfVTs-HO8g" key="documentation" value="Select Ascending or Descending to sort elements alphabetically. Select Custom sorting mode to use your own order."/>
+          </eAnnotations>
+        </eStructuralFeatures>
+        <eStructuralFeatures xmi:type="ecore:EAttribute" xmi:id="_SNmzC0eEEeWlKfVTs-HO8g" name="readOnly" ordered="false" unique="false" lowerBound="1" defaultValueLiteral="false">
+          <eAnnotations xmi:id="_SNmzDEeEEeWlKfVTs-HO8g" source="http://www.eclipse.org/emf/2002/GenModel">
+            <details xmi:id="_SNmzDUeEEeWlKfVTs-HO8g" key="documentation" value="Set to true to treat Dependency Matrix cells as non editable."/>
+          </eAnnotations>
+          <eType xmi:type="ecore:EDataType" href="http://www.eclipse.org/emf/2002/Ecore#//EBoolean"/>
+        </eStructuralFeatures>
+        <eStructuralFeatures xmi:type="ecore:EAttribute" xmi:id="_SNmzDkeEEeWlKfVTs-HO8g" name="takeWholeModelAsScope" ordered="false" lowerBound="1" defaultValueLiteral="true">
+          <eAnnotations xmi:id="_SNmzD0eEEeWlKfVTs-HO8g" source="http://www.eclipse.org/emf/2002/GenModel">
+            <details xmi:id="_SNmzEEeEEeWlKfVTs-HO8g" key="documentation" value="Set to true to take whole model as default scope."/>
+          </eAnnotations>
+          <eType xmi:type="ecore:EDataType" href="http://www.eclipse.org/emf/2002/Ecore#//EBoolean"/>
+        </eStructuralFeatures>
+        <eStructuralFeatures xmi:type="ecore:EAttribute" xmi:id="_SNmzEUeEEeWlKfVTs-HO8g" name="columnCustomOrder" unique="false" defaultValueLiteral="">
+          <eAnnotations xmi:id="_SNmzEkeEEeWlKfVTs-HO8g" source="http://www.eclipse.org/emf/2002/GenModel">
+            <details xmi:id="_SNmzE0eEEeWlKfVTs-HO8g" key="documentation" value="Contains Dependency Matrix column elements custom sorting order."/>
+          </eAnnotations>
+          <eType xmi:type="ecore:EDataType" href="http://www.eclipse.org/emf/2002/Ecore#//EString"/>
+        </eStructuralFeatures>
+        <eStructuralFeatures xmi:type="ecore:EAttribute" xmi:id="_SNmzFEeEEeWlKfVTs-HO8g" name="rowCustomOrder" unique="false" defaultValueLiteral="">
+          <eAnnotations xmi:id="_SNmzFUeEEeWlKfVTs-HO8g" source="http://www.eclipse.org/emf/2002/GenModel">
+            <details xmi:id="_SNmzFkeEEeWlKfVTs-HO8g" key="documentation" value="Contains Dependency Matrix row elements custom sorting order."/>
+          </eAnnotations>
+          <eType xmi:type="ecore:EDataType" href="http://www.eclipse.org/emf/2002/Ecore#//EString"/>
+        </eStructuralFeatures>
+      </eClassifiers>
+      <eClassifiers xmi:type="ecore:EClass" xmi:id="_SNmzF0eEEeWlKfVTs-HO8g" name="MagicDrawProfile__auxiliaryResource" eSuperTypes="_SNm0JEeEEeWlKfVTs-HO8g">
+        <eAnnotations xmi:id="_SNmzGEeEEeWlKfVTs-HO8g" source="stereotype">
+          <references xmi:type="uml:Stereotype" href="UML_Standard_Profile.MagicDraw_Profile.profile.uml2#_12_1_8f90291_1173963323875_662612_98"/>
+        </eAnnotations>
+      </eClassifiers>
+      <eClassifiers xmi:type="ecore:EClass" xmi:id="_SNmzGUeEEeWlKfVTs-HO8g" name="MagicDrawProfile__Info">
+        <eAnnotations xmi:id="_SNmzGkeEEeWlKfVTs-HO8g" source="stereotype">
+          <references xmi:type="uml:Stereotype" href="UML_Standard_Profile.MagicDraw_Profile.profile.uml2#_15_5EAPbeta1_8f90291_1207743469046_796042_162"/>
+        </eAnnotations>
+        <eStructuralFeatures xmi:type="ecore:EAttribute" xmi:id="_SNmzG0eEEeWlKfVTs-HO8g" name="author" ordered="false" defaultValueLiteral="">
+          <eType xmi:type="ecore:EDataType" href="http://www.eclipse.org/emf/2002/Ecore#//EString"/>
+        </eStructuralFeatures>
+        <eStructuralFeatures xmi:type="ecore:EAttribute" xmi:id="_SNmzHEeEEeWlKfVTs-HO8g" name="version" ordered="false" defaultValueLiteral="">
+          <eType xmi:type="ecore:EDataType" href="http://www.eclipse.org/emf/2002/Ecore#//EString"/>
+        </eStructuralFeatures>
+      </eClassifiers>
+      <eClassifiers xmi:type="ecore:EClass" xmi:id="_SNmzHUeEEeWlKfVTs-HO8g" name="MagicDrawProfile__TODO_Owner" eSuperTypes="_SNm0JEeEEeWlKfVTs-HO8g">
+        <eAnnotations xmi:id="_SNmzHkeEEeWlKfVTs-HO8g" source="stereotype">
+          <references xmi:type="uml:Stereotype" href="UML_Standard_Profile.MagicDraw_Profile.profile.uml2#_9_0_be00301_1108044705753_203399_228"/>
+        </eAnnotations>
+        <eStructuralFeatures xmi:type="ecore:EAttribute" xmi:id="_SNmzH0eEEeWlKfVTs-HO8g" name="TODO" ordered="false" upperBound="-1" defaultValueLiteral="">
+          <eAnnotations xmi:id="_SNmzIEeEEeWlKfVTs-HO8g" source="http://www.eclipse.org/emf/2002/GenModel">
+            <details xmi:id="_SNmzIUeEEeWlKfVTs-HO8g" key="documentation" value="Specifies TO DO list for ModelElement."/>
+          </eAnnotations>
+          <eType xmi:type="ecore:EDataType" href="http://www.eclipse.org/emf/2002/Ecore#//EString"/>
+        </eStructuralFeatures>
+      </eClassifiers>
+      <eClassifiers xmi:type="ecore:EClass" xmi:id="_SNmzIkeEEeWlKfVTs-HO8g" name="MagicDrawProfile__HyperlinkOwner" eSuperTypes="_SNm0JEeEEeWlKfVTs-HO8g">
+        <eAnnotations xmi:id="_SNmzI0eEEeWlKfVTs-HO8g" source="stereotype">
+          <references xmi:type="uml:Stereotype" href="UML_Standard_Profile.MagicDraw_Profile.profile.uml2#_9_0_be00301_1108044563999_784946_1"/>
+        </eAnnotations>
+        <eStructuralFeatures xmi:type="ecore:EAttribute" xmi:id="_SNmzJEeEEeWlKfVTs-HO8g" name="hyperlinkModel" ordered="false" upperBound="-1" defaultValueLiteral="">
+          <eType xmi:type="ecore:EDataType" href="http://www.eclipse.org/emf/2002/Ecore#//EString"/>
+        </eStructuralFeatures>
+        <eStructuralFeatures xmi:type="ecore:EAttribute" xmi:id="_SNmzJUeEEeWlKfVTs-HO8g" name="hyperlinkTextActive" ordered="false" defaultValueLiteral="">
+          <eType xmi:type="ecore:EDataType" href="http://www.eclipse.org/emf/2002/Ecore#//EString"/>
+        </eStructuralFeatures>
+        <eStructuralFeatures xmi:type="ecore:EAttribute" xmi:id="_SNmzJkeEEeWlKfVTs-HO8g" name="hyperlinkModelActive" ordered="false" defaultValueLiteral="">
+          <eType xmi:type="ecore:EDataType" href="http://www.eclipse.org/emf/2002/Ecore#//EString"/>
+        </eStructuralFeatures>
+        <eStructuralFeatures xmi:type="ecore:EAttribute" xmi:id="_SNmzJ0eEEeWlKfVTs-HO8g" name="hyperlinkText" ordered="false" upperBound="-1" defaultValueLiteral="">
+          <eType xmi:type="ecore:EDataType" href="http://www.eclipse.org/emf/2002/Ecore#//EString"/>
+        </eStructuralFeatures>
+      </eClassifiers>
+      <eClassifiers xmi:type="ecore:EClass" xmi:id="_SNmzKEeEEeWlKfVTs-HO8g" name="MagicDrawProfile__DiagramTable" eSuperTypes="_SNm0JEeEEeWlKfVTs-HO8g">
+        <eAnnotations xmi:id="_SNmzKUeEEeWlKfVTs-HO8g" source="stereotype">
+          <references xmi:type="uml:Stereotype" href="UML_Standard_Profile.MagicDraw_Profile.profile.uml2#_16_5beta1_8ba0276_1232443673758_573873_267"/>
+        </eAnnotations>
+        <eStructuralFeatures xmi:type="ecore:EAttribute" xmi:id="_SNmzKkeEEeWlKfVTs-HO8g" name="rowElements" unique="false" upperBound="-1" defaultValueLiteral="">
+          <eType xmi:type="ecore:EDataType" href="http://www.eclipse.org/emf/2002/Ecore#//EString"/>
+        </eStructuralFeatures>
+        <eStructuralFeatures xmi:type="ecore:EAttribute" xmi:id="_SNmzK0eEEeWlKfVTs-HO8g" name="columnElements" upperBound="-1" defaultValueLiteral="">
+          <eType xmi:type="ecore:EDataType" href="http://www.eclipse.org/emf/2002/Ecore#//EString"/>
+        </eStructuralFeatures>
+        <eStructuralFeatures xmi:type="ecore:EAttribute" xmi:id="_SNmzLEeEEeWlKfVTs-HO8g" name="rowHeight" unique="false" upperBound="-1">
+          <eType xmi:type="ecore:EDataType" href="http://www.eclipse.org/emf/2002/Ecore#//EInt"/>
+        </eStructuralFeatures>
+        <eStructuralFeatures xmi:type="ecore:EAttribute" xmi:id="_SNmzLUeEEeWlKfVTs-HO8g" name="columnWidth" unique="false" upperBound="-1">
+          <eType xmi:type="ecore:EDataType" href="http://www.eclipse.org/emf/2002/Ecore#//EInt"/>
+        </eStructuralFeatures>
+        <eStructuralFeatures xmi:type="ecore:EAttribute" xmi:id="_SNmzLkeEEeWlKfVTs-HO8g" name="showFullPath" ordered="false" lowerBound="1" defaultValueLiteral="false">
+          <eType xmi:type="ecore:EDataType" href="http://www.eclipse.org/emf/2002/Ecore#//EBoolean"/>
+        </eStructuralFeatures>
+        <eStructuralFeatures xmi:type="ecore:EAttribute" xmi:id="_SNmzL0eEEeWlKfVTs-HO8g" name="sort" ordered="false" upperBound="-1" defaultValueLiteral="">
+          <eType xmi:type="ecore:EDataType" href="http://www.eclipse.org/emf/2002/Ecore#//EString"/>
+        </eStructuralFeatures>
+        <eStructuralFeatures xmi:type="ecore:EAttribute" xmi:id="_SNmzMEeEEeWlKfVTs-HO8g" name="autoResizeOn" ordered="false" lowerBound="1" defaultValueLiteral="false">
+          <eType xmi:type="ecore:EDataType" href="http://www.eclipse.org/emf/2002/Ecore#//EBoolean"/>
+        </eStructuralFeatures>
+        <eStructuralFeatures xmi:type="ecore:EAttribute" xmi:id="_SNmzMUeEEeWlKfVTs-HO8g" name="hideColumns" ordered="false" upperBound="-1" defaultValueLiteral="">
+          <eType xmi:type="ecore:EDataType" href="http://www.eclipse.org/emf/2002/Ecore#//EString"/>
+        </eStructuralFeatures>
+        <eStructuralFeatures xmi:type="ecore:EAttribute" xmi:id="_SNmzMkeEEeWlKfVTs-HO8g" name="defaultRowElementsOwner" ordered="false" defaultValueLiteral="">
+          <eAnnotations xmi:id="_SNmzM0eEEeWlKfVTs-HO8g" source="http://www.eclipse.org/emf/2002/GenModel">
+            <details xmi:id="_SNmzNEeEEeWlKfVTs-HO8g" key="documentation" value="The default owner for an element represented by a newly added table row."/>
+          </eAnnotations>
+          <eType xmi:type="ecore:EDataType" href="http://www.eclipse.org/emf/2002/Ecore#//EString"/>
+        </eStructuralFeatures>
+        <eStructuralFeatures xmi:type="ecore:EAttribute" xmi:id="_SNmzNUeEEeWlKfVTs-HO8g" name="rowFilters" ordered="false" upperBound="-1" defaultValueLiteral="">
+          <eType xmi:type="ecore:EDataType" href="http://www.eclipse.org/emf/2002/Ecore#//EString"/>
+        </eStructuralFeatures>
+        <eStructuralFeatures xmi:type="ecore:EAttribute" xmi:id="_SNmzNkeEEeWlKfVTs-HO8g" name="rowElementType" ordered="false" upperBound="-1" defaultValueLiteral="">
+          <eType xmi:type="ecore:EDataType" href="http://www.eclipse.org/emf/2002/Ecore#//EString"/>
+        </eStructuralFeatures>
+        <eStructuralFeatures xmi:type="ecore:EAttribute" xmi:id="_SNmzN0eEEeWlKfVTs-HO8g" name="rowElementOwner" ordered="false" upperBound="-1" defaultValueLiteral="">
+          <eType xmi:type="ecore:EDataType" href="http://www.eclipse.org/emf/2002/Ecore#//EString"/>
+        </eStructuralFeatures>
+        <eStructuralFeatures xmi:type="ecore:EAttribute" xmi:id="_SNmzOEeEEeWlKfVTs-HO8g" name="columnIds" upperBound="-1" defaultValueLiteral="">
+          <eType xmi:type="ecore:EDataType" href="http://www.eclipse.org/emf/2002/Ecore#//EString"/>
+        </eStructuralFeatures>
+        <eStructuralFeatures xmi:type="ecore:EAttribute" xmi:id="_SNmzOUeEEeWlKfVTs-HO8g" name="showDetailedColumnName" ordered="false" lowerBound="1" defaultValueLiteral="false">
+          <eType xmi:type="ecore:EDataType" href="http://www.eclipse.org/emf/2002/Ecore#//EBoolean"/>
+        </eStructuralFeatures>
+        <eStructuralFeatures xmi:type="ecore:EAttribute" xmi:id="_SNmzOkeEEeWlKfVTs-HO8g" name="scope" ordered="false" upperBound="-1" defaultValueLiteral="">
+          <eAnnotations xmi:id="_SNmzO0eEEeWlKfVTs-HO8g" source="http://www.eclipse.org/emf/2002/GenModel">
+            <details xmi:id="_SNmzPEeEEeWlKfVTs-HO8g" key="documentation" value="All the model elements of the suitable type, contained in the scope are included into the table. When more elements are added to the scope they are automatically added to the table."/>
+          </eAnnotations>
+          <eType xmi:type="ecore:EDataType" href="http://www.eclipse.org/emf/2002/Ecore#//EString"/>
+        </eStructuralFeatures>
+        <eStructuralFeatures xmi:type="ecore:EAttribute" xmi:id="_SNmzPUeEEeWlKfVTs-HO8g" name="excludedElements" ordered="false" upperBound="-1" defaultValueLiteral="">
+          <eAnnotations xmi:id="_SNmzPkeEEeWlKfVTs-HO8g" source="http://www.eclipse.org/emf/2002/GenModel">
+            <details xmi:id="_SNmzP0eEEeWlKfVTs-HO8g" key="documentation" value="Excluded elements field specifies the list of elements that are not included into the table even if they are present in the scope."/>
+          </eAnnotations>
+          <eType xmi:type="ecore:EDataType" href="http://www.eclipse.org/emf/2002/Ecore#//EString"/>
+        </eStructuralFeatures>
+        <eStructuralFeatures xmi:type="ecore:EAttribute" xmi:id="_SNmzQEeEEeWlKfVTs-HO8g" name="typesIncludeSubtypes" ordered="false" lowerBound="1" defaultValueLiteral="false">
+          <eType xmi:type="ecore:EDataType" href="http://www.eclipse.org/emf/2002/Ecore#//EBoolean"/>
+        </eStructuralFeatures>
+        <eStructuralFeatures xmi:type="ecore:EAttribute" xmi:id="_SNmzQUeEEeWlKfVTs-HO8g" name="additionalElements" ordered="false" upperBound="-1" defaultValueLiteral="">
+          <eAnnotations xmi:id="_SNmzQkeEEeWlKfVTs-HO8g" source="http://www.eclipse.org/emf/2002/GenModel">
+            <details xmi:id="_SNmzQ0eEEeWlKfVTs-HO8g" key="documentation" value="Additional elements field specifies the elements that are included into the table regardless of the scope."/>
+          </eAnnotations>
+          <eType xmi:type="ecore:EDataType" href="http://www.eclipse.org/emf/2002/Ecore#//EString"/>
+        </eStructuralFeatures>
+      </eClassifiers>
+      <eClassifiers xmi:type="ecore:EClass" xmi:id="_SNmzREeEEeWlKfVTs-HO8g" name="MagicDrawProfile__fileView">
+        <eAnnotations xmi:id="_SNmzRUeEEeWlKfVTs-HO8g" source="stereotype">
+          <references xmi:type="uml:Stereotype" href="UML_Standard_Profile.MagicDraw_Profile.profile.uml2#_9_5_622020d_1119363644753_693786_138"/>
+        </eAnnotations>
+      </eClassifiers>
+      <eClassifiers xmi:type="ecore:EClass" xmi:id="_SNmzRkeEEeWlKfVTs-HO8g" name="MagicDrawProfile__deploymentView" eSuperTypes="_SNm0JEeEEeWlKfVTs-HO8g">
+        <eAnnotations xmi:id="_SNmzR0eEEeWlKfVTs-HO8g" source="stereotype">
+          <references xmi:type="uml:Stereotype" href="UML_Standard_Profile.MagicDraw_Profile.profile.uml2#_8bb027e_1074084628959_697484_92"/>
+        </eAnnotations>
+        <eStructuralFeatures xmi:type="ecore:EAttribute" xmi:id="_SNmzSEeEEeWlKfVTs-HO8g" name="deploymentViewID" ordered="false" lowerBound="1">
+          <eType xmi:type="ecore:EDataType" href="http://www.eclipse.org/emf/2002/Ecore#//EInt"/>
+        </eStructuralFeatures>
+      </eClassifiers>
+      <eClassifiers xmi:type="ecore:EClass" xmi:id="_SNmzSUeEEeWlKfVTs-HO8g" name="MagicDrawProfile__RelationMap" eSuperTypes="_SNm0JEeEEeWlKfVTs-HO8g">
+        <eAnnotations xmi:id="_SNmzSkeEEeWlKfVTs-HO8g" source="http://www.eclipse.org/emf/2002/GenModel">
+          <details xmi:id="_SNmzS0eEEeWlKfVTs-HO8g" key="documentation" value="&lt;html>&#xA;  &lt;head>&#xA;&#x9;&#x9;&lt;style>&#xA;&#x9;&#x9;&#x9;p {padding:0px; margin:0px;}&#xA;&#x9;&#x9;&lt;/style>&#xA;&#x9;&lt;/head>&#xA;  &lt;body>&#xA;    &lt;p>&#xA;&lt;span style=&quot;font-family:Arial; font-size:12.0pt;&quot;>The &lt;b>Relation Map&lt;/b> allows rapid review and analysis of relations among the elements of the whole model. &lt;/span>&#xA;    &lt;/p>&#xA;&#xA;    &lt;p>&#xA;&amp;#160;&#xA;    &lt;/p>&#xA;&#xA;    &#xA;&lt;hr style=&quot;font-family:Arial;font-size:3;&quot; />&#xA;    &lt;p>&#xA;&lt;span style=&quot;font-family:Arial; font-size:12.0pt;&quot;>&lt;b>To create a relation map: &lt;/b>&lt;/span>&#xA;    &lt;/p>&#xA;&#xA;    &lt;ol>&#xA;      &lt;li>&#xA;&lt;span style=&quot;font-family:Arial; font-size:12.0pt;&quot;>Drag an element from the Model Browser to the relation map.&lt;/span>&#xA;      &lt;/li>&#xA;      &lt;li>&#xA;&lt;span style=&quot;font-family:Arial; font-size:12.0pt;&quot;>Specify filters: Relation Criterion, Element Type, Scope, and Depth.&lt;/span>&#xA;      &lt;/li>&#xA;    &lt;/ol>&#xA;    &lt;p>&#xA;&amp;#160;&#xA;    &lt;/p>&#xA;&#xA;    &lt;p>&#xA;&lt;span style=&quot;font-family:Arial; font-size:12.0pt;&quot;>Relation map can display the model structure in two different&lt;b> layouts&lt;/b>: &lt;b>tree&lt;/b> or &lt;b>radial&lt;/b>. The relations represented on the map can be analyzed in one of the following ways: &lt;/span>&#xA;    &lt;/p>&#xA;&#xA;    &lt;p>&#xA;&lt;span style=&quot;font-family:Arial; font-size:12.0pt;&quot;>- Dynamically - according to the applied filters: element type, dependencies criterion, depth, and scope. &lt;/span>&#xA;    &lt;/p>&#xA;&#xA;    &lt;p>&#xA;&lt;span style=&quot;font-family:Arial; font-size:12.0pt;&quot;>- Statically - step-by-step by expanding the branches of the structure. To represent the same element as a single node in the map, click the Options button on the toolbar and then select the &lt;b>Show Single Node Per Element&lt;/b> command.&lt;/span>&#xA;    &lt;/p>&#xA;&#xA;    &lt;p>&#xA;&amp;#160;&#xA;    &lt;/p>&#xA;&#xA;    &lt;p>&#xA;&amp;#160;&#xA;    &lt;/p>&#xA;&#xA;    &#xA;&lt;hr style=&quot;font-family:Arial;font-size:3;&quot; />&#xA;    &lt;p>&#xA;&lt;span style=&quot;font-family:Arial; font-size:12.0pt;&quot;>&lt;b>Manipulations:&lt;/b>&lt;/span>&#xA;    &lt;/p>&#xA;&#xA;    &lt;p>&#xA;&amp;#160;&#xA;    &lt;/p>&#xA;&#xA;    &lt;p>&#xA;&lt;span style=&quot;font-family:Arial; font-size:12.0pt;&quot;>&lt;b>Create a relation map structure&lt;/b>&lt;/span>&lt;span style=&quot;font-family:Arial; font-size:12.0pt;&quot;> - drag an element from the Model Browser to the relation map. &lt;/span>&#xA;    &lt;/p>&#xA;&#xA;    &lt;p>&#xA;&lt;span style=&quot;font-family:Arial; font-size:12.0pt;&quot;>&lt;b>Restore manually suppressed / expanded branches and hidden elements and they position&lt;/b>&lt;/span>&lt;span style=&quot;font-family:Arial; font-size:12.0pt;&quot;> - click the Refresh button       &#xA;&lt;/span>&lt;img border=&quot;0&quot; src=&quot;file:plugins/com.nomagic.magicdraw.relationshipmap/icons/reapply_filter.gif&quot; />&lt;span style=&quot;font-family:Arial; font-size:12.0pt;&quot;>. &lt;/span>&#xA;    &lt;/p>&#xA;&#xA;    &lt;p>&#xA;&lt;span style=&quot;font-family:Arial; font-size:12.0pt;&quot;>&lt;b>Expand / suppress branches&lt;/b>&lt;/span>&lt;span style=&quot;font-family:Arial; font-size:12.0pt;&quot;> - click       &#xA;&lt;/span>&lt;img border=&quot;0&quot; src=&quot;file:plugins/com.nomagic.magicdraw.relationshipmap/icons/expand.gif&quot; />&amp;#160;/       &#xA;&lt;img border=&quot;0&quot; src=&quot;file:plugins/com.nomagic.magicdraw.relationshipmap/icons/supp.gif&quot; />&amp;#160;&lt;span style=&quot;font-family:Arial; font-size:12.0pt;&quot;>near the node.&lt;/span>&lt;span style=&quot;font-family:Arial; font-size:12.0pt;&quot;> &lt;/span>&#xA;    &lt;/p>&#xA;&#xA;    &lt;p>&#xA;&lt;span style=&quot;font-family:Arial; font-size:12.0pt;&quot;>&lt;b>Move the whole structure&lt;/b>&lt;/span>&lt;span style=&quot;font-family:Arial; font-size:12.0pt;&quot;> - click an empty space on the relation map and drag. &lt;/span>&#xA;    &lt;/p>&#xA;&#xA;    &lt;p>&#xA;&lt;span style=&quot;font-family:Arial; font-size:12.0pt;&quot;>&lt;b>Move the selected node&lt;/b>&lt;/span>&lt;span style=&quot;font-family:Arial; font-size:12.0pt;&quot;> - click the node and drag. &lt;/span>&#xA;    &lt;/p>&#xA;&#xA;    &lt;p>&#xA;&lt;span style=&quot;font-family:Arial; font-size:12.0pt;&quot;>&lt;b>Zoom in&lt;/b>&lt;/span>&lt;span style=&quot;font-family:Arial; font-size:12.0pt;&quot;> - Ctrl + scroll up. &lt;/span>&#xA;    &lt;/p>&#xA;&#xA;    &lt;p>&#xA;&lt;span style=&quot;font-family:Arial; font-size:12.0pt;&quot;>&lt;b>Zoom out&lt;/b>&lt;/span>&lt;span style=&quot;font-family:Arial; font-size:12.0pt;&quot;> - Ctrl + scroll down. &lt;/span>&#xA;    &lt;/p>&#xA;&#xA;    &lt;p>&#xA;&lt;span style=&quot;font-family:Arial; font-size:12.0pt;&quot;>&lt;b>Turn on the ability to change the context element with single click&lt;/b>&lt;/span>&lt;span style=&quot;font-family:Arial; font-size:12.0pt;&quot;> -&lt;/span>&lt;span style=&quot;font-family:Arial; font-size:12.0pt;&quot;> &lt;/span>&lt;span style=&quot;font-family:Arial; font-size:12.0pt;&quot;>click the Options button on the toolbar and then select the &lt;/span>&lt;span style=&quot;font-family:Arial; font-size:12.0pt;&quot;>&lt;b>Make Element as Context on Selection&lt;/b> command&lt;/span>&lt;span style=&quot;font-family:Arial; font-size:12.0pt;&quot;>.&lt;/span>&#xA;    &lt;/p>&#xA;&#xA;    &lt;p>&#xA;&lt;span style=&quot;font-family:Arial; font-size:12.0pt;&quot;>&amp;#160;&lt;/span>&#xA;    &lt;/p>&#xA;&#xA;    &lt;p>&#xA;&amp;#160;&#xA;    &lt;/p>&#xA;&#xA;    &lt;p>&#xA;&lt;span style=&quot;font-family:Arial; font-size:12.0pt;&quot;>&lt;b>Filters:&lt;/b>&lt;/span>&#xA;    &lt;/p>&#xA;&#xA;    &lt;p>&#xA;&amp;#160;&#xA;    &lt;/p>&#xA;&#xA;    &lt;p>&#xA;&lt;span style=&quot;font-family:Arial; font-size:12.0pt;&quot;>&lt;b>Context&lt;/b>&lt;/span>&lt;span style=&quot;font-family:Arial; font-size:12.0pt;&quot;> - the core element of the structure. &lt;/span>&#xA;    &lt;/p>&#xA;&#xA;    &lt;p>&#xA;&lt;span style=&quot;font-family:Arial; font-size:12.0pt;&quot;>&lt;b>Relation Criterion&lt;/b>&lt;/span>&lt;span style=&quot;font-family:Arial; font-size:12.0pt;&quot;> - relations that are shown. Property, custom Tag definition, or relationship from diagrams can be chosen as a relation. &lt;/span>&#xA;    &lt;/p>&#xA;&#xA;    &lt;p>&#xA;&lt;span style=&quot;font-family:Arial; font-size:12.0pt;&quot;>&lt;b>Element Type&lt;/b>&lt;/span>&lt;span style=&quot;font-family:Arial; font-size:12.0pt;&quot;> - element types that are shown. &lt;/span>&#xA;    &lt;/p>&#xA;&#xA;    &lt;p>&#xA;&lt;span style=&quot;font-family:Arial; font-size:12.0pt;&quot;>&lt;b>Scope&lt;/b>&lt;/span>&lt;span style=&quot;font-family:Arial; font-size:12.0pt;&quot;> - fragment of the model (or the whole model) from which the relation map is built. &lt;/span>&#xA;    &lt;/p>&#xA;&#xA;    &lt;p>&#xA;&lt;span style=&quot;font-family:Arial; font-size:12.0pt;&quot;>&lt;b>Depth&lt;/b>&lt;/span>&lt;span style=&quot;font-family:Arial; font-size:12.0pt;&quot;> - level of branches automatically expanded starting from the context element.&lt;/span>&#xA;&#xA;    &lt;/p>&#xA;&#xA;&lt;/body>&#xA;&lt;/html>"/>
+        </eAnnotations>
+        <eAnnotations xmi:id="_SNmzTEeEEeWlKfVTs-HO8g" source="stereotype">
+          <references xmi:type="uml:Stereotype" href="UML_Standard_Profile.MagicDraw_Profile.profile.uml2#_16_8beta_9020291_1260453936960_387965_1187"/>
+        </eAnnotations>
+        <eStructuralFeatures xmi:type="ecore:EAttribute" xmi:id="_SNmzTUeEEeWlKfVTs-HO8g" name="contextElement" ordered="false" defaultValueLiteral="">
+          <eType xmi:type="ecore:EDataType" href="http://www.eclipse.org/emf/2002/Ecore#//EString"/>
+        </eStructuralFeatures>
+        <eStructuralFeatures xmi:type="ecore:EAttribute" xmi:id="_SNmzTkeEEeWlKfVTs-HO8g" name="elementType" ordered="false" upperBound="-1" defaultValueLiteral="">
+          <eType xmi:type="ecore:EDataType" href="http://www.eclipse.org/emf/2002/Ecore#//EString"/>
+        </eStructuralFeatures>
+        <eStructuralFeatures xmi:type="ecore:EAttribute" xmi:id="_SNmzT0eEEeWlKfVTs-HO8g" name="relationCriterion" upperBound="-1" defaultValueLiteral="">
+          <eType xmi:type="ecore:EDataType" href="http://www.eclipse.org/emf/2002/Ecore#//EString"/>
+        </eStructuralFeatures>
+        <eStructuralFeatures xmi:type="ecore:EAttribute" xmi:id="_SNmzUEeEEeWlKfVTs-HO8g" name="depth" ordered="false" lowerBound="1" defaultValueLiteral="2">
+          <eType xmi:type="ecore:EDataType" href="http://www.eclipse.org/emf/2002/Ecore#//EInt"/>
+        </eStructuralFeatures>
+        <eStructuralFeatures xmi:type="ecore:EAttribute" xmi:id="_SNmzUUeEEeWlKfVTs-HO8g" name="scope" ordered="false" upperBound="-1" defaultValueLiteral="">
+          <eType xmi:type="ecore:EDataType" href="http://www.eclipse.org/emf/2002/Ecore#//EString"/>
+        </eStructuralFeatures>
+        <eStructuralFeatures xmi:type="ecore:EAttribute" xmi:id="_SNmzUkeEEeWlKfVTs-HO8g" name="showRelationStyles" ordered="false" lowerBound="1" defaultValueLiteral="true">
+          <eType xmi:type="ecore:EDataType" href="http://www.eclipse.org/emf/2002/Ecore#//EBoolean"/>
+        </eStructuralFeatures>
+        <eStructuralFeatures xmi:type="ecore:EAttribute" xmi:id="_SNmzU0eEEeWlKfVTs-HO8g" name="filterAreaExpanded" ordered="false" lowerBound="1" defaultValueLiteral="true">
+          <eType xmi:type="ecore:EDataType" href="http://www.eclipse.org/emf/2002/Ecore#//EBoolean"/>
+        </eStructuralFeatures>
+        <eStructuralFeatures xmi:type="ecore:EAttribute" xmi:id="_SNmzVEeEEeWlKfVTs-HO8g" name="layout" ordered="false" lowerBound="1" eType="_SNmzaEeEEeWlKfVTs-HO8g" defaultValueLiteral="Tree"/>
+        <eStructuralFeatures xmi:type="ecore:EAttribute" xmi:id="_SNmzVUeEEeWlKfVTs-HO8g" name="makeSelectedAsContext" ordered="false" lowerBound="1" defaultValueLiteral="false">
+          <eType xmi:type="ecore:EDataType" href="http://www.eclipse.org/emf/2002/Ecore#//EBoolean"/>
+        </eStructuralFeatures>
+        <eStructuralFeatures xmi:type="ecore:EAttribute" xmi:id="_SNmzVkeEEeWlKfVTs-HO8g" name="groupingCriterion" ordered="false" upperBound="-1" defaultValueLiteral="">
+          <eType xmi:type="ecore:EDataType" href="http://www.eclipse.org/emf/2002/Ecore#//EString"/>
+        </eStructuralFeatures>
+        <eStructuralFeatures xmi:type="ecore:EAttribute" xmi:id="_SNmzV0eEEeWlKfVTs-HO8g" name="showGrouping" ordered="false" lowerBound="1" defaultValueLiteral="false">
+          <eType xmi:type="ecore:EDataType" href="http://www.eclipse.org/emf/2002/Ecore#//EBoolean"/>
+        </eStructuralFeatures>
+        <eStructuralFeatures xmi:type="ecore:EAttribute" xmi:id="_SNmzWEeEEeWlKfVTs-HO8g" name="removedElements" ordered="false" upperBound="-1" defaultValueLiteral="">
+          <eType xmi:type="ecore:EDataType" href="http://www.eclipse.org/emf/2002/Ecore#//EString"/>
+        </eStructuralFeatures>
+        <eStructuralFeatures xmi:type="ecore:EAttribute" xmi:id="_SNmzWUeEEeWlKfVTs-HO8g" name="isInitialized" ordered="false" lowerBound="1" defaultValueLiteral="true">
+          <eType xmi:type="ecore:EDataType" href="http://www.eclipse.org/emf/2002/Ecore#//EBoolean"/>
+        </eStructuralFeatures>
+        <eStructuralFeatures xmi:type="ecore:EAttribute" xmi:id="_SNmzWkeEEeWlKfVTs-HO8g" name="expandedElements" ordered="false" upperBound="-1" defaultValueLiteral="">
+          <eType xmi:type="ecore:EDataType" href="http://www.eclipse.org/emf/2002/Ecore#//EString"/>
+        </eStructuralFeatures>
+        <eStructuralFeatures xmi:type="ecore:EAttribute" xmi:id="_SNmzW0eEEeWlKfVTs-HO8g" name="showFullTypes" ordered="false" lowerBound="1" defaultValueLiteral="false">
+          <eType xmi:type="ecore:EDataType" href="http://www.eclipse.org/emf/2002/Ecore#//EBoolean"/>
+        </eStructuralFeatures>
+        <eStructuralFeatures xmi:type="ecore:EAttribute" xmi:id="_SNmzXEeEEeWlKfVTs-HO8g" name="ShowAppliedStereotypes" ordered="false" lowerBound="1" defaultValueLiteral="false">
+          <eType xmi:type="ecore:EDataType" href="http://www.eclipse.org/emf/2002/Ecore#//EBoolean"/>
+        </eStructuralFeatures>
+        <eStructuralFeatures xmi:type="ecore:EAttribute" xmi:id="_SNmzXUeEEeWlKfVTs-HO8g" name="layoutData" ordered="false" upperBound="-1" defaultValueLiteral="">
+          <eType xmi:type="ecore:EDataType" href="http://www.eclipse.org/emf/2002/Ecore#//EString"/>
+        </eStructuralFeatures>
+        <eStructuralFeatures xmi:type="ecore:EAttribute" xmi:id="_SNmzXkeEEeWlKfVTs-HO8g" name="suppressedElements" ordered="false" upperBound="-1" defaultValueLiteral="">
+          <eType xmi:type="ecore:EDataType" href="http://www.eclipse.org/emf/2002/Ecore#//EString"/>
+        </eStructuralFeatures>
+        <eStructuralFeatures xmi:type="ecore:EAttribute" xmi:id="_SNmzX0eEEeWlKfVTs-HO8g" name="showSingleNodePerElement" ordered="false" lowerBound="1" defaultValueLiteral="false">
+          <eAnnotations xmi:id="_SNmzYEeEEeWlKfVTs-HO8g" source="http://www.eclipse.org/emf/2002/GenModel">
+            <details xmi:id="_SNmzYUeEEeWlKfVTs-HO8g" key="documentation" value="Show a single node per element when the graph has more than one representation of the same element in the Relation Map.&#xA;"/>
+          </eAnnotations>
+          <eType xmi:type="ecore:EDataType" href="http://www.eclipse.org/emf/2002/Ecore#//EBoolean"/>
+        </eStructuralFeatures>
+        <eStructuralFeatures xmi:type="ecore:EAttribute" xmi:id="_SNmzYkeEEeWlKfVTs-HO8g" name="cutElementNames" ordered="false" lowerBound="1" defaultValueLiteral="true">
+          <eAnnotations xmi:id="_SNmzY0eEEeWlKfVTs-HO8g" source="http://www.eclipse.org/emf/2002/GenModel">
+            <details xmi:id="_SNmzZEeEEeWlKfVTs-HO8g" key="documentation" value="Cut element names, if they are too long (the text exceeds reasonable length) and make the Relation Map difficult to read."/>
+          </eAnnotations>
+          <eType xmi:type="ecore:EDataType" href="http://www.eclipse.org/emf/2002/Ecore#//EBoolean"/>
+        </eStructuralFeatures>
+        <eStructuralFeatures xmi:type="ecore:EAttribute" xmi:id="_SNmzZUeEEeWlKfVTs-HO8g" name="showLegend" ordered="false" lowerBound="1" defaultValueLiteral="true">
+          <eAnnotations xmi:id="_SNmzZkeEEeWlKfVTs-HO8g" source="http://www.eclipse.org/emf/2002/GenModel">
+            <details xmi:id="_SNmzZ0eEEeWlKfVTs-HO8g" key="documentation" value="Show relationship type color legend"/>
+          </eAnnotations>
+          <eType xmi:type="ecore:EDataType" href="http://www.eclipse.org/emf/2002/Ecore#//EBoolean"/>
+        </eStructuralFeatures>
+      </eClassifiers>
+      <eClassifiers xmi:type="ecore:EEnum" xmi:id="_SNmzaEeEEeWlKfVTs-HO8g" name="MagicDrawProfile__relationMapLayoutEnumeration">
+        <eLiterals xmi:id="_SNmzaUeEEeWlKfVTs-HO8g" name="Radial">
+          <eAnnotations xmi:id="_SNmzakeEEeWlKfVTs-HO8g" source="enumerationLiteral">
+            <references xmi:type="uml:EnumerationLiteral" href="UML_Standard_Profile.MagicDraw_Profile.profile.uml2#_16_8beta_9020291_1264152579416_194273_1193"/>
+          </eAnnotations>
+        </eLiterals>
+        <eLiterals xmi:id="_SNmza0eEEeWlKfVTs-HO8g" name="Tree" value="1">
+          <eAnnotations xmi:id="_SNmzbEeEEeWlKfVTs-HO8g" source="enumerationLiteral">
+            <references xmi:type="uml:EnumerationLiteral" href="UML_Standard_Profile.MagicDraw_Profile.profile.uml2#_16_8beta_9020291_1264152588145_284974_1194"/>
+          </eAnnotations>
+        </eLiterals>
+      </eClassifiers>
+      <eClassifiers xmi:type="ecore:EClass" xmi:id="_SNmzbUeEEeWlKfVTs-HO8g" name="MagicDrawProfile__tagGroup">
+        <eAnnotations xmi:id="_SNmzbkeEEeWlKfVTs-HO8g" source="http://www.eclipse.org/emf/2002/GenModel">
+          <details xmi:id="_SNmzb0eEEeWlKfVTs-HO8g" key="documentation" value="This stereotype should be applied to tag definition which values describes group names of other tag definitions.&#xA;Used for tags grouping in MagicDraw model elements specifications, TaggedValues tabs."/>
+        </eAnnotations>
+        <eAnnotations xmi:id="_SNmzcEeEEeWlKfVTs-HO8g" source="stereotype">
+          <references xmi:type="uml:Stereotype" href="UML_Standard_Profile.MagicDraw_Profile.profile.uml2#_be00301_1069835754648_699954_1"/>
+        </eAnnotations>
+      </eClassifiers>
+      <eClassifiers xmi:type="ecore:EClass" xmi:id="_SNmzcUeEEeWlKfVTs-HO8g" name="MagicDrawProfile__virtual">
+        <eAnnotations xmi:id="_SNmzckeEEeWlKfVTs-HO8g" source="stereotype">
+          <references xmi:type="uml:Stereotype" href="UML_Standard_Profile.MagicDraw_Profile.profile.uml2#_12_5EAPbeta_622020d_1173883464130_42978_98"/>
+        </eAnnotations>
+        <eStructuralFeatures xmi:type="ecore:EAttribute" xmi:id="_SNmzc0eEEeWlKfVTs-HO8g" name="details" ordered="false" upperBound="-1" defaultValueLiteral="">
+          <eType xmi:type="ecore:EDataType" href="http://www.eclipse.org/emf/2002/Ecore#//EString"/>
+        </eStructuralFeatures>
+        <eStructuralFeatures xmi:type="ecore:EAttribute" xmi:id="_SNmzdEeEEeWlKfVTs-HO8g" name="n" ordered="false" lowerBound="1">
+          <eType xmi:type="ecore:EDataType" href="http://www.eclipse.org/emf/2002/Ecore#//EInt"/>
+        </eStructuralFeatures>
+      </eClassifiers>
+      <eClassifiers xmi:type="ecore:EClass" xmi:id="_SNmzdUeEEeWlKfVTs-HO8g" name="MagicDrawProfile__DiagramInfo" eSuperTypes="_SNm0JEeEEeWlKfVTs-HO8g">
+        <eAnnotations xmi:id="_SNmzdkeEEeWlKfVTs-HO8g" source="stereotype">
+          <references xmi:type="uml:Stereotype" href="UML_Standard_Profile.MagicDraw_Profile.profile.uml2#_9_0_be00301_1108044380615_150487_0"/>
+        </eAnnotations>
+        <eStructuralFeatures xmi:type="ecore:EAttribute" xmi:id="_SNmzd0eEEeWlKfVTs-HO8g" name="Creationdate" ordered="false" lowerBound="1" defaultValueLiteral="">
+          <eType xmi:type="ecore:EDataType" href="http://www.eclipse.org/emf/2002/Ecore#//EString"/>
+        </eStructuralFeatures>
+        <eStructuralFeatures xmi:type="ecore:EAttribute" xmi:id="_SNmzeEeEEeWlKfVTs-HO8g" name="Author" ordered="false" lowerBound="1" defaultValueLiteral="">
+          <eType xmi:type="ecore:EDataType" href="http://www.eclipse.org/emf/2002/Ecore#//EString"/>
+        </eStructuralFeatures>
+        <eStructuralFeatures xmi:type="ecore:EAttribute" xmi:id="_SNmzeUeEEeWlKfVTs-HO8g" name="Modificationdate" ordered="false" lowerBound="1" defaultValueLiteral="">
+          <eType xmi:type="ecore:EDataType" href="http://www.eclipse.org/emf/2002/Ecore#//EString"/>
+        </eStructuralFeatures>
+        <eStructuralFeatures xmi:type="ecore:EAttribute" xmi:id="_SNmzekeEEeWlKfVTs-HO8g" name="Lastmodifiedby" ordered="false" lowerBound="1" defaultValueLiteral="">
+          <eType xmi:type="ecore:EDataType" href="http://www.eclipse.org/emf/2002/Ecore#//EString"/>
+        </eStructuralFeatures>
+      </eClassifiers>
+      <eClassifiers xmi:type="ecore:EClass" xmi:id="_SNmze0eEEeWlKfVTs-HO8g" name="MagicDrawProfile__useCaseModel">
+        <eAnnotations xmi:id="_SNmzfEeEEeWlKfVTs-HO8g" source="http://www.eclipse.org/emf/2002/GenModel">
+          <details xmi:id="_SNmzfUeEEeWlKfVTs-HO8g" key="documentation" value="A use case model specifies the services a system provides to its users; that is, the different ways of using the system, and whose top-level package is a use case system."/>
+        </eAnnotations>
+        <eAnnotations xmi:id="_SNmzfkeEEeWlKfVTs-HO8g" source="stereotype">
+          <references xmi:type="uml:Stereotype" href="UML_Standard_Profile.MagicDraw_Profile.profile.uml2#magicdraw_1046861421226_625103_15"/>
+        </eAnnotations>
+      </eClassifiers>
+      <eClassifiers xmi:type="ecore:EClass" xmi:id="_SNmzf0eEEeWlKfVTs-HO8g" name="MagicDrawProfile__migrationLog">
+        <eAnnotations xmi:id="_SNmzgEeEEeWlKfVTs-HO8g" source="stereotype">
+          <references xmi:type="uml:Stereotype" href="UML_Standard_Profile.MagicDraw_Profile.profile.uml2#_16_5beta1_62a020a_1228837140211_91240_252"/>
+        </eAnnotations>
+        <eStructuralFeatures xmi:type="ecore:EAttribute" xmi:id="_SNmzgUeEEeWlKfVTs-HO8g" name="logEntry" ordered="false" upperBound="-1" defaultValueLiteral="">
+          <eAnnotations xmi:id="_SNmzgkeEEeWlKfVTs-HO8g" source="http://www.eclipse.org/emf/2002/GenModel">
+            <details xmi:id="_SNmzg0eEEeWlKfVTs-HO8g" key="documentation" value="Information how elements were replaced during migration. First value is original element id, then separator and created element ids."/>
+          </eAnnotations>
+          <eType xmi:type="ecore:EDataType" href="http://www.eclipse.org/emf/2002/Ecore#//EString"/>
+        </eStructuralFeatures>
+      </eClassifiers>
+      <eClassifiers xmi:type="ecore:EClass" xmi:id="_SNmzhEeEEeWlKfVTs-HO8g" name="MagicDrawProfile__CustomImageHolder" eSuperTypes="_SNm0JEeEEeWlKfVTs-HO8g">
+        <eAnnotations xmi:id="_SNmzhUeEEeWlKfVTs-HO8g" source="http://www.eclipse.org/emf/2002/GenModel">
+          <details xmi:id="_SNmzhkeEEeWlKfVTs-HO8g" key="documentation" value="Stereotype used to hold image which is draw in diagram."/>
+        </eAnnotations>
+        <eAnnotations xmi:id="_SNmzh0eEEeWlKfVTs-HO8g" source="stereotype">
+          <references xmi:type="uml:Stereotype" href="UML_Standard_Profile.MagicDraw_Profile.profile.uml2#_16_0_62a020a_1227788740027_441955_240"/>
+        </eAnnotations>
+        <eStructuralFeatures xmi:type="ecore:EAttribute" xmi:id="_SNmziEeEEeWlKfVTs-HO8g" name="Content" ordered="false" lowerBound="1" defaultValueLiteral="">
+          <eType xmi:type="ecore:EDataType" href="http://www.eclipse.org/emf/2002/Ecore#//EString"/>
+        </eStructuralFeatures>
+        <eStructuralFeatures xmi:type="ecore:EAttribute" xmi:id="_SNmziUeEEeWlKfVTs-HO8g" name="Format" ordered="false" lowerBound="1" defaultValueLiteral="">
+          <eType xmi:type="ecore:EDataType" href="http://www.eclipse.org/emf/2002/Ecore#//EString"/>
+        </eStructuralFeatures>
+        <eStructuralFeatures xmi:type="ecore:EAttribute" xmi:id="_SNmzikeEEeWlKfVTs-HO8g" name="Location" ordered="false" lowerBound="1" defaultValueLiteral="">
+          <eType xmi:type="ecore:EDataType" href="http://www.eclipse.org/emf/2002/Ecore#//EString"/>
+        </eStructuralFeatures>
+      </eClassifiers>
+      <eClassifiers xmi:type="ecore:EClass" xmi:id="_SNmzi0eEEeWlKfVTs-HO8g" name="MagicDrawProfile__implementationModel" eSuperTypes="_SNm0JEeEEeWlKfVTs-HO8g">
+        <eAnnotations xmi:id="_SNmzjEeEEeWlKfVTs-HO8g" source="stereotype">
+          <references xmi:type="uml:Stereotype" href="UML_Standard_Profile.MagicDraw_Profile.profile.uml2#_8bb027e_1074084663729_234105_94"/>
+        </eAnnotations>
+        <eStructuralFeatures xmi:type="ecore:EAttribute" xmi:id="_SNmzjUeEEeWlKfVTs-HO8g" name="implementationModelID" ordered="false" lowerBound="1">
+          <eType xmi:type="ecore:EDataType" href="http://www.eclipse.org/emf/2002/Ecore#//EInt"/>
+        </eStructuralFeatures>
+      </eClassifiers>
+      <eClassifiers xmi:type="ecore:EClass" xmi:id="_SNmzjkeEEeWlKfVTs-HO8g" name="MagicDrawProfile__autoGeneratedName" eSuperTypes="_SNm0JEeEEeWlKfVTs-HO8g">
+        <eAnnotations xmi:id="_SNmzj0eEEeWlKfVTs-HO8g" source="stereotype">
+          <references xmi:type="uml:Stereotype" href="UML_Standard_Profile.MagicDraw_Profile.profile.uml2#_10_0_622020d_1127207234373_259585_1"/>
+        </eAnnotations>
+      </eClassifiers>
+      <eClassifiers xmi:type="ecore:EClass" xmi:id="_SNmzkEeEEeWlKfVTs-HO8g" name="MagicDrawProfile__hasGroupName">
+        <eAnnotations xmi:id="_SNmzkUeEEeWlKfVTs-HO8g" source="stereotype">
+          <references xmi:type="uml:Stereotype" href="UML_Standard_Profile.MagicDraw_Profile.profile.uml2#_11_5_be00301_1158137605451_703438_707"/>
+        </eAnnotations>
+        <eStructuralFeatures xmi:type="ecore:EAttribute" xmi:id="_SNmzkkeEEeWlKfVTs-HO8g" name="groupName" ordered="false" lowerBound="1" defaultValueLiteral="">
+          <eType xmi:type="ecore:EDataType" href="http://www.eclipse.org/emf/2002/Ecore#//EString"/>
+        </eStructuralFeatures>
+      </eClassifiers>
+      <eClassifiers xmi:type="ecore:EClass" xmi:id="_SNmzk0eEEeWlKfVTs-HO8g" name="MagicDrawProfile__conceptualView" eSuperTypes="_SNm0JEeEEeWlKfVTs-HO8g">
+        <eAnnotations xmi:id="_SNmzlEeEEeWlKfVTs-HO8g" source="stereotype">
+          <references xmi:type="uml:Stereotype" href="UML_Standard_Profile.MagicDraw_Profile.profile.uml2#_8bb027e_1074084583003_865080_88"/>
+        </eAnnotations>
+        <eStructuralFeatures xmi:type="ecore:EAttribute" xmi:id="_SNmzlUeEEeWlKfVTs-HO8g" name="conceptualViewID" ordered="false" lowerBound="1">
+          <eType xmi:type="ecore:EDataType" href="http://www.eclipse.org/emf/2002/Ecore#//EInt"/>
+        </eStructuralFeatures>
+      </eClassifiers>
+      <eClassifiers xmi:type="ecore:EClass" xmi:id="_SNmzlkeEEeWlKfVTs-HO8g" name="MagicDrawProfile__constructor">
+        <eAnnotations xmi:id="_SNmzl0eEEeWlKfVTs-HO8g" source="stereotype">
+          <references xmi:type="uml:Stereotype" href="UML_Standard_Profile.MagicDraw_Profile.profile.uml2#donce_1051109878774_670313_0"/>
+        </eAnnotations>
+      </eClassifiers>
+      <eClassifiers xmi:type="ecore:EClass" xmi:id="_SNmzmEeEEeWlKfVTs-HO8g" name="MagicDrawProfile__processView" eSuperTypes="_SNm0JEeEEeWlKfVTs-HO8g">
+        <eAnnotations xmi:id="_SNmzmUeEEeWlKfVTs-HO8g" source="stereotype">
+          <references xmi:type="uml:Stereotype" href="UML_Standard_Profile.MagicDraw_Profile.profile.uml2#_8bb027e_1074084707292_548965_100"/>
+        </eAnnotations>
+        <eStructuralFeatures xmi:type="ecore:EAttribute" xmi:id="_SNmzmkeEEeWlKfVTs-HO8g" name="processViewID" ordered="false" lowerBound="1">
+          <eType xmi:type="ecore:EDataType" href="http://www.eclipse.org/emf/2002/Ecore#//EInt"/>
+        </eStructuralFeatures>
+      </eClassifiers>
+      <eClassifiers xmi:type="ecore:EClass" xmi:id="_SNmzm0eEEeWlKfVTs-HO8g" name="MagicDrawProfile__ED" eSuperTypes="_SNm0JEeEEeWlKfVTs-HO8g">
+        <eAnnotations xmi:id="_SNmznEeEEeWlKfVTs-HO8g" source="stereotype">
+          <references xmi:type="uml:Stereotype" href="UML_Standard_Profile.MagicDraw_Profile.profile.uml2#_16_8beta_8f90291_1261660091418_363521_1255"/>
+        </eAnnotations>
+        <eStructuralFeatures xmi:type="ecore:EAttribute" xmi:id="_SNmznUeEEeWlKfVTs-HO8g" name="ed" ordered="false" lowerBound="1" defaultValueLiteral="">
+          <eType xmi:type="ecore:EDataType" href="http://www.eclipse.org/emf/2002/Ecore#//EString"/>
+        </eStructuralFeatures>
+      </eClassifiers>
+      <eClassifiers xmi:type="ecore:EClass" xmi:id="_SNmznkeEEeWlKfVTs-HO8g" name="MagicDrawProfile__typeModifier" eSuperTypes="_SNm0JEeEEeWlKfVTs-HO8g">
+        <eAnnotations xmi:id="_SNmzn0eEEeWlKfVTs-HO8g" source="stereotype">
+          <references xmi:type="uml:Stereotype" href="UML_Standard_Profile.MagicDraw_Profile.profile.uml2#_9_0_2_91a0295_1110467285765_674988_0"/>
+        </eAnnotations>
+        <eStructuralFeatures xmi:type="ecore:EAttribute" xmi:id="_SNmzoEeEEeWlKfVTs-HO8g" name="typeModifier" ordered="false" lowerBound="1" defaultValueLiteral="">
+          <eType xmi:type="ecore:EDataType" href="http://www.eclipse.org/emf/2002/Ecore#//EString"/>
+        </eStructuralFeatures>
+      </eClassifiers>
+      <eClassifiers xmi:type="ecore:EEnum" xmi:id="_SNmzoUeEEeWlKfVTs-HO8g" name="MagicDrawProfile__typeModifierEnumeration">
+        <eLiterals xmi:id="_SNmzokeEEeWlKfVTs-HO8g" name="&amp;">
+          <eAnnotations xmi:id="_SNmzo0eEEeWlKfVTs-HO8g" source="enumerationLiteral">
+            <references xmi:type="uml:EnumerationLiteral" href="UML_Standard_Profile.MagicDraw_Profile.profile.uml2#_9_0_2_be00301_1116424134387_923605_159"/>
+          </eAnnotations>
+        </eLiterals>
+        <eLiterals xmi:id="_SNmzpEeEEeWlKfVTs-HO8g" name="*" value="1">
+          <eAnnotations xmi:id="_SNmzpUeEEeWlKfVTs-HO8g" source="enumerationLiteral">
+            <references xmi:type="uml:EnumerationLiteral" href="UML_Standard_Profile.MagicDraw_Profile.profile.uml2#_9_0_2_be00301_1116424134387_402015_160"/>
+          </eAnnotations>
+        </eLiterals>
+        <eLiterals xmi:id="_SNmzpkeEEeWlKfVTs-HO8g" name="[]" value="2">
+          <eAnnotations xmi:id="_SNmzp0eEEeWlKfVTs-HO8g" source="enumerationLiteral">
+            <references xmi:type="uml:EnumerationLiteral" href="UML_Standard_Profile.MagicDraw_Profile.profile.uml2#_9_0_2_be00301_1116424134387_659823_161"/>
+          </eAnnotations>
+        </eLiterals>
+      </eClassifiers>
+      <eClassifiers xmi:type="ecore:EClass" xmi:id="_SNmzqEeEEeWlKfVTs-HO8g" name="MagicDrawProfile__getter">
+        <eAnnotations xmi:id="_SNmzqUeEEeWlKfVTs-HO8g" source="stereotype">
+          <references xmi:type="uml:Stereotype" href="UML_Standard_Profile.MagicDraw_Profile.profile.uml2#donce_1051109928087_589958_2"/>
+        </eAnnotations>
+        <eStructuralFeatures xmi:type="ecore:EAttribute" xmi:id="_SNmzqkeEEeWlKfVTs-HO8g" name="gettersetterforattribute" ordered="false" lowerBound="1" defaultValueLiteral="">
+          <eType xmi:type="ecore:EDataType" href="http://www.eclipse.org/emf/2002/Ecore#//EString"/>
+        </eStructuralFeatures>
+      </eClassifiers>
+      <eClassifiers xmi:type="ecore:EClass" xmi:id="_SNmzq0eEEeWlKfVTs-HO8g" name="MagicDrawProfile__SDDSubsystem" eSuperTypes="_SNm0JEeEEeWlKfVTs-HO8g">
+        <eAnnotations xmi:id="_SNmzrEeEEeWlKfVTs-HO8g" source="stereotype">
+          <references xmi:type="uml:Stereotype" href="UML_Standard_Profile.MagicDraw_Profile.profile.uml2#_9_0_be00301_1108046865098_660920_613"/>
+        </eAnnotations>
+        <eStructuralFeatures xmi:type="ecore:EAttribute" xmi:id="_SNmzrUeEEeWlKfVTs-HO8g" name="subsystemResources" ordered="false" lowerBound="1" defaultValueLiteral="">
+          <eType xmi:type="ecore:EDataType" href="http://www.eclipse.org/emf/2002/Ecore#//EString"/>
+        </eStructuralFeatures>
+        <eStructuralFeatures xmi:type="ecore:EAttribute" xmi:id="_SNmzrkeEEeWlKfVTs-HO8g" name="subsystemInteractions" ordered="false" lowerBound="1" defaultValueLiteral="">
+          <eType xmi:type="ecore:EDataType" href="http://www.eclipse.org/emf/2002/Ecore#//EString"/>
+        </eStructuralFeatures>
+      </eClassifiers>
+      <eClassifiers xmi:type="ecore:EClass" xmi:id="_SNmzr0eEEeWlKfVTs-HO8g" name="MagicDrawProfile__setter">
+        <eAnnotations xmi:id="_SNmzsEeEEeWlKfVTs-HO8g" source="stereotype">
+          <references xmi:type="uml:Stereotype" href="UML_Standard_Profile.MagicDraw_Profile.profile.uml2#donce_1051109905964_953584_1"/>
+        </eAnnotations>
+        <eStructuralFeatures xmi:type="ecore:EAttribute" xmi:id="_SNmzsUeEEeWlKfVTs-HO8g" name="gettersetterforattribute" ordered="false" lowerBound="1" defaultValueLiteral="">
+          <eType xmi:type="ecore:EDataType" href="http://www.eclipse.org/emf/2002/Ecore#//EString"/>
+        </eStructuralFeatures>
+      </eClassifiers>
+      <eClassifiers xmi:type="ecore:EClass" xmi:id="_SNmzskeEEeWlKfVTs-HO8g" name="MagicDrawProfile__useCaseView" eSuperTypes="_SNm0JEeEEeWlKfVTs-HO8g">
+        <eAnnotations xmi:id="_SNmzs0eEEeWlKfVTs-HO8g" source="stereotype">
+          <references xmi:type="uml:Stereotype" href="UML_Standard_Profile.MagicDraw_Profile.profile.uml2#_8bb027e_1074084491972_410022_1"/>
+        </eAnnotations>
+        <eStructuralFeatures xmi:type="ecore:EAttribute" xmi:id="_SNmztEeEEeWlKfVTs-HO8g" name="useCaseViewID" ordered="false" lowerBound="1">
+          <eType xmi:type="ecore:EDataType" href="http://www.eclipse.org/emf/2002/Ecore#//EInt"/>
+        </eStructuralFeatures>
+      </eClassifiers>
+      <eClassifiers xmi:type="ecore:EClass" xmi:id="_SNmztUeEEeWlKfVTs-HO8g" name="MagicDrawProfile__destructor">
+        <eAnnotations xmi:id="_SNmztkeEEeWlKfVTs-HO8g" source="stereotype">
+          <references xmi:type="uml:Stereotype" href="UML_Standard_Profile.MagicDraw_Profile.profile.uml2#_be00301_1077190258953_828224_1"/>
+        </eAnnotations>
+      </eClassifiers>
+      <eClassifiers xmi:type="ecore:EClass" xmi:id="_SNmzt0eEEeWlKfVTs-HO8g" name="MagicDrawProfile__designModel" eSuperTypes="_SNm0JEeEEeWlKfVTs-HO8g">
+        <eAnnotations xmi:id="_SNmzuEeEEeWlKfVTs-HO8g" source="stereotype">
+          <references xmi:type="uml:Stereotype" href="UML_Standard_Profile.MagicDraw_Profile.profile.uml2#_8bb027e_1074084769381_319095_104"/>
+        </eAnnotations>
+        <eStructuralFeatures xmi:type="ecore:EAttribute" xmi:id="_SNmzuUeEEeWlKfVTs-HO8g" name="designModelID" ordered="false" lowerBound="1">
+          <eType xmi:type="ecore:EDataType" href="http://www.eclipse.org/emf/2002/Ecore#//EInt"/>
+        </eStructuralFeatures>
+      </eClassifiers>
+      <eClassifiers xmi:type="ecore:EClass" xmi:id="_SNmzukeEEeWlKfVTs-HO8g" name="MagicDrawProfile__iconHolder">
+        <eAnnotations xmi:id="_SNmzu0eEEeWlKfVTs-HO8g" source="stereotype">
+          <references xmi:type="uml:Stereotype" href="UML_Standard_Profile.MagicDraw_Profile.profile.uml2#_11_5EAPbeta_be00301_1151484491369_618395_1"/>
+        </eAnnotations>
+      </eClassifiers>
+      <eClassifiers xmi:type="ecore:EClass" xmi:id="_SNmzvEeEEeWlKfVTs-HO8g" name="MagicDrawProfile__delegate">
+        <eAnnotations xmi:id="_SNmzvUeEEeWlKfVTs-HO8g" source="stereotype">
+          <references xmi:type="uml:Stereotype" href="UML_Standard_Profile.MagicDraw_Profile.profile.uml2#_be00301_1097567632124_590182_266"/>
+        </eAnnotations>
+      </eClassifiers>
+      <eClassifiers xmi:type="ecore:EClass" xmi:id="_SNmzvkeEEeWlKfVTs-HO8g" name="MagicDrawProfile__assembly">
+        <eAnnotations xmi:id="_SNmzv0eEEeWlKfVTs-HO8g" source="stereotype">
+          <references xmi:type="uml:Stereotype" href="UML_Standard_Profile.MagicDraw_Profile.profile.uml2#_be00301_1097567632124_120762_265"/>
+        </eAnnotations>
+      </eClassifiers>
+      <eClassifiers xmi:type="ecore:EClass" xmi:id="_SNmzwEeEEeWlKfVTs-HO8g" name="MagicDrawProfile__boundary">
+        <eAnnotations xmi:id="_SNmzwUeEEeWlKfVTs-HO8g" source="http://www.eclipse.org/emf/2002/GenModel">
+          <details xmi:id="_SNmzwkeEEeWlKfVTs-HO8g" key="documentation" value="A boundary is a class that lies on the periphery of a system, but within it. It interacts with actors outside the system as well as with entity, control, and other boundary classes within the system."/>
+        </eAnnotations>
+        <eAnnotations xmi:id="_SNmzw0eEEeWlKfVTs-HO8g" source="stereotype">
+          <references xmi:type="uml:Stereotype" href="UML_Standard_Profile.MagicDraw_Profile.profile.uml2#magicdraw_1046861421246_561509_69"/>
+        </eAnnotations>
+      </eClassifiers>
+      <eClassifiers xmi:type="ecore:EClass" xmi:id="_SNmzxEeEEeWlKfVTs-HO8g" name="MagicDrawProfile__control">
+        <eAnnotations xmi:id="_SNmzxUeEEeWlKfVTs-HO8g" source="http://www.eclipse.org/emf/2002/GenModel">
+          <details xmi:id="_SNmzxkeEEeWlKfVTs-HO8g" key="documentation" value="A control is a class whose objects manage interactions between collections of objects.&#xA;A control class usually has behavior that is specific for one use case, and a control object usually does not outlive the use case realizations in which it participates."/>
+        </eAnnotations>
+        <eAnnotations xmi:id="_SNmzx0eEEeWlKfVTs-HO8g" source="stereotype">
+          <references xmi:type="uml:Stereotype" href="UML_Standard_Profile.MagicDraw_Profile.profile.uml2#magicdraw_1046861421226_233101_6"/>
+        </eAnnotations>
+      </eClassifiers>
+      <eClassifiers xmi:type="ecore:EClass" xmi:id="_SNmzyEeEEeWlKfVTs-HO8g" name="MagicDrawProfile__derivedPropertiesSuite">
+        <eAnnotations xmi:id="_SNmzyUeEEeWlKfVTs-HO8g" source="stereotype">
+          <references xmi:type="uml:Stereotype" href="UML_Standard_Profile.MagicDraw_Profile.profile.uml2#_17_0_2beta_1_8ba0276_1328170763457_888031_1701"/>
+        </eAnnotations>
+      </eClassifiers>
+      <eClassifiers xmi:type="ecore:EClass" xmi:id="_SNmzykeEEeWlKfVTs-HO8g" name="MagicDrawProfile__DiagramLegend" eSuperTypes="_SNm0JEeEEeWlKfVTs-HO8g">
+        <eAnnotations xmi:id="_SNmzy0eEEeWlKfVTs-HO8g" source="stereotype">
+          <references xmi:type="uml:Stereotype" href="UML_Standard_Profile.MagicDraw_Profile.profile.uml2#_17_0_2beta_903028d_1330931963982_116619_1920"/>
+        </eAnnotations>
+      </eClassifiers>
+      <eClassifiers xmi:type="ecore:EClass" xmi:id="_SNmzzEeEEeWlKfVTs-HO8g" name="MagicDrawProfile__LegendItem" eSuperTypes="_SNm0JEeEEeWlKfVTs-HO8g">
+        <eAnnotations xmi:id="_SNmzzUeEEeWlKfVTs-HO8g" source="stereotype">
+          <references xmi:type="uml:Stereotype" href="UML_Standard_Profile.MagicDraw_Profile.profile.uml2#_17_0_2beta_903028d_1330931963978_770627_1918"/>
+        </eAnnotations>
+        <eStructuralFeatures xmi:type="ecore:EAttribute" xmi:id="_SNmzzkeEEeWlKfVTs-HO8g" name="name" ordered="false" lowerBound="1" defaultValueLiteral="">
+          <eType xmi:type="ecore:EDataType" href="http://www.eclipse.org/emf/2002/Ecore#//EString"/>
+        </eStructuralFeatures>
+        <eStructuralFeatures xmi:type="ecore:EAttribute" xmi:id="_SNmzz0eEEeWlKfVTs-HO8g" name="color" ordered="false" lowerBound="1" defaultValueLiteral="">
+          <eType xmi:type="ecore:EDataType" href="http://www.eclipse.org/emf/2002/Ecore#//EString"/>
+        </eStructuralFeatures>
+        <eStructuralFeatures xmi:type="ecore:EAttribute" xmi:id="_SNmz0EeEEeWlKfVTs-HO8g" name="useFillColor" ordered="false" lowerBound="1" defaultValueLiteral="true">
+          <eType xmi:type="ecore:EDataType" href="http://www.eclipse.org/emf/2002/Ecore#//EBoolean"/>
+        </eStructuralFeatures>
+        <eStructuralFeatures xmi:type="ecore:EAttribute" xmi:id="_SNmz0UeEEeWlKfVTs-HO8g" name="penColor" ordered="false" lowerBound="1" defaultValueLiteral="">
+          <eType xmi:type="ecore:EDataType" href="http://www.eclipse.org/emf/2002/Ecore#//EString"/>
+        </eStructuralFeatures>
+        <eStructuralFeatures xmi:type="ecore:EAttribute" xmi:id="_SNmz0keEEeWlKfVTs-HO8g" name="textColor" ordered="false" lowerBound="1" defaultValueLiteral="">
+          <eType xmi:type="ecore:EDataType" href="http://www.eclipse.org/emf/2002/Ecore#//EString"/>
+        </eStructuralFeatures>
+        <eStructuralFeatures xmi:type="ecore:EAttribute" xmi:id="_SNmz00eEEeWlKfVTs-HO8g" name="font" ordered="false" lowerBound="1" defaultValueLiteral="">
+          <eType xmi:type="ecore:EDataType" href="http://www.eclipse.org/emf/2002/Ecore#//EString"/>
+        </eStructuralFeatures>
+        <eStructuralFeatures xmi:type="ecore:EAttribute" xmi:id="_SNmz1EeEEeWlKfVTs-HO8g" name="lineWidth" ordered="false" lowerBound="1" defaultValueLiteral="">
+          <eType xmi:type="ecore:EDataType" href="http://www.eclipse.org/emf/2002/Ecore#//EString"/>
+        </eStructuralFeatures>
+        <eStructuralFeatures xmi:type="ecore:EAttribute" xmi:id="_SNmz1UeEEeWlKfVTs-HO8g" name="shape" ordered="false" lowerBound="1" defaultValueLiteral="true">
+          <eType xmi:type="ecore:EDataType" href="http://www.eclipse.org/emf/2002/Ecore#//EBoolean"/>
+        </eStructuralFeatures>
+        <eStructuralFeatures xmi:type="ecore:EAttribute" xmi:id="_SNmz1keEEeWlKfVTs-HO8g" name="colorUse" ordered="false" lowerBound="1" defaultValueLiteral="true">
+          <eType xmi:type="ecore:EDataType" href="http://www.eclipse.org/emf/2002/Ecore#//EBoolean"/>
+        </eStructuralFeatures>
+        <eStructuralFeatures xmi:type="ecore:EAttribute" xmi:id="_SNmz10eEEeWlKfVTs-HO8g" name="useFillColorUse" ordered="false" lowerBound="1" defaultValueLiteral="true">
+          <eType xmi:type="ecore:EDataType" href="http://www.eclipse.org/emf/2002/Ecore#//EBoolean"/>
+        </eStructuralFeatures>
+        <eStructuralFeatures xmi:type="ecore:EAttribute" xmi:id="_SNmz2EeEEeWlKfVTs-HO8g" name="penColorUse" ordered="false" lowerBound="1" defaultValueLiteral="true">
+          <eType xmi:type="ecore:EDataType" href="http://www.eclipse.org/emf/2002/Ecore#//EBoolean"/>
+        </eStructuralFeatures>
+        <eStructuralFeatures xmi:type="ecore:EAttribute" xmi:id="_SNmz2UeEEeWlKfVTs-HO8g" name="textColorUse" ordered="false" lowerBound="1" defaultValueLiteral="true">
+          <eType xmi:type="ecore:EDataType" href="http://www.eclipse.org/emf/2002/Ecore#//EBoolean"/>
+        </eStructuralFeatures>
+        <eStructuralFeatures xmi:type="ecore:EAttribute" xmi:id="_SNmz2keEEeWlKfVTs-HO8g" name="fontUse" ordered="false" lowerBound="1" defaultValueLiteral="true">
+          <eType xmi:type="ecore:EDataType" href="http://www.eclipse.org/emf/2002/Ecore#//EBoolean"/>
+        </eStructuralFeatures>
+        <eStructuralFeatures xmi:type="ecore:EAttribute" xmi:id="_SNmz20eEEeWlKfVTs-HO8g" name="lineWidthUse" ordered="false" lowerBound="1" defaultValueLiteral="true">
+          <eType xmi:type="ecore:EDataType" href="http://www.eclipse.org/emf/2002/Ecore#//EBoolean"/>
+        </eStructuralFeatures>
+      </eClassifiers>
+      <eClassifiers xmi:type="ecore:EClass" xmi:id="_SNmz3EeEEeWlKfVTs-HO8g" name="MagicDrawProfile__SmartPackage">
+        <eAnnotations xmi:id="_SNmz3UeEEeWlKfVTs-HO8g" source="stereotype">
+          <references xmi:type="uml:Stereotype" href="UML_Standard_Profile.MagicDraw_Profile.profile.uml2#_17_0_5beta_f720368_1373961709543_89140_3280"/>
+        </eAnnotations>
+        <eStructuralFeatures xmi:type="ecore:EAttribute" xmi:id="_SNmz3keEEeWlKfVTs-HO8g" name="query" ordered="false" lowerBound="1" defaultValueLiteral="">
+          <eType xmi:type="ecore:EDataType" href="http://www.eclipse.org/emf/2002/Ecore#//EString"/>
+        </eStructuralFeatures>
+        <eStructuralFeatures xmi:type="ecore:EAttribute" xmi:id="_SNmz30eEEeWlKfVTs-HO8g" name="additionalElements" ordered="false" upperBound="-1" defaultValueLiteral="">
+          <eType xmi:type="ecore:EDataType" href="http://www.eclipse.org/emf/2002/Ecore#//EString"/>
+        </eStructuralFeatures>
+        <eStructuralFeatures xmi:type="ecore:EAttribute" xmi:id="_SNmz4EeEEeWlKfVTs-HO8g" name="excludedElements" ordered="false" upperBound="-1" defaultValueLiteral="">
+          <eType xmi:type="ecore:EDataType" href="http://www.eclipse.org/emf/2002/Ecore#//EString"/>
+        </eStructuralFeatures>
+      </eClassifiers>
+      <eClassifiers xmi:type="ecore:EClass" xmi:id="_SNmz4UeEEeWlKfVTs-HO8g" name="MagicDrawProfile__InstanceTable" eSuperTypes="_SNmzKEeEEeWlKfVTs-HO8g">
+        <eAnnotations xmi:id="_SNmz4keEEeWlKfVTs-HO8g" source="stereotype">
+          <references xmi:type="uml:Stereotype" href="UML_Standard_Profile.MagicDraw_Profile.profile.uml2#_18_0beta_8e8028e_1384177586203_506524_3245"/>
+        </eAnnotations>
+        <eStructuralFeatures xmi:type="ecore:EAttribute" xmi:id="_SNmz40eEEeWlKfVTs-HO8g" name="classifiers" ordered="false" upperBound="-1" defaultValueLiteral="">
+          <eType xmi:type="ecore:EDataType" href="http://www.eclipse.org/emf/2002/Ecore#//EString"/>
+        </eStructuralFeatures>
+      </eClassifiers>
+      <eClassifiers xmi:type="ecore:EClass" xmi:id="_SNmz5EeEEeWlKfVTs-HO8g" name="MagicDrawProfile__AttachedFile">
+        <eAnnotations xmi:id="_SNmz5UeEEeWlKfVTs-HO8g" source="stereotype">
+          <references xmi:type="uml:Stereotype" href="UML_Standard_Profile.MagicDraw_Profile.profile.uml2#_18_1beta_8760276_1412082225355_110096_3917"/>
+        </eAnnotations>
+        <eStructuralFeatures xmi:type="ecore:EAttribute" xmi:id="_SNmz5keEEeWlKfVTs-HO8g" name="file" ordered="false" lowerBound="1" defaultValueLiteral="">
+          <eType xmi:type="ecore:EDataType" href="http://www.eclipse.org/emf/2002/Ecore#//EString"/>
+        </eStructuralFeatures>
+        <eStructuralFeatures xmi:type="ecore:EAttribute" xmi:id="_SNmz50eEEeWlKfVTs-HO8g" name="attachedAt" ordered="false" lowerBound="1" defaultValueLiteral="">
+          <eType xmi:type="ecore:EDataType" href="http://www.eclipse.org/emf/2002/Ecore#//EString"/>
+        </eStructuralFeatures>
+        <eStructuralFeatures xmi:type="ecore:EAttribute" xmi:id="_SNmz6EeEEeWlKfVTs-HO8g" name="modifiedAt" ordered="false" lowerBound="1" defaultValueLiteral="">
+          <eType xmi:type="ecore:EDataType" href="http://www.eclipse.org/emf/2002/Ecore#//EString"/>
+        </eStructuralFeatures>
+        <eStructuralFeatures xmi:type="ecore:EAttribute" xmi:id="_SNmz6UeEEeWlKfVTs-HO8g" name="author" ordered="false" lowerBound="1" defaultValueLiteral="">
+          <eType xmi:type="ecore:EDataType" href="http://www.eclipse.org/emf/2002/Ecore#//EString"/>
+        </eStructuralFeatures>
+        <eStructuralFeatures xmi:type="ecore:EAttribute" xmi:id="_SNmz6keEEeWlKfVTs-HO8g" name="size" ordered="false" lowerBound="1" defaultValueLiteral="">
+          <eType xmi:type="ecore:EDataType" href="http://www.eclipse.org/emf/2002/Ecore#//EString"/>
+        </eStructuralFeatures>
+      </eClassifiers>
+      <eClassifiers xmi:type="ecore:EClass" xmi:id="_SNmz60eEEeWlKfVTs-HO8g" name="MagicDrawProfile__ReportTemplate" eSuperTypes="_SNmz5EeEEeWlKfVTs-HO8g">
+        <eAnnotations xmi:id="_SNmz7EeEEeWlKfVTs-HO8g" source="stereotype">
+          <references xmi:type="uml:Stereotype" href="UML_Standard_Profile.MagicDraw_Profile.profile.uml2#_18_1_8760276_1416414449210_764904_3981"/>
+        </eAnnotations>
+        <eStructuralFeatures xmi:type="ecore:EAttribute" xmi:id="_SNmz7UeEEeWlKfVTs-HO8g" name="templateXML" ordered="false" lowerBound="1" defaultValueLiteral="">
+          <eType xmi:type="ecore:EDataType" href="http://www.eclipse.org/emf/2002/Ecore#//EString"/>
+        </eStructuralFeatures>
+      </eClassifiers>
+      <eClassifiers xmi:type="ecore:EClass" xmi:id="_SNmz7keEEeWlKfVTs-HO8g" name="MagicDrawProfile__ReplaceTaggedValue">
+        <eAnnotations xmi:id="_SNmz70eEEeWlKfVTs-HO8g" source="stereotype">
+          <references xmi:type="uml:Stereotype" href="UML_Standard_Profile.MagicDraw_Profile.profile.uml2#_16_5beta1_62a020a_1231413414651_14134_300"/>
+        </eAnnotations>
+        <eStructuralFeatures xmi:type="ecore:EAttribute" xmi:id="_SNmz8EeEEeWlKfVTs-HO8g" name="caseSensitiveEnumerationLiteral" ordered="false" lowerBound="1" defaultValueLiteral="true">
+          <eType xmi:type="ecore:EDataType" href="http://www.eclipse.org/emf/2002/Ecore#//EBoolean"/>
+        </eStructuralFeatures>
+        <eStructuralFeatures xmi:type="ecore:EAttribute" xmi:id="_SNmz8UeEEeWlKfVTs-HO8g" name="addToDoIfTagDoesNotExist" ordered="false" lowerBound="1" defaultValueLiteral="false">
+          <eType xmi:type="ecore:EDataType" href="http://www.eclipse.org/emf/2002/Ecore#//EBoolean"/>
+        </eStructuralFeatures>
+        <eStructuralFeatures xmi:type="ecore:EAttribute" xmi:id="_SNmz8keEEeWlKfVTs-HO8g" name="addStereotypeIfNotAdded" ordered="false" lowerBound="1" defaultValueLiteral="false">
+          <eType xmi:type="ecore:EDataType" href="http://www.eclipse.org/emf/2002/Ecore#//EBoolean"/>
+        </eStructuralFeatures>
+      </eClassifiers>
+      <eClassifiers xmi:type="ecore:EClass" xmi:id="_SNmz80eEEeWlKfVTs-HO8g" name="MagicDrawProfile__ReplaceType">
+        <eAnnotations xmi:id="_SNmz9EeEEeWlKfVTs-HO8g" source="stereotype">
+          <references xmi:type="uml:Stereotype" href="UML_Standard_Profile.MagicDraw_Profile.profile.uml2#_16_5beta1_62a020a_1231413441683_59584_324"/>
+        </eAnnotations>
+      </eClassifiers>
+      <eClassifiers xmi:type="ecore:EClass" xmi:id="_SNmz9UeEEeWlKfVTs-HO8g" name="MagicDrawProfile__ReplaceStereotype">
+        <eAnnotations xmi:id="_SNmz9keEEeWlKfVTs-HO8g" source="stereotype">
+          <references xmi:type="uml:Stereotype" href="UML_Standard_Profile.MagicDraw_Profile.profile.uml2#_16_5beta1_62a020a_1231413403116_985724_276"/>
+        </eAnnotations>
+        <eStructuralFeatures xmi:type="ecore:EAttribute" xmi:id="_SNmz90eEEeWlKfVTs-HO8g" name="disableNewTypeCreation" ordered="false" lowerBound="1">
+          <eType xmi:type="ecore:EDataType" href="http://www.eclipse.org/emf/2002/Ecore#//EBoolean"/>
+        </eStructuralFeatures>
+        <eStructuralFeatures xmi:type="ecore:EAttribute" xmi:id="_SNmz-EeEEeWlKfVTs-HO8g" name="disableReplaceWhereSavedAsElementValue" ordered="false" lowerBound="1" defaultValueLiteral="false">
+          <eType xmi:type="ecore:EDataType" href="http://www.eclipse.org/emf/2002/Ecore#//EBoolean"/>
+        </eStructuralFeatures>
+        <eStructuralFeatures xmi:type="ecore:EAttribute" xmi:id="_SNmz-UeEEeWlKfVTs-HO8g" name="isStrict" ordered="false" lowerBound="1" defaultValueLiteral="false">
+          <eType xmi:type="ecore:EDataType" href="http://www.eclipse.org/emf/2002/Ecore#//EBoolean"/>
+        </eStructuralFeatures>
+        <eStructuralFeatures xmi:type="ecore:EAttribute" xmi:id="_SNmz-keEEeWlKfVTs-HO8g" name="explicitNewMetaclass" ordered="false" defaultValueLiteral="">
+          <eType xmi:type="ecore:EDataType" href="http://www.eclipse.org/emf/2002/Ecore#//EString"/>
+        </eStructuralFeatures>
+      </eClassifiers>
+      <eClassifiers xmi:type="ecore:EClass" xmi:id="_SNmz-0eEEeWlKfVTs-HO8g" name="MagicDrawProfile__ProfileUpgradeTable" eSuperTypes="_SNm0JEeEEeWlKfVTs-HO8g">
+        <eAnnotations xmi:id="_SNmz_EeEEeWlKfVTs-HO8g" source="stereotype">
+          <references xmi:type="uml:Stereotype" href="UML_Standard_Profile.MagicDraw_Profile.profile.uml2#_17_0beta_8e8028e_1284367987822_645084_1477"/>
+        </eAnnotations>
+        <eStructuralFeatures xmi:type="ecore:EAttribute" xmi:id="_SNmz_UeEEeWlKfVTs-HO8g" name="sourceProjectName" ordered="false" defaultValueLiteral="">
+          <eType xmi:type="ecore:EDataType" href="http://www.eclipse.org/emf/2002/Ecore#//EString"/>
+        </eStructuralFeatures>
+        <eStructuralFeatures xmi:type="ecore:EAttribute" xmi:id="_SNmz_keEEeWlKfVTs-HO8g" name="targetProjectName" ordered="false" defaultValueLiteral="">
+          <eType xmi:type="ecore:EDataType" href="http://www.eclipse.org/emf/2002/Ecore#//EString"/>
+        </eStructuralFeatures>
+      </eClassifiers>
+      <eClassifiers xmi:type="ecore:EClass" xmi:id="_SNmz_0eEEeWlKfVTs-HO8g" name="MagicDrawProfile__ProfileUpgradeMappingRule">
+        <eAnnotations xmi:id="_SNm0AEeEEeWlKfVTs-HO8g" source="stereotype">
+          <references xmi:type="uml:Stereotype" href="UML_Standard_Profile.MagicDraw_Profile.profile.uml2#_17_0beta_8e8028e_1284367987822_459968_1478"/>
+        </eAnnotations>
+        <eStructuralFeatures xmi:type="ecore:EAttribute" xmi:id="_SNm0AUeEEeWlKfVTs-HO8g" name="sourceStereotypeID" ordered="false" defaultValueLiteral="">
+          <eType xmi:type="ecore:EDataType" href="http://www.eclipse.org/emf/2002/Ecore#//EString"/>
+        </eStructuralFeatures>
+        <eStructuralFeatures xmi:type="ecore:EAttribute" xmi:id="_SNm0AkeEEeWlKfVTs-HO8g" name="sourceStereotypeName" ordered="false" defaultValueLiteral="">
+          <eType xmi:type="ecore:EDataType" href="http://www.eclipse.org/emf/2002/Ecore#//EString"/>
+        </eStructuralFeatures>
+        <eStructuralFeatures xmi:type="ecore:EAttribute" xmi:id="_SNm0A0eEEeWlKfVTs-HO8g" name="sourceStereotypeIconContent" ordered="false" defaultValueLiteral="">
+          <eType xmi:type="ecore:EDataType" href="http://www.eclipse.org/emf/2002/Ecore#//EString"/>
+        </eStructuralFeatures>
+        <eStructuralFeatures xmi:type="ecore:EAttribute" xmi:id="_SNm0BEeEEeWlKfVTs-HO8g" name="sourceStereotypeIconFormat" ordered="false" defaultValueLiteral="">
+          <eType xmi:type="ecore:EDataType" href="http://www.eclipse.org/emf/2002/Ecore#//EString"/>
+        </eStructuralFeatures>
+        <eStructuralFeatures xmi:type="ecore:EAttribute" xmi:id="_SNm0BUeEEeWlKfVTs-HO8g" name="sourceStereotypeMetaclass" ordered="false" upperBound="-1" defaultValueLiteral="">
+          <eType xmi:type="ecore:EDataType" href="http://www.eclipse.org/emf/2002/Ecore#//EString"/>
+        </eStructuralFeatures>
+        <eStructuralFeatures xmi:type="ecore:EAttribute" xmi:id="_SNm0BkeEEeWlKfVTs-HO8g" name="sourceTagID" ordered="false" defaultValueLiteral="">
+          <eType xmi:type="ecore:EDataType" href="http://www.eclipse.org/emf/2002/Ecore#//EString"/>
+        </eStructuralFeatures>
+        <eStructuralFeatures xmi:type="ecore:EAttribute" xmi:id="_SNm0B0eEEeWlKfVTs-HO8g" name="sourceTagName" ordered="false" defaultValueLiteral="">
+          <eType xmi:type="ecore:EDataType" href="http://www.eclipse.org/emf/2002/Ecore#//EString"/>
+        </eStructuralFeatures>
+        <eStructuralFeatures xmi:type="ecore:EAttribute" xmi:id="_SNm0CEeEEeWlKfVTs-HO8g" name="targetStereotypeID" ordered="false" defaultValueLiteral="">
+          <eType xmi:type="ecore:EDataType" href="http://www.eclipse.org/emf/2002/Ecore#//EString"/>
+        </eStructuralFeatures>
+        <eStructuralFeatures xmi:type="ecore:EAttribute" xmi:id="_SNm0CUeEEeWlKfVTs-HO8g" name="targetStereotypeName" ordered="false" defaultValueLiteral="">
+          <eType xmi:type="ecore:EDataType" href="http://www.eclipse.org/emf/2002/Ecore#//EString"/>
+        </eStructuralFeatures>
+        <eStructuralFeatures xmi:type="ecore:EAttribute" xmi:id="_SNm0CkeEEeWlKfVTs-HO8g" name="targetStereotypeIconContent" ordered="false" defaultValueLiteral="">
+          <eType xmi:type="ecore:EDataType" href="http://www.eclipse.org/emf/2002/Ecore#//EString"/>
+        </eStructuralFeatures>
+        <eStructuralFeatures xmi:type="ecore:EAttribute" xmi:id="_SNm0C0eEEeWlKfVTs-HO8g" name="targetStereotypeIconFormat" ordered="false" defaultValueLiteral="">
+          <eType xmi:type="ecore:EDataType" href="http://www.eclipse.org/emf/2002/Ecore#//EString"/>
+        </eStructuralFeatures>
+        <eStructuralFeatures xmi:type="ecore:EAttribute" xmi:id="_SNm0DEeEEeWlKfVTs-HO8g" name="targetTagID" ordered="false" defaultValueLiteral="">
+          <eType xmi:type="ecore:EDataType" href="http://www.eclipse.org/emf/2002/Ecore#//EString"/>
+        </eStructuralFeatures>
+        <eStructuralFeatures xmi:type="ecore:EAttribute" xmi:id="_SNm0DUeEEeWlKfVTs-HO8g" name="targetTagName" ordered="false" defaultValueLiteral="">
+          <eType xmi:type="ecore:EDataType" href="http://www.eclipse.org/emf/2002/Ecore#//EString"/>
+        </eStructuralFeatures>
+        <eStructuralFeatures xmi:type="ecore:EAttribute" xmi:id="_SNm0DkeEEeWlKfVTs-HO8g" name="disableNewTypeCreation" ordered="false" lowerBound="1" defaultValueLiteral="false">
+          <eType xmi:type="ecore:EDataType" href="http://www.eclipse.org/emf/2002/Ecore#//EBoolean"/>
+        </eStructuralFeatures>
+        <eStructuralFeatures xmi:type="ecore:EAttribute" xmi:id="_SNm0D0eEEeWlKfVTs-HO8g" name="disableReplaceWhereSavedAsElementValue" ordered="false" lowerBound="1" defaultValueLiteral="false">
+          <eType xmi:type="ecore:EDataType" href="http://www.eclipse.org/emf/2002/Ecore#//EBoolean"/>
+        </eStructuralFeatures>
+        <eStructuralFeatures xmi:type="ecore:EAttribute" xmi:id="_SNm0EEeEEeWlKfVTs-HO8g" name="searchForDerivedIfDoesNotExist" ordered="false" lowerBound="1" defaultValueLiteral="true">
+          <eType xmi:type="ecore:EDataType" href="http://www.eclipse.org/emf/2002/Ecore#//EBoolean"/>
+        </eStructuralFeatures>
+        <eStructuralFeatures xmi:type="ecore:EAttribute" xmi:id="_SNm0EUeEEeWlKfVTs-HO8g" name="explicitNewMetaclass" ordered="false" defaultValueLiteral="">
+          <eType xmi:type="ecore:EDataType" href="http://www.eclipse.org/emf/2002/Ecore#//EString"/>
+        </eStructuralFeatures>
+        <eStructuralFeatures xmi:type="ecore:EAttribute" xmi:id="_SNm0EkeEEeWlKfVTs-HO8g" name="caseSensitiveEnumerationLiteral" ordered="false" lowerBound="1" defaultValueLiteral="true">
+          <eType xmi:type="ecore:EDataType" href="http://www.eclipse.org/emf/2002/Ecore#//EBoolean"/>
+        </eStructuralFeatures>
+        <eStructuralFeatures xmi:type="ecore:EAttribute" xmi:id="_SNm0E0eEEeWlKfVTs-HO8g" name="addToDoIfTagDoesNotExist" ordered="false" lowerBound="1" defaultValueLiteral="false">
+          <eType xmi:type="ecore:EDataType" href="http://www.eclipse.org/emf/2002/Ecore#//EBoolean"/>
+        </eStructuralFeatures>
+      </eClassifiers>
+      <eClassifiers xmi:type="ecore:EClass" xmi:id="_SNm0FEeEEeWlKfVTs-HO8g" name="MagicDrawProfile__mergedDiagram">
+        <eAnnotations xmi:id="_SNm0FUeEEeWlKfVTs-HO8g" source="stereotype">
+          <references xmi:type="uml:Stereotype" href="UML_Standard_Profile.MagicDraw_Profile.profile.uml2#_16_0beta1_8bb027e_1222180125529_870868_223"/>
+        </eAnnotations>
+        <eStructuralFeatures xmi:type="ecore:EAttribute" xmi:id="_SNm0FkeEEeWlKfVTs-HO8g" name="mergedSymbols" ordered="false" upperBound="-1" defaultValueLiteral="">
+          <eType xmi:type="ecore:EDataType" href="http://www.eclipse.org/emf/2002/Ecore#//EString"/>
+        </eStructuralFeatures>
+        <eStructuralFeatures xmi:type="ecore:EAttribute" xmi:id="_SNm0F0eEEeWlKfVTs-HO8g" name="mergedFromBothContributors" ordered="false">
+          <eType xmi:type="ecore:EDataType" href="http://www.eclipse.org/emf/2002/Ecore#//EBoolean"/>
+        </eStructuralFeatures>
+      </eClassifiers>
+      <eClassifiers xmi:type="ecore:EClass" xmi:id="_SNm0GEeEEeWlKfVTs-HO8g" name="MagicDrawProfile__elementsLibrary" eSuperTypes="_SNm0JEeEEeWlKfVTs-HO8g">
+        <eAnnotations xmi:id="_SNm0GUeEEeWlKfVTs-HO8g" source="stereotype">
+          <references xmi:type="uml:Stereotype" href="UML_Standard_Profile.MagicDraw_Profile.profile.uml2#_16_8beta_8e8028e_1259661314325_318849_1000"/>
+        </eAnnotations>
+        <eStructuralFeatures xmi:type="ecore:EAttribute" xmi:id="_SNm0GkeEEeWlKfVTs-HO8g" name="contents" ordered="false" upperBound="-1" defaultValueLiteral="">
+          <eType xmi:type="ecore:EDataType" href="http://www.eclipse.org/emf/2002/Ecore#//EString"/>
+        </eStructuralFeatures>
+        <eStructuralFeatures xmi:type="ecore:EAttribute" xmi:id="_SNm0G0eEEeWlKfVTs-HO8g" name="structure" ordered="false" lowerBound="1" eType="_SNm0cUeEEeWlKfVTs-HO8g" defaultValueLiteral="containment"/>
+        <eStructuralFeatures xmi:type="ecore:EAttribute" xmi:id="_SNm0HEeEEeWlKfVTs-HO8g" name="indexShortNames" ordered="false" upperBound="-1" defaultValueLiteral="">
+          <eType xmi:type="ecore:EDataType" href="http://www.eclipse.org/emf/2002/Ecore#//EString"/>
+        </eStructuralFeatures>
+        <eStructuralFeatures xmi:type="ecore:EAttribute" xmi:id="_SNm0HUeEEeWlKfVTs-HO8g" name="indexNamespaces" ordered="false" upperBound="-1" defaultValueLiteral="">
+          <eType xmi:type="ecore:EDataType" href="http://www.eclipse.org/emf/2002/Ecore#//EString"/>
+        </eStructuralFeatures>
+        <eStructuralFeatures xmi:type="ecore:EAttribute" xmi:id="_SNm0HkeEEeWlKfVTs-HO8g" name="indexElementIDs" ordered="false" upperBound="-1" defaultValueLiteral="">
+          <eType xmi:type="ecore:EDataType" href="http://www.eclipse.org/emf/2002/Ecore#//EString"/>
+        </eStructuralFeatures>
+        <eStructuralFeatures xmi:type="ecore:EAttribute" xmi:id="_SNm0H0eEEeWlKfVTs-HO8g" name="indexMetaTypes" ordered="false" upperBound="-1" defaultValueLiteral="">
+          <eType xmi:type="ecore:EDataType" href="http://www.eclipse.org/emf/2002/Ecore#//EString"/>
+        </eStructuralFeatures>
+        <eStructuralFeatures xmi:type="ecore:EAttribute" xmi:id="_SNm0IEeEEeWlKfVTs-HO8g" name="indexOwnersIDs" ordered="false" upperBound="-1" defaultValueLiteral="">
+          <eType xmi:type="ecore:EDataType" href="http://www.eclipse.org/emf/2002/Ecore#//EString"/>
+        </eStructuralFeatures>
+        <eStructuralFeatures xmi:type="ecore:EAttribute" xmi:id="_SNm0IUeEEeWlKfVTs-HO8g" name="indexOwnersModulesIDs" ordered="false" upperBound="-1" defaultValueLiteral="">
+          <eType xmi:type="ecore:EDataType" href="http://www.eclipse.org/emf/2002/Ecore#//EString"/>
+        </eStructuralFeatures>
+      </eClassifiers>
+      <eClassifiers xmi:type="ecore:EClass" xmi:id="_SNm0IkeEEeWlKfVTs-HO8g" name="MagicDrawProfile__elementsLibraryBranch" eSuperTypes="_SNm0JEeEEeWlKfVTs-HO8g">
+        <eAnnotations xmi:id="_SNm0I0eEEeWlKfVTs-HO8g" source="stereotype">
+          <references xmi:type="uml:Stereotype" href="UML_Standard_Profile.MagicDraw_Profile.profile.uml2#_16_8beta_8e8028e_1259661719889_163446_1943"/>
+        </eAnnotations>
+      </eClassifiers>
+      <eClassifiers xmi:type="ecore:EClass" xmi:id="_SNm0JEeEEeWlKfVTs-HO8g" name="MagicDrawProfile__InvisibleStereotype">
+        <eAnnotations xmi:id="_SNm0JUeEEeWlKfVTs-HO8g" source="stereotype">
+          <references xmi:type="uml:Stereotype" href="UML_Standard_Profile.MagicDraw_Profile.profile.uml2#_9_0_be00301_1108044721245_236588_411"/>
+        </eAnnotations>
+      </eClassifiers>
+      <eClassifiers xmi:type="ecore:EClass" xmi:id="_SNm0JkeEEeWlKfVTs-HO8g" name="DependencyMatrixProfile__MatrixFilter" eSuperTypes="_SNm0JEeEEeWlKfVTs-HO8g">
+        <eAnnotations xmi:id="_SNm0J0eEEeWlKfVTs-HO8g" source="stereotype" references="_17_0_3beta_8e10289_1348753189306_38038_3061"/>
+        <eStructuralFeatures xmi:type="ecore:EAttribute" xmi:id="_SNm0KEeEEeWlKfVTs-HO8g" name="rowElementType" ordered="false" upperBound="-1" defaultValueLiteral="">
+          <eAnnotations xmi:id="_SNm0KUeEEeWlKfVTs-HO8g" source="http://www.eclipse.org/emf/2002/GenModel">
+            <details xmi:id="_SNm0KkeEEeWlKfVTs-HO8g" key="documentation" value="Select the type of the elements to be used to build the Dependency Matrix."/>
+          </eAnnotations>
+          <eType xmi:type="ecore:EDataType" href="http://www.eclipse.org/emf/2002/Ecore#//EString"/>
+        </eStructuralFeatures>
+        <eStructuralFeatures xmi:type="ecore:EAttribute" xmi:id="_SNm0K0eEEeWlKfVTs-HO8g" name="rowScope" ordered="false" upperBound="-1" defaultValueLiteral="">
+          <eAnnotations xmi:id="_SNm0LEeEEeWlKfVTs-HO8g" source="http://www.eclipse.org/emf/2002/GenModel">
+            <details xmi:id="_SNm0LUeEEeWlKfVTs-HO8g" key="documentation" value="Select the scope of the model to be used to build the Dependency Matrix."/>
+          </eAnnotations>
+          <eType xmi:type="ecore:EDataType" href="http://www.eclipse.org/emf/2002/Ecore#//EString"/>
+        </eStructuralFeatures>
+        <eStructuralFeatures xmi:type="ecore:EAttribute" xmi:id="_SNm0LkeEEeWlKfVTs-HO8g" name="removedRowElements" ordered="false" upperBound="-1" defaultValueLiteral="">
+          <eAnnotations xmi:id="_SNm0L0eEEeWlKfVTs-HO8g" source="http://www.eclipse.org/emf/2002/GenModel">
+            <details xmi:id="_SNm0MEeEEeWlKfVTs-HO8g" key="documentation" value="Select elements to exclude from the Dependency Matrix."/>
+          </eAnnotations>
+          <eType xmi:type="ecore:EDataType" href="http://www.eclipse.org/emf/2002/Ecore#//EString"/>
+        </eStructuralFeatures>
+        <eStructuralFeatures xmi:type="ecore:EAttribute" xmi:id="_SNm0MUeEEeWlKfVTs-HO8g" name="rowTypesIncludeSubtypes" ordered="false" lowerBound="1" defaultValueLiteral="true">
+          <eAnnotations xmi:id="_SNm0MkeEEeWlKfVTs-HO8g" source="http://www.eclipse.org/emf/2002/GenModel">
+            <details xmi:id="_SNm0M0eEEeWlKfVTs-HO8g" key="documentation" value="Set to true to display subtypes of selected element types. For example, if a class is selected, then all its subtypes, such as component or custom subtypes like SysML block and requirement will be displayed."/>
+          </eAnnotations>
+          <eType xmi:type="ecore:EDataType" href="http://www.eclipse.org/emf/2002/Ecore#//EBoolean"/>
+        </eStructuralFeatures>
+        <eStructuralFeatures xmi:type="ecore:EAttribute" xmi:id="_SNm0NEeEEeWlKfVTs-HO8g" name="columnScope" ordered="false" upperBound="-1" defaultValueLiteral="">
+          <eAnnotations xmi:id="_SNm0NUeEEeWlKfVTs-HO8g" source="http://www.eclipse.org/emf/2002/GenModel">
+            <details xmi:id="_SNm0NkeEEeWlKfVTs-HO8g" key="documentation" value="Select the scope of the model to be used to build the Dependency Matrix."/>
+          </eAnnotations>
+          <eType xmi:type="ecore:EDataType" href="http://www.eclipse.org/emf/2002/Ecore#//EString"/>
+        </eStructuralFeatures>
+        <eStructuralFeatures xmi:type="ecore:EAttribute" xmi:id="_SNm0N0eEEeWlKfVTs-HO8g" name="removedColumnElements" ordered="false" upperBound="-1" defaultValueLiteral="">
+          <eAnnotations xmi:id="_SNm0OEeEEeWlKfVTs-HO8g" source="http://www.eclipse.org/emf/2002/GenModel">
+            <details xmi:id="_SNm0OUeEEeWlKfVTs-HO8g" key="documentation" value="Select elements to exclude from the Dependency Matrix."/>
+          </eAnnotations>
+          <eType xmi:type="ecore:EDataType" href="http://www.eclipse.org/emf/2002/Ecore#//EString"/>
+        </eStructuralFeatures>
+        <eStructuralFeatures xmi:type="ecore:EAttribute" xmi:id="_SNm0OkeEEeWlKfVTs-HO8g" name="columnElementType" ordered="false" upperBound="-1" defaultValueLiteral="">
+          <eAnnotations xmi:id="_SNm0O0eEEeWlKfVTs-HO8g" source="http://www.eclipse.org/emf/2002/GenModel">
+            <details xmi:id="_SNm0PEeEEeWlKfVTs-HO8g" key="documentation" value="Select the type of the elements to be used to build the Dependency Matrix."/>
+          </eAnnotations>
+          <eType xmi:type="ecore:EDataType" href="http://www.eclipse.org/emf/2002/Ecore#//EString"/>
+        </eStructuralFeatures>
+        <eStructuralFeatures xmi:type="ecore:EAttribute" xmi:id="_SNm0PUeEEeWlKfVTs-HO8g" name="columnTypesIncludeSubtypes" ordered="false" lowerBound="1" defaultValueLiteral="true">
+          <eAnnotations xmi:id="_SNm0PkeEEeWlKfVTs-HO8g" source="http://www.eclipse.org/emf/2002/GenModel">
+            <details xmi:id="_SNm0P0eEEeWlKfVTs-HO8g" key="documentation" value="Set to true to display subtypes of selected element types. For example, if a class is selected, then all its subtypes, such as component or custom subtypes like SysML block and requirement will be displayed."/>
+          </eAnnotations>
+          <eType xmi:type="ecore:EDataType" href="http://www.eclipse.org/emf/2002/Ecore#//EBoolean"/>
+        </eStructuralFeatures>
+        <eStructuralFeatures xmi:type="ecore:EAttribute" xmi:id="_SNm0QEeEEeWlKfVTs-HO8g" name="columnPropertyFilter" ordered="false" upperBound="-1" defaultValueLiteral="">
+          <eAnnotations xmi:id="_SNm0QUeEEeWlKfVTs-HO8g" source="http://www.eclipse.org/emf/2002/GenModel">
+            <details xmi:id="_SNm0QkeEEeWlKfVTs-HO8g" key="documentation" value="Select properties and values to filter elements included in the Dependency Matrix."/>
+          </eAnnotations>
+          <eType xmi:type="ecore:EDataType" href="http://www.eclipse.org/emf/2002/Ecore#//EString"/>
+        </eStructuralFeatures>
+        <eStructuralFeatures xmi:type="ecore:EAttribute" xmi:id="_SNm0Q0eEEeWlKfVTs-HO8g" name="rowPropertyFilter" ordered="false" upperBound="-1" defaultValueLiteral="">
+          <eAnnotations xmi:id="_SNm0REeEEeWlKfVTs-HO8g" source="http://www.eclipse.org/emf/2002/GenModel">
+            <details xmi:id="_SNm0RUeEEeWlKfVTs-HO8g" key="documentation" value="Select properties and values to filter elements included in the Dependency Matrix."/>
+          </eAnnotations>
+          <eType xmi:type="ecore:EDataType" href="http://www.eclipse.org/emf/2002/Ecore#//EString"/>
+        </eStructuralFeatures>
+      </eClassifiers>
+      <eSubpackages xmi:id="_SNm0RkeEEeWlKfVTs-HO8g" name="Types" nsURI="http:///DependencyMatrixProfile_0/Types.ecore" nsPrefix="DependencyMatrixProfile_0.Types">
+        <eClassifiers xmi:type="ecore:EEnum" xmi:id="_SNm0R0eEEeWlKfVTs-HO8g" name="DependencyMatrixProfile__Types__TextDirection">
+          <eLiterals xmi:id="_SNm0SEeEEeWlKfVTs-HO8g" name="Vertical">
+            <eAnnotations xmi:id="_SNm0SUeEEeWlKfVTs-HO8g" source="enumerationLiteral" references="_17_0_3beta_8e10289_1348753189308_943346_3071"/>
+          </eLiterals>
+          <eLiterals xmi:id="_SNm0SkeEEeWlKfVTs-HO8g" name="Horizontal" value="1">
+            <eAnnotations xmi:id="_SNm0S0eEEeWlKfVTs-HO8g" source="enumerationLiteral" references="_17_0_3beta_8e10289_1348753189312_645330_3076"/>
+          </eLiterals>
+        </eClassifiers>
+        <eClassifiers xmi:type="ecore:EEnum" xmi:id="_SNm0TEeEEeWlKfVTs-HO8g" name="DependencyMatrixProfile__Types__RelationOption">
+          <eLiterals xmi:id="_SNm0TUeEEeWlKfVTs-HO8g" name="All">
+            <eAnnotations xmi:id="_SNm0TkeEEeWlKfVTs-HO8g" source="enumerationLiteral" references="_17_0_3beta_8e10289_1348753189275_708756_3021"/>
+          </eLiterals>
+          <eLiterals xmi:id="_SNm0T0eEEeWlKfVTs-HO8g" name="With relations" value="1">
+            <eAnnotations xmi:id="_SNm0UEeEEeWlKfVTs-HO8g" source="enumerationLiteral" references="_17_0_3beta_8e10289_1348753189304_554077_3055"/>
+          </eLiterals>
+          <eLiterals xmi:id="_SNm0UUeEEeWlKfVTs-HO8g" name="Without relations" value="2">
+            <eAnnotations xmi:id="_SNm0UkeEEeWlKfVTs-HO8g" source="enumerationLiteral" references="_17_0_3beta_8e10289_1348753189235_537868_2899"/>
+          </eLiterals>
+        </eClassifiers>
+        <eClassifiers xmi:type="ecore:EEnum" xmi:id="_SNm0U0eEEeWlKfVTs-HO8g" name="DependencyMatrixProfile__Types__Direction">
+          <eLiterals xmi:id="_SNm0VEeEEeWlKfVTs-HO8g" name="Row to column">
+            <eAnnotations xmi:id="_SNm0VUeEEeWlKfVTs-HO8g" source="enumerationLiteral" references="_17_0_3beta_8e10289_1348753189272_448769_3003"/>
+          </eLiterals>
+          <eLiterals xmi:id="_SNm0VkeEEeWlKfVTs-HO8g" name="Column to row" value="1">
+            <eAnnotations xmi:id="_SNm0V0eEEeWlKfVTs-HO8g" source="enumerationLiteral" references="_17_0_3beta_8e10289_1348753189231_651452_2875"/>
+          </eLiterals>
+          <eLiterals xmi:id="_SNm0WEeEEeWlKfVTs-HO8g" name="Both" value="2">
+            <eAnnotations xmi:id="_SNm0WUeEEeWlKfVTs-HO8g" source="enumerationLiteral" references="_17_0_3beta_8e10289_1348753189319_309731_3088"/>
+          </eLiterals>
+        </eClassifiers>
+        <eClassifiers xmi:type="ecore:EEnum" xmi:id="_SNm0WkeEEeWlKfVTs-HO8g" name="DependencyMatrixProfile__Types__OwnerDisplayMode">
+          <eLiterals xmi:id="_SNm0W0eEEeWlKfVTs-HO8g" name="Complete tree">
+            <eAnnotations xmi:id="_SNm0XEeEEeWlKfVTs-HO8g" source="enumerationLiteral" references="_17_0_4beta_8e10289_1358431631797_528952_2981"/>
+          </eLiterals>
+          <eLiterals xmi:id="_SNm0XUeEEeWlKfVTs-HO8g" name="Hidden" value="1">
+            <eAnnotations xmi:id="_SNm0XkeEEeWlKfVTs-HO8g" source="enumerationLiteral" references="_17_0_4beta_8e10289_1358431636500_255454_2982"/>
+          </eLiterals>
+          <eLiterals xmi:id="_SNm0X0eEEeWlKfVTs-HO8g" name="Full qualified name" value="2">
+            <eAnnotations xmi:id="_SNm0YEeEEeWlKfVTs-HO8g" source="enumerationLiteral" references="_17_0_4beta_8e10289_1358431640861_551653_2983"/>
+          </eLiterals>
+          <eLiterals xmi:id="_SNm0YUeEEeWlKfVTs-HO8g" name="Compact tree" value="3">
+            <eAnnotations xmi:id="_SNm0YkeEEeWlKfVTs-HO8g" source="enumerationLiteral" references="_17_0_4beta_8e10289_1359443852996_130991_3007"/>
+          </eLiterals>
+        </eClassifiers>
+        <eClassifiers xmi:type="ecore:EEnum" xmi:id="_SNm0Y0eEEeWlKfVTs-HO8g" name="DependencyMatrixProfile__Types__SortingMode">
+          <eLiterals xmi:id="_SNm0ZEeEEeWlKfVTs-HO8g" name="Ascending">
+            <eAnnotations xmi:id="_SNm0ZUeEEeWlKfVTs-HO8g" source="enumerationLiteral" references="_17_0_4beta_8f90291_1361806210454_792762_3437"/>
+          </eLiterals>
+          <eLiterals xmi:id="_SNm0ZkeEEeWlKfVTs-HO8g" name="Descending" value="1">
+            <eAnnotations xmi:id="_SNm0Z0eEEeWlKfVTs-HO8g" source="enumerationLiteral" references="_17_0_4beta_8f90291_1361806216494_394624_3441"/>
+          </eLiterals>
+          <eLiterals xmi:id="_SNm0aEeEEeWlKfVTs-HO8g" name="Custom" value="2">
+            <eAnnotations xmi:id="_SNm0aUeEEeWlKfVTs-HO8g" source="enumerationLiteral" references="_17_0_4beta_8f90291_1361806241033_722576_3451"/>
+          </eLiterals>
+        </eClassifiers>
+      </eSubpackages>
+      <eSubpackages xmi:id="_SNm0akeEEeWlKfVTs-HO8g" name="migration" nsURI="http:///DependencyMatrixProfile_0/migration.ecore" nsPrefix="DependencyMatrixProfile_0.migration">
+        <eAnnotations xmi:id="_SNm0a0eEEeWlKfVTs-HO8g" source="http://www.eclipse.org/emf/2002/GenModel">
+          <details xmi:id="_SNm0bEeEEeWlKfVTs-HO8g" key="documentation" value="Stereotypes used in migration framework."/>
+        </eAnnotations>
+        <eClassifiers xmi:type="ecore:EClass" xmi:id="_SNm0bUeEEeWlKfVTs-HO8g" name="MagicDrawProfile__migration__ProfileUpgradeTablecustomization"/>
+      </eSubpackages>
+      <eSubpackages xmi:id="_SNm0bkeEEeWlKfVTs-HO8g" name="Merge" nsURI="http:///DependencyMatrixProfile_0/Merge.ecore" nsPrefix="DependencyMatrixProfile_0.Merge">
+        <eSubpackages xmi:id="_SNm0b0eEEeWlKfVTs-HO8g" name="DiagramMerge" nsURI="http:///DependencyMatrixProfile_0/Merge/DiagramMerge.ecore" nsPrefix="DependencyMatrixProfile_0.Merge.DiagramMerge"/>
+      </eSubpackages>
+      <eSubpackages xmi:id="_SNm0cEeEEeWlKfVTs-HO8g" name="libraries" nsURI="http:///DependencyMatrixProfile_0/libraries.ecore" nsPrefix="DependencyMatrixProfile_0.libraries">
+        <eClassifiers xmi:type="ecore:EEnum" xmi:id="_SNm0cUeEEeWlKfVTs-HO8g" name="MagicDrawProfile__libraries__treeStructureEnumeration">
+          <eLiterals xmi:id="_SNm0ckeEEeWlKfVTs-HO8g" name="containment">
+            <eAnnotations xmi:id="_SNm0c0eEEeWlKfVTs-HO8g" source="enumerationLiteral">
+              <references xmi:type="uml:EnumerationLiteral" href="UML_Standard_Profile.MagicDraw_Profile.profile.uml2#_16_8beta_8e8028e_1259661576050_307974_1072"/>
+            </eAnnotations>
+          </eLiterals>
+          <eLiterals xmi:id="_SNm0dEeEEeWlKfVTs-HO8g" name="composition" value="1">
+            <eAnnotations xmi:id="_SNnaAEeEEeWlKfVTs-HO8g" source="enumerationLiteral">
+              <references xmi:type="uml:EnumerationLiteral" href="UML_Standard_Profile.MagicDraw_Profile.profile.uml2#_16_8beta_8e8028e_1259661593864_406668_1079"/>
+            </eAnnotations>
+          </eLiterals>
+          <eLiterals xmi:id="_SNnaAUeEEeWlKfVTs-HO8g" name="inheritance" value="2">
+            <eAnnotations xmi:id="_SNnaAkeEEeWlKfVTs-HO8g" source="enumerationLiteral">
+              <references xmi:type="uml:EnumerationLiteral" href="UML_Standard_Profile.MagicDraw_Profile.profile.uml2#_16_9beta_8e8028e_1272352213162_49101_1266"/>
+            </eAnnotations>
+          </eLiterals>
+        </eClassifiers>
+      </eSubpackages>
+      <eSubpackages xmi:id="_SNnaA0eEEeWlKfVTs-HO8g" name="datatypes" nsURI="http:///DependencyMatrixProfile_0/datatypes.ecore" nsPrefix="DependencyMatrixProfile_0.datatypes">
+        <eClassifiers xmi:type="ecore:EDataType" xmi:id="_SNnaBEeEEeWlKfVTs-HO8g" name="MagicDrawProfile__datatypes__void" instanceClassName="MagicDrawProfile__datatypes__void"/>
+        <eClassifiers xmi:type="ecore:EDataType" xmi:id="_SNnaBUeEEeWlKfVTs-HO8g" name="MagicDrawProfile__datatypes__date" instanceClassName="MagicDrawProfile__datatypes__date"/>
+        <eClassifiers xmi:type="ecore:EDataType" xmi:id="_SNnaBkeEEeWlKfVTs-HO8g" name="MagicDrawProfile__datatypes__StructuredExpression" instanceClassName="MagicDrawProfile__datatypes__StructuredExpression"/>
+        <eClassifiers xmi:type="ecore:EDataType" xmi:id="_SNnaB0eEEeWlKfVTs-HO8g" name="MagicDrawProfile__datatypes__XML" instanceClassName="MagicDrawProfile__datatypes__XML"/>
+      </eSubpackages>
+      <eSubpackages xmi:id="_SNnaCEeEEeWlKfVTs-HO8g" name="BuiltInOperations" nsURI="http:///DependencyMatrixProfile_0/BuiltInOperations.ecore" nsPrefix="DependencyMatrixProfile_0.BuiltInOperations">
+        <eClassifiers xmi:type="ecore:EClass" xmi:id="_SNnaCUeEEeWlKfVTs-HO8g" name="MagicDrawProfile__BuiltInOperations__Union"/>
+        <eClassifiers xmi:type="ecore:EClass" xmi:id="_SNnaCkeEEeWlKfVTs-HO8g" name="MagicDrawProfile__BuiltInOperations__javalangObject"/>
+        <eClassifiers xmi:type="ecore:EClass" xmi:id="_SNnaC0eEEeWlKfVTs-HO8g" name="MagicDrawProfile__BuiltInOperations__Find"/>
+        <eClassifiers xmi:type="ecore:EClass" xmi:id="_SNnaDEeEEeWlKfVTs-HO8g" name="MagicDrawProfile__BuiltInOperations__Exclude"/>
+        <eClassifiers xmi:type="ecore:EClass" xmi:id="_SNnaDUeEEeWlKfVTs-HO8g" name="MagicDrawProfile__BuiltInOperations__Timestamp"/>
+        <eClassifiers xmi:type="ecore:EClass" xmi:id="_SNnaDkeEEeWlKfVTs-HO8g" name="MagicDrawProfile__BuiltInOperations__FormatDate"/>
+        <eClassifiers xmi:type="ecore:EClass" xmi:id="_SNnaD0eEEeWlKfVTs-HO8g" name="MagicDrawProfile__BuiltInOperations__ParseDate"/>
+        <eClassifiers xmi:type="ecore:EClass" xmi:id="_SNnaEEeEEeWlKfVTs-HO8g" name="MagicDrawProfile__BuiltInOperations__comnomagicexpressionsOperation"/>
+        <eClassifiers xmi:type="ecore:EClass" xmi:id="_SNnaEUeEEeWlKfVTs-HO8g" name="MagicDrawProfile__BuiltInOperations__TypeTest"/>
+        <eClassifiers xmi:type="ecore:EClass" xmi:id="_SNnaEkeEEeWlKfVTs-HO8g" name="MagicDrawProfile__BuiltInOperations__InstanceNavigation"/>
+        <eClassifiers xmi:type="ecore:EClass" xmi:id="_SNnaE0eEEeWlKfVTs-HO8g" name="MagicDrawProfile__BuiltInOperations__Filter"/>
+      </eSubpackages>
+    </contents>
+  </eAnnotations>
+  <eAnnotations xmi:id="_SP9jYEeEEeWlKfVTs-HO8g" source="MagicDraw">
+    <details xmi:id="_SP9jYUeEEeWlKfVTs-HO8g" key="md_id" value="_17_0_4beta_8ca0285_1361349406965_180847_3086"/>
+  </eAnnotations>
+  <packageImport xmi:id="_17_0_4beta_8ca0285_1361349406966_337106_3087">
+    <eAnnotations xmi:id="_SP_YmEeEEeWlKfVTs-HO8g" source="MagicDraw">
+      <details xmi:id="_SP_YmUeEEeWlKfVTs-HO8g" key="md_id" value="_17_0_4beta_8ca0285_1361349406966_337106_3087"/>
+    </eAnnotations>
+    <importedPackage xmi:type="uml:Model" href="pathmap://UML2_METAMODELS/UML2.metamodel.uml2#_m8qbA686EdiEh75YJ_3n8g"/>
+  </packageImport>
+  <packageImport xmi:id="_EfRZoK86EdieaYgxtVWN8QprimitiveTypesDependency_Matrix_Profile">
+    <importedPackage xmi:type="uml:Model" href="pathmap://UML2_LIBRARIES/UML2PrimitiveTypes.library.uml2#_EfRZoK86EdieaYgxtVWN8Q"/>
+  </packageImport>
+  <packageImport xmi:id="_RjmyoK86EdieaYgxtVWN8QjavaPrimitiveTypesDependency_Matrix_Profile">
+    <importedPackage xmi:type="uml:Model" href="pathmap://UML2_LIBRARIES/JavaPrimitiveTypes.library.uml2#_RjmyoK86EdieaYgxtVWN8Q"/>
+  </packageImport>
+  <packageImport xmi:type="uml:ProfileApplication" xmi:id="_11_5_be00301_1153310565718_226811_161profileApplicationDependency_Matrix_Profile">
+    <eAnnotations xmi:id="_SObSWUeEEeWlKfVTs-HO8g" source="attributes">
+      <details xmi:id="_SObSWkeEEeWlKfVTs-HO8g" key="version" value="0"/>
+    </eAnnotations>
+    <importedPackage xmi:type="uml:Profile" href="UML_Standard_Profile.MagicDraw_Profile.DSL_Customization.profile.uml2#_11_5_be00301_1153310565718_226811_161"/>
+    <importedProfile href="UML_Standard_Profile.MagicDraw_Profile.DSL_Customization.profile.uml2#_11_5_be00301_1153310565718_226811_161"/>
+  </packageImport>
+  <ownedMember xmi:type="uml:Package" xmi:id="_17_0_3beta_8e10289_1348753189254_575688_2954" name="Types">
+    <eAnnotations xmi:id="_SP9jYkeEEeWlKfVTs-HO8g" source="MagicDraw">
+      <details xmi:id="_SP9jY0eEEeWlKfVTs-HO8g" key="md_id" value="_17_0_3beta_8e10289_1348753189254_575688_2954"/>
+    </eAnnotations>
+    <ownedMember xmi:type="uml:Enumeration" xmi:id="_17_0_3beta_8e10289_1348753189307_91247_3068" name="TextDirection">
+      <eAnnotations xmi:id="_SP9jZEeEEeWlKfVTs-HO8g" source="MagicDraw">
+        <details xmi:id="_SP9jZUeEEeWlKfVTs-HO8g" key="md_id" value="_17_0_3beta_8e10289_1348753189307_91247_3068"/>
+      </eAnnotations>
+      <ownedLiteral xmi:id="_17_0_3beta_8e10289_1348753189308_943346_3071" name="Vertical" classifier="_17_0_3beta_8e10289_1348753189307_91247_3068">
+        <eAnnotations xmi:id="_SP9jZkeEEeWlKfVTs-HO8g" source="MagicDraw">
+          <details xmi:id="_SP9jZ0eEEeWlKfVTs-HO8g" key="md_id" value="_17_0_3beta_8e10289_1348753189308_943346_3071"/>
+        </eAnnotations>
+      </ownedLiteral>
+      <ownedLiteral xmi:id="_17_0_3beta_8e10289_1348753189312_645330_3076" name="Horizontal" classifier="_17_0_3beta_8e10289_1348753189307_91247_3068">
+        <eAnnotations xmi:id="_SP9jaEeEEeWlKfVTs-HO8g" source="MagicDraw">
+          <details xmi:id="_SP9jaUeEEeWlKfVTs-HO8g" key="md_id" value="_17_0_3beta_8e10289_1348753189312_645330_3076"/>
+        </eAnnotations>
+      </ownedLiteral>
+    </ownedMember>
+    <ownedMember xmi:type="uml:Enumeration" xmi:id="_17_0_3beta_8e10289_1348753189307_866738_3062" name="RelationOption">
+      <eAnnotations xmi:id="_SP9jakeEEeWlKfVTs-HO8g" source="MagicDraw">
+        <details xmi:id="_SP9ja0eEEeWlKfVTs-HO8g" key="md_id" value="_17_0_3beta_8e10289_1348753189307_866738_3062"/>
+      </eAnnotations>
+      <ownedLiteral xmi:id="_17_0_3beta_8e10289_1348753189275_708756_3021" name="All" classifier="_17_0_3beta_8e10289_1348753189307_866738_3062">
+        <eAnnotations xmi:id="_SP9jbEeEEeWlKfVTs-HO8g" source="MagicDraw">
+          <details xmi:id="_SP9jbUeEEeWlKfVTs-HO8g" key="md_id" value="_17_0_3beta_8e10289_1348753189275_708756_3021"/>
+        </eAnnotations>
+      </ownedLiteral>
+      <ownedLiteral xmi:id="_17_0_3beta_8e10289_1348753189304_554077_3055" name="With relations" classifier="_17_0_3beta_8e10289_1348753189307_866738_3062">
+        <eAnnotations xmi:id="_SP9jbkeEEeWlKfVTs-HO8g" source="MagicDraw">
+          <details xmi:id="_SP9jb0eEEeWlKfVTs-HO8g" key="md_id" value="_17_0_3beta_8e10289_1348753189304_554077_3055"/>
+        </eAnnotations>
+      </ownedLiteral>
+      <ownedLiteral xmi:id="_17_0_3beta_8e10289_1348753189235_537868_2899" name="Without relations" classifier="_17_0_3beta_8e10289_1348753189307_866738_3062">
+        <eAnnotations xmi:id="_SP9jcEeEEeWlKfVTs-HO8g" source="MagicDraw">
+          <details xmi:id="_SP9jcUeEEeWlKfVTs-HO8g" key="md_id" value="_17_0_3beta_8e10289_1348753189235_537868_2899"/>
+        </eAnnotations>
+      </ownedLiteral>
+    </ownedMember>
+    <ownedMember xmi:type="uml:Enumeration" xmi:id="_17_0_3beta_8e10289_1348753189274_953899_3014" name="Direction">
+      <eAnnotations xmi:id="_SP9jckeEEeWlKfVTs-HO8g" source="MagicDraw">
+        <details xmi:id="_SP9jc0eEEeWlKfVTs-HO8g" key="md_id" value="_17_0_3beta_8e10289_1348753189274_953899_3014"/>
+      </eAnnotations>
+      <ownedLiteral xmi:id="_17_0_3beta_8e10289_1348753189272_448769_3003" name="Row to column" classifier="_17_0_3beta_8e10289_1348753189274_953899_3014">
+        <eAnnotations xmi:id="_SP9jdEeEEeWlKfVTs-HO8g" source="MagicDraw">
+          <details xmi:id="_SP9jdUeEEeWlKfVTs-HO8g" key="md_id" value="_17_0_3beta_8e10289_1348753189272_448769_3003"/>
+        </eAnnotations>
+      </ownedLiteral>
+      <ownedLiteral xmi:id="_17_0_3beta_8e10289_1348753189231_651452_2875" name="Column to row" classifier="_17_0_3beta_8e10289_1348753189274_953899_3014">
+        <eAnnotations xmi:id="_SP9jdkeEEeWlKfVTs-HO8g" source="MagicDraw">
+          <details xmi:id="_SP9jd0eEEeWlKfVTs-HO8g" key="md_id" value="_17_0_3beta_8e10289_1348753189231_651452_2875"/>
+        </eAnnotations>
+      </ownedLiteral>
+      <ownedLiteral xmi:id="_17_0_3beta_8e10289_1348753189319_309731_3088" name="Both" classifier="_17_0_3beta_8e10289_1348753189274_953899_3014">
+        <eAnnotations xmi:id="_SP9jeEeEEeWlKfVTs-HO8g" source="MagicDraw">
+          <details xmi:id="_SP9jeUeEEeWlKfVTs-HO8g" key="md_id" value="_17_0_3beta_8e10289_1348753189319_309731_3088"/>
+        </eAnnotations>
+      </ownedLiteral>
+    </ownedMember>
+    <ownedMember xmi:type="uml:Enumeration" xmi:id="_17_0_4beta_8e10289_1358431599968_292291_2980" name="OwnerDisplayMode">
+      <eAnnotations xmi:id="_SP9jekeEEeWlKfVTs-HO8g" source="MagicDraw">
+        <details xmi:id="_SP9je0eEEeWlKfVTs-HO8g" key="md_id" value="_17_0_4beta_8e10289_1358431599968_292291_2980"/>
+      </eAnnotations>
+      <ownedLiteral xmi:id="_17_0_4beta_8e10289_1358431631797_528952_2981" name="Complete tree" classifier="_17_0_4beta_8e10289_1358431599968_292291_2980">
+        <eAnnotations xmi:id="_SP9jfEeEEeWlKfVTs-HO8g" source="MagicDraw">
+          <details xmi:id="_SP9jfUeEEeWlKfVTs-HO8g" key="md_id" value="_17_0_4beta_8e10289_1358431631797_528952_2981"/>
+        </eAnnotations>
+      </ownedLiteral>
+      <ownedLiteral xmi:id="_17_0_4beta_8e10289_1358431636500_255454_2982" name="Hidden" classifier="_17_0_4beta_8e10289_1358431599968_292291_2980">
+        <eAnnotations xmi:id="_SP9jfkeEEeWlKfVTs-HO8g" source="MagicDraw">
+          <details xmi:id="_SP9jf0eEEeWlKfVTs-HO8g" key="md_id" value="_17_0_4beta_8e10289_1358431636500_255454_2982"/>
+        </eAnnotations>
+      </ownedLiteral>
+      <ownedLiteral xmi:id="_17_0_4beta_8e10289_1358431640861_551653_2983" name="Full qualified name" classifier="_17_0_4beta_8e10289_1358431599968_292291_2980">
+        <eAnnotations xmi:id="_SP9jgEeEEeWlKfVTs-HO8g" source="MagicDraw">
+          <details xmi:id="_SP9jgUeEEeWlKfVTs-HO8g" key="md_id" value="_17_0_4beta_8e10289_1358431640861_551653_2983"/>
+        </eAnnotations>
+      </ownedLiteral>
+      <ownedLiteral xmi:id="_17_0_4beta_8e10289_1359443852996_130991_3007" name="Compact tree" classifier="_17_0_4beta_8e10289_1358431599968_292291_2980">
+        <eAnnotations xmi:id="_SP-KcEeEEeWlKfVTs-HO8g" source="MagicDraw">
+          <details xmi:id="_SP-KcUeEEeWlKfVTs-HO8g" key="md_id" value="_17_0_4beta_8e10289_1359443852996_130991_3007"/>
+        </eAnnotations>
+      </ownedLiteral>
+    </ownedMember>
+    <ownedMember xmi:type="uml:Enumeration" xmi:id="_17_0_4beta_8f90291_1361806196409_193631_3432" name="SortingMode">
+      <eAnnotations xmi:id="_SP-KckeEEeWlKfVTs-HO8g" source="MagicDraw">
+        <details xmi:id="_SP-Kc0eEEeWlKfVTs-HO8g" key="md_id" value="_17_0_4beta_8f90291_1361806196409_193631_3432"/>
+      </eAnnotations>
+      <ownedLiteral xmi:id="_17_0_4beta_8f90291_1361806210454_792762_3437" name="Ascending" classifier="_17_0_4beta_8f90291_1361806196409_193631_3432">
+        <eAnnotations xmi:id="_SP-KdEeEEeWlKfVTs-HO8g" source="MagicDraw">
+          <details xmi:id="_SP-KdUeEEeWlKfVTs-HO8g" key="md_id" value="_17_0_4beta_8f90291_1361806210454_792762_3437"/>
+        </eAnnotations>
+      </ownedLiteral>
+      <ownedLiteral xmi:id="_17_0_4beta_8f90291_1361806216494_394624_3441" name="Descending" classifier="_17_0_4beta_8f90291_1361806196409_193631_3432">
+        <eAnnotations xmi:id="_SP-KdkeEEeWlKfVTs-HO8g" source="MagicDraw">
+          <details xmi:id="_SP-Kd0eEEeWlKfVTs-HO8g" key="md_id" value="_17_0_4beta_8f90291_1361806216494_394624_3441"/>
+        </eAnnotations>
+      </ownedLiteral>
+      <ownedLiteral xmi:id="_17_0_4beta_8f90291_1361806241033_722576_3451" name="Custom" classifier="_17_0_4beta_8f90291_1361806196409_193631_3432">
+        <eAnnotations xmi:id="_SP-KeEeEEeWlKfVTs-HO8g" source="MagicDraw">
+          <details xmi:id="_SP-KeUeEEeWlKfVTs-HO8g" key="md_id" value="_17_0_4beta_8f90291_1361806241033_722576_3451"/>
+        </eAnnotations>
+      </ownedLiteral>
+    </ownedMember>
+  </ownedMember>
+  <ownedMember xmi:type="uml:Class" xmi:id="_17_0_3beta_8e10289_1348753189272_853760_3005" name="CustomizationOfDependencyMatrix">
+    <eAnnotations xmi:id="_SOjOKUeEEeWlKfVTs-HO8g" source="appliedStereotypes">
+      <contents xmi:type="DSLCustomization_0:DSLCustomization__Customization" xmi:id="_SOjOKkeEEeWlKfVTs-HO8g">
+        <customizationTarget>Dependency Matrix Profile::DependencyMatrix</customizationTarget>
+        <customizationTarget>Dependency Matrix Profile::MatrixFilter</customizationTarget>
+        <standardExpertConfiguration>&lt;html>&lt;head>&lt;title>SP&lt;/title>&lt;/head>&lt;body>&lt;p>name&lt;/p>&lt;/body>&lt;/html></standardExpertConfiguration>
+        <standardExpertConfiguration>&lt;html>&lt;head>&lt;title>HP&lt;/title>&lt;/head>&lt;body>&lt;p>columnCustomOrder&lt;/p>&lt;/body>&lt;/html></standardExpertConfiguration>
+        <standardExpertConfiguration>&lt;html>&lt;head>&lt;title>HP&lt;/title>&lt;/head>&lt;body>&lt;p>rowCustomOrder&lt;/p>&lt;/body>&lt;/html></standardExpertConfiguration>
+        <standardExpertConfiguration>&lt;html>&lt;head>&lt;title>SP&lt;/title>&lt;/head>&lt;body>&lt;p>columnTypesIncludeSubtypes&lt;/p>&lt;/body>&lt;/html></standardExpertConfiguration>
+        <standardExpertConfiguration>&lt;html>&lt;head>&lt;title>SP&lt;/title>&lt;/head>&lt;body>&lt;p>rowTypesIncludeSubtypes&lt;/p>&lt;/body>&lt;/html></standardExpertConfiguration>
+        <standardExpertConfiguration>&lt;html>&lt;head>&lt;title>HP&lt;/title>&lt;/head>&lt;body>&lt;p>takeWholeModelAsScope&lt;/p>&lt;/body>&lt;/html></standardExpertConfiguration>
+        <standardExpertConfiguration>&lt;html>&lt;head>&lt;title>HP&lt;/title>&lt;/head>&lt;body>&lt;p>ELEMENT_ID&lt;/p>&lt;/body>&lt;/html></standardExpertConfiguration>
+        <standardExpertConfiguration>&lt;html>&lt;head>&lt;title>SP&lt;/title>&lt;/head>&lt;body>&lt;p>direction&lt;/p>&lt;/body>&lt;/html></standardExpertConfiguration>
+        <standardExpertConfiguration>&lt;html>&lt;head>&lt;title>SP&lt;/title>&lt;/head>&lt;body>&lt;p>dependencyCriteria&lt;/p>&lt;/body>&lt;/html></standardExpertConfiguration>
+        <standardExpertConfiguration>&lt;html>&lt;head>&lt;title>SP&lt;/title>&lt;/head>&lt;body>&lt;p>showElements&lt;/p>&lt;/body>&lt;/html></standardExpertConfiguration>
+        <standardExpertConfiguration>&lt;html>&lt;head>&lt;title>EP&lt;/title>&lt;/head>&lt;body>&lt;p>showInnerDependencies&lt;/p>&lt;/body>&lt;/html></standardExpertConfiguration>
+        <standardExpertConfiguration>&lt;html>&lt;head>&lt;title>HP&lt;/title>&lt;/head>&lt;body>&lt;p>suppressCriteriaArea&lt;/p>&lt;/body>&lt;/html></standardExpertConfiguration>
+        <standardExpertConfiguration>&lt;html>&lt;head>&lt;title>SP&lt;/title>&lt;/head>&lt;body>&lt;p>readOnly&lt;/p>&lt;/body>&lt;/html></standardExpertConfiguration>
+        <standardExpertConfiguration>&lt;html>&lt;head>&lt;title>HP&lt;/title>&lt;/head>&lt;body>&lt;p>descriptionArea&lt;/p>&lt;/body>&lt;/html></standardExpertConfiguration>
+        <standardExpertConfiguration>&lt;html>&lt;head>&lt;title>HP&lt;/title>&lt;/head>&lt;body>&lt;p>hideTypes&lt;/p>&lt;/body>&lt;/html></standardExpertConfiguration>
+        <standardExpertConfiguration>&lt;html>&lt;head>&lt;title>HP&lt;/title>&lt;/head>&lt;body>&lt;p>hideScope&lt;/p>&lt;/body>&lt;/html></standardExpertConfiguration>
+        <standardExpertConfiguration>&lt;html>&lt;head>&lt;title>HP&lt;/title>&lt;/head>&lt;body>&lt;p>hideDependencyCriteria&lt;/p>&lt;/body>&lt;/html></standardExpertConfiguration>
+        <standardExpertConfiguration>&lt;html>&lt;head>&lt;title>SP&lt;/title>&lt;/head>&lt;body>&lt;p>rowOwnerDisplayMode&lt;/p>&lt;/body>&lt;/html></standardExpertConfiguration>
+        <standardExpertConfiguration>&lt;html>&lt;head>&lt;title>SP&lt;/title>&lt;/head>&lt;body>&lt;p>columnOwnerDisplayMode&lt;/p>&lt;/body>&lt;/html></standardExpertConfiguration>
+        <standardExpertConfiguration>&lt;html>&lt;head>&lt;title>SP&lt;/title>&lt;/head>&lt;body>&lt;p>columnTextDirection&lt;/p>&lt;/body>&lt;/html></standardExpertConfiguration>
+        <standardExpertConfiguration>&lt;html>&lt;head>&lt;title>SP&lt;/title>&lt;/head>&lt;body>&lt;p>columnElementType&lt;/p>&lt;/body>&lt;/html></standardExpertConfiguration>
+        <standardExpertConfiguration>&lt;html>&lt;head>&lt;title>SP&lt;/title>&lt;/head>&lt;body>&lt;p>rowElementType&lt;/p>&lt;/body>&lt;/html></standardExpertConfiguration>
+        <standardExpertConfiguration>&lt;html>&lt;head>&lt;title>SP&lt;/title>&lt;/head>&lt;body>&lt;p>columnScope&lt;/p>&lt;/body>&lt;/html></standardExpertConfiguration>
+        <standardExpertConfiguration>&lt;html>&lt;head>&lt;title>SP&lt;/title>&lt;/head>&lt;body>&lt;p>rowScope&lt;/p>&lt;/body>&lt;/html></standardExpertConfiguration>
+        <standardExpertConfiguration>&lt;html>&lt;head>&lt;title>SP&lt;/title>&lt;/head>&lt;body>&lt;p>rowPropertyFilter&lt;/p>&lt;/body>&lt;/html></standardExpertConfiguration>
+        <standardExpertConfiguration>&lt;html>&lt;head>&lt;title>SP&lt;/title>&lt;/head>&lt;body>&lt;p>columnPropertyFilter&lt;/p>&lt;/body>&lt;/html></standardExpertConfiguration>
+        <standardExpertConfiguration>&lt;html>&lt;head>&lt;title>SP&lt;/title>&lt;/head>&lt;body>&lt;p>removedRowElements&lt;/p>&lt;/body>&lt;/html></standardExpertConfiguration>
+        <standardExpertConfiguration>&lt;html>&lt;head>&lt;title>SP&lt;/title>&lt;/head>&lt;body>&lt;p>removedColumnElements&lt;/p>&lt;/body>&lt;/html></standardExpertConfiguration>
+        <standardExpertConfiguration>&lt;html>&lt;head>&lt;title>HP&lt;/title>&lt;/head>&lt;body>&lt;p>rowSortingMode&lt;/p>&lt;/body>&lt;/html></standardExpertConfiguration>
+        <standardExpertConfiguration>&lt;html>&lt;head>&lt;title>HP&lt;/title>&lt;/head>&lt;body>&lt;p>columnSortingMode&lt;/p>&lt;/body>&lt;/html></standardExpertConfiguration>
+        <standardExpertConfiguration>&lt;html>&lt;head>&lt;title>HP&lt;/title>&lt;/head>&lt;body>&lt;p>columnCollapsedNodes&lt;/p>&lt;/body>&lt;/html></standardExpertConfiguration>
+        <standardExpertConfiguration>&lt;html>&lt;head>&lt;title>HP&lt;/title>&lt;/head>&lt;body>&lt;p>rowCollapsedNodes&lt;/p>&lt;/body>&lt;/html></standardExpertConfiguration>
+        <standardExpertConfiguration>&lt;html>&lt;head>&lt;title>HP&lt;/title>&lt;/head>&lt;body>&lt;p>columnHeaderHeight&lt;/p>&lt;/body>&lt;/html></standardExpertConfiguration>
+        <standardExpertConfiguration>&lt;html>&lt;head>&lt;title>HP&lt;/title>&lt;/head>&lt;body>&lt;p>rowHeaderWidth&lt;/p>&lt;/body>&lt;/html></standardExpertConfiguration>
+        <standardExpertConfiguration>&lt;html>&lt;head>&lt;title>HP&lt;/title>&lt;/head>&lt;body>&lt;p>allRealizingElements&lt;/p>&lt;/body>&lt;/html></standardExpertConfiguration>
+        <standardExpertConfiguration>&lt;html>&lt;head>&lt;title>HP&lt;/title>&lt;/head>&lt;body>&lt;p>allSpecifyingElements&lt;/p>&lt;/body>&lt;/html></standardExpertConfiguration>
+        <standardExpertConfiguration>&lt;html>&lt;head>&lt;title>HP&lt;/title>&lt;/head>&lt;body>&lt;p>realizingElement&lt;/p>&lt;/body>&lt;/html></standardExpertConfiguration>
+        <standardExpertConfiguration>&lt;html>&lt;head>&lt;title>HP&lt;/title>&lt;/head>&lt;body>&lt;p>specifyingElement&lt;/p>&lt;/body>&lt;/html></standardExpertConfiguration>
+        <standardExpertConfiguration>&lt;html>&lt;head>&lt;title>SN&lt;/title>&lt;/head>&lt;body>&lt;p>DOCUMENTATION_HYPERLINKS&lt;/p>&lt;/body>&lt;/html></standardExpertConfiguration>
+        <standardExpertConfiguration>&lt;html>&lt;head>&lt;title>SN&lt;/title>&lt;/head>&lt;body>&lt;p>USAGE&lt;/p>&lt;/body>&lt;/html></standardExpertConfiguration>
+        <standardExpertConfiguration>&lt;html>&lt;head>&lt;title>SN&lt;/title>&lt;/head>&lt;body>&lt;p>Traceability&lt;/p>&lt;/body>&lt;/html></standardExpertConfiguration>
+        <standardExpertConfiguration>&lt;html>&lt;head>&lt;title>HP&lt;/title>&lt;/head>&lt;body>&lt;p>Active Hyperlink&lt;/p>&lt;/body>&lt;/html></standardExpertConfiguration>
+        <standardExpertConfiguration>&lt;html>&lt;head>&lt;title>HP&lt;/title>&lt;/head>&lt;body>&lt;p>qualifiedName&lt;/p>&lt;/body>&lt;/html></standardExpertConfiguration>
+        <standardExpertConfiguration>&lt;html>&lt;head>&lt;title>HP&lt;/title>&lt;/head>&lt;body>&lt;p>visibility&lt;/p>&lt;/body>&lt;/html></standardExpertConfiguration>
+        <standardExpertConfiguration>&lt;html>&lt;head>&lt;title>HP&lt;/title>&lt;/head>&lt;body>&lt;p>appliedStereotypeInstance&lt;/p>&lt;/body>&lt;/html></standardExpertConfiguration>
+        <standardExpertConfiguration>&lt;html>&lt;head>&lt;title>HP&lt;/title>&lt;/head>&lt;body>&lt;p>clientDependency&lt;/p>&lt;/body>&lt;/html></standardExpertConfiguration>
+        <standardExpertConfiguration>&lt;html>&lt;head>&lt;title>HP&lt;/title>&lt;/head>&lt;body>&lt;p>nameExpression&lt;/p>&lt;/body>&lt;/html></standardExpertConfiguration>
+        <standardExpertConfiguration>&lt;html>&lt;head>&lt;title>HP&lt;/title>&lt;/head>&lt;body>&lt;p>namespace&lt;/p>&lt;/body>&lt;/html></standardExpertConfiguration>
+        <standardExpertConfiguration>&lt;html>&lt;head>&lt;title>HP&lt;/title>&lt;/head>&lt;body>&lt;p>ownedComment&lt;/p>&lt;/body>&lt;/html></standardExpertConfiguration>
+        <standardExpertConfiguration>&lt;html>&lt;head>&lt;title>HP&lt;/title>&lt;/head>&lt;body>&lt;p>ownedElement&lt;/p>&lt;/body>&lt;/html></standardExpertConfiguration>
+        <standardExpertConfiguration>&lt;html>&lt;head>&lt;title>HP&lt;/title>&lt;/head>&lt;body>&lt;p>supplierDependency&lt;/p>&lt;/body>&lt;/html></standardExpertConfiguration>
+        <standardExpertConfiguration>&lt;html>&lt;head>&lt;title>EN&lt;/title>&lt;/head>&lt;body>&lt;p>RELATIONS&lt;/p>&lt;/body>&lt;/html></standardExpertConfiguration>
+        <standardExpertConfiguration>&lt;html>&lt;head>&lt;title>EN&lt;/title>&lt;/head>&lt;body>&lt;p>TAGS&lt;/p>&lt;/body>&lt;/html></standardExpertConfiguration>
+        <standardExpertConfiguration>&lt;html>&lt;head>&lt;title>EN&lt;/title>&lt;/head>&lt;body>&lt;p>CONSTRAINTS&lt;/p>&lt;/body>&lt;/html></standardExpertConfiguration>
+        <standardExpertConfiguration>&lt;html>&lt;head>&lt;title>HP&lt;/title>&lt;/head>&lt;body>&lt;p>CUSTOM_IMAGE&lt;/p>&lt;/body>&lt;/html></standardExpertConfiguration>
+        <standardExpertConfiguration>&lt;html>&lt;head>&lt;title>HN&lt;/title>&lt;/head>&lt;body>&lt;p>INNER_ELEMENTS&lt;/p>&lt;/body>&lt;/html></standardExpertConfiguration>
+        <standardExpertConfiguration>&lt;html>&lt;head>&lt;title>HP&lt;/title>&lt;/head>&lt;body>&lt;p>context&lt;/p>&lt;/body>&lt;/html></standardExpertConfiguration>
+        <standardExpertConfiguration>&lt;html>&lt;head>&lt;title>HP&lt;/title>&lt;/head>&lt;body>&lt;p>ownerOfDiagram&lt;/p>&lt;/body>&lt;/html></standardExpertConfiguration>
+        <standardExpertConfiguration>&lt;html>&lt;head>&lt;title>EP&lt;/title>&lt;/head>&lt;body>&lt;p>owner&lt;/p>&lt;/body>&lt;/html></standardExpertConfiguration>
+        <standardExpertConfiguration>&lt;html>&lt;head>&lt;title>EP&lt;/title>&lt;/head>&lt;body>&lt;p>APPLIED_STEREOTYPES&lt;/p>&lt;/body>&lt;/html></standardExpertConfiguration>
+        <standardExpertConfiguration>&lt;html>&lt;head>&lt;title>EP&lt;/title>&lt;/head>&lt;body>&lt;p>TO_DO&lt;/p>&lt;/body>&lt;/html></standardExpertConfiguration>
+        <standardExpertConfiguration>&lt;html>&lt;head>&lt;title>EP&lt;/title>&lt;/head>&lt;body>&lt;p>documentation&lt;/p>&lt;/body>&lt;/html></standardExpertConfiguration>
+      </contents>
+    </eAnnotations>
+    <eAnnotations xmi:id="_SP-KekeEEeWlKfVTs-HO8g" source="MagicDraw">
+      <details xmi:id="_SP-Ke0eEEeWlKfVTs-HO8g" key="md_id" value="_17_0_3beta_8e10289_1348753189272_853760_3005"/>
+    </eAnnotations>
+    <ownedAttribute xmi:id="_17_0_3beta_8e10289_1348753189234_336331_2890" name="Row" visibility="private">
+      <eAnnotations xmi:id="_SOeVokeEEeWlKfVTs-HO8g" source="appliedStereotypes">
+        <contents xmi:type="DSLCustomization_0:DSLCustomization__propertyGroup" xmi:id="_SOeVo0eEEeWlKfVTs-HO8g">
+          <properties>removedRowElements</properties>
+          <properties>rowCollapsedNodes</properties>
+          <properties>rowElementType</properties>
+          <properties>rowHeaderWidth</properties>
+          <properties>rowOwnerDisplayMode</properties>
+          <properties>rowPropertyFilter</properties>
+          <properties>rowScope</properties>
+          <properties>rowSortingMode</properties>
+          <properties>rowTypesIncludeSubtypes</properties>
+        </contents>
+      </eAnnotations>
+      <eAnnotations xmi:id="_SP-KfEeEEeWlKfVTs-HO8g" source="MagicDraw">
+        <details xmi:id="_SP-KfUeEEeWlKfVTs-HO8g" key="md_id" value="_17_0_3beta_8e10289_1348753189234_336331_2890"/>
+      </eAnnotations>
+    </ownedAttribute>
+    <ownedAttribute xmi:id="_17_0_3beta_8e10289_1348753189221_821811_2849" name="Column" visibility="private">
+      <eAnnotations xmi:id="_SOb5YEeEEeWlKfVTs-HO8g" source="appliedStereotypes">
+        <contents xmi:type="DSLCustomization_0:DSLCustomization__propertyGroup" xmi:id="_SOb5YUeEEeWlKfVTs-HO8g">
+          <properties>columnCollapsedNodes</properties>
+          <properties>columnElementType</properties>
+          <properties>columnHeaderHeight</properties>
+          <properties>columnOwnerDisplayMode</properties>
+          <properties>columnPropertyFilter</properties>
+          <properties>columnScope</properties>
+          <properties>columnSortingMode</properties>
+          <properties>columnTextDirection</properties>
+          <properties>removedColumnElements</properties>
+          <properties>columnTypesIncludeSubtypes</properties>
+        </contents>
+      </eAnnotations>
+      <eAnnotations xmi:id="_SP-KfkeEEeWlKfVTs-HO8g" source="MagicDraw">
+        <details xmi:id="_SP-Kf0eEEeWlKfVTs-HO8g" key="md_id" value="_17_0_3beta_8e10289_1348753189221_821811_2849"/>
+      </eAnnotations>
+    </ownedAttribute>
+  </ownedMember>
+  <ownedMember xmi:type="uml:Stereotype" xmi:id="_17_0_3beta_8e10289_1348753189236_873942_2915" name="DependencyMatrix">
+    <eAnnotations xmi:id="_SP-KgEeEEeWlKfVTs-HO8g" source="MagicDraw">
+      <details xmi:id="_SP-KgUeEEeWlKfVTs-HO8g" key="md_id" value="_17_0_3beta_8e10289_1348753189236_873942_2915"/>
+    </eAnnotations>
+    <generalization xmi:id="_17_0_3beta_8e10289_1348753189249_395182_2932" isSubstitutable="true">
+      <eAnnotations xmi:id="_SP-x80eEEeWlKfVTs-HO8g" source="MagicDraw">
+        <details xmi:id="_SP-x9EeEEeWlKfVTs-HO8g" key="md_id" value="_17_0_3beta_8e10289_1348753189249_395182_2932"/>
+      </eAnnotations>
+      <general xmi:type="uml:Stereotype" href="UML_Standard_Profile.MagicDraw_Profile.profile.uml2#_9_0_be00301_1108044721245_236588_411"/>
+    </generalization>
+    <ownedAttribute xmi:id="_17_0_3beta_8e10289_1348753189250_976469_2933" name="columnTextDirection" visibility="private" type="_17_0_3beta_8e10289_1348753189307_91247_3068">
+      <eAnnotations xmi:id="_SP-KgkeEEeWlKfVTs-HO8g" source="MagicDraw">
+        <details xmi:id="_SP-Kg0eEEeWlKfVTs-HO8g" key="md_id" value="_17_0_3beta_8e10289_1348753189250_976469_2933"/>
+      </eAnnotations>
+      <ownedComment xmi:id="_17_0_3beta_8e10289_1348753189304_177075_3056" body="Specifies the text direction of the Matrix column headers." annotatedElement="_17_0_3beta_8e10289_1348753189250_976469_2933">
+        <eAnnotations xmi:id="_SP-KhkeEEeWlKfVTs-HO8g" source="MagicDraw">
+          <details xmi:id="_SP-Kh0eEEeWlKfVTs-HO8g" key="md_id" value="_17_0_3beta_8e10289_1348753189304_177075_3056"/>
+        </eAnnotations>
+      </ownedComment>
+      <upperValue xmi:type="uml:LiteralUnlimitedNatural" xmi:id="_17_0_3beta_8e10289_1348753189293_186838_3043" value="1">
+        <eAnnotations xmi:id="_SP-KiEeEEeWlKfVTs-HO8g" source="MagicDraw">
+          <details xmi:id="_SP-KiUeEEeWlKfVTs-HO8g" key="md_id" value="_17_0_3beta_8e10289_1348753189293_186838_3043"/>
+        </eAnnotations>
+      </upperValue>
+      <lowerValue xmi:type="uml:LiteralInteger" xmi:id="_17_0_3beta_8e10289_1348753189251_37914_2945" value="1">
+        <eAnnotations xmi:id="_SP-KhEeEEeWlKfVTs-HO8g" source="MagicDraw">
+          <details xmi:id="_SP-KhUeEEeWlKfVTs-HO8g" key="md_id" value="_17_0_3beta_8e10289_1348753189251_37914_2945"/>
+        </eAnnotations>
+      </lowerValue>
+      <defaultValue xmi:type="uml:InstanceValue" xmi:id="_17_0_3beta_8e10289_1348753189275_152508_3023" instance="_17_0_3beta_8e10289_1348753189308_943346_3071">
+        <eAnnotations xmi:id="_SP-KikeEEeWlKfVTs-HO8g" source="MagicDraw">
+          <details xmi:id="_SP-Ki0eEEeWlKfVTs-HO8g" key="md_id" value="_17_0_3beta_8e10289_1348753189275_152508_3023"/>
+        </eAnnotations>
+      </defaultValue>
+    </ownedAttribute>
+    <ownedAttribute xmi:id="_17_0_3beta_8e10289_1348753189288_719322_3041" name="columnOwnerDisplayMode" visibility="private" type="_17_0_4beta_8e10289_1358431599968_292291_2980">
+      <eAnnotations xmi:id="_SP-KjEeEEeWlKfVTs-HO8g" source="MagicDraw">
+        <details xmi:id="_SP-KjUeEEeWlKfVTs-HO8g" key="md_id" value="_17_0_3beta_8e10289_1348753189288_719322_3041"/>
+      </eAnnotations>
+      <ownedComment xmi:id="_17_0_3beta_8e10289_1348753189307_975943_3066" body="Select Compact tree mode to show only direct and common element owners in the nested mode. Select Complete tree to show all owners in the nested mode. Select Hidden or Full qualified name to shown a regular elements list." annotatedElement="_17_0_3beta_8e10289_1348753189288_719322_3041">
+        <eAnnotations xmi:id="_SP-KkEeEEeWlKfVTs-HO8g" source="MagicDraw">
+          <details xmi:id="_SP-KkUeEEeWlKfVTs-HO8g" key="md_id" value="_17_0_3beta_8e10289_1348753189307_975943_3066"/>
+        </eAnnotations>
+      </ownedComment>
+      <upperValue xmi:type="uml:LiteralUnlimitedNatural" xmi:id="_17_0_3beta_8e10289_1348753189234_750885_2884" value="1">
+        <eAnnotations xmi:id="_SP-KkkeEEeWlKfVTs-HO8g" source="MagicDraw">
+          <details xmi:id="_SP-Kk0eEEeWlKfVTs-HO8g" key="md_id" value="_17_0_3beta_8e10289_1348753189234_750885_2884"/>
+        </eAnnotations>
+      </upperValue>
+      <lowerValue xmi:type="uml:LiteralInteger" xmi:id="_17_0_3beta_8e10289_1348753189264_611632_2975" value="1">
+        <eAnnotations xmi:id="_SP-KjkeEEeWlKfVTs-HO8g" source="MagicDraw">
+          <details xmi:id="_SP-Kj0eEEeWlKfVTs-HO8g" key="md_id" value="_17_0_3beta_8e10289_1348753189264_611632_2975"/>
+        </eAnnotations>
+      </lowerValue>
+      <defaultValue xmi:type="uml:InstanceValue" xmi:id="_17_0_4beta_8e10289_1358431760721_712682_3106" instance="_17_0_4beta_8e10289_1359443852996_130991_3007">
+        <eAnnotations xmi:id="_SP-KlEeEEeWlKfVTs-HO8g" source="MagicDraw">
+          <details xmi:id="_SP-KlUeEEeWlKfVTs-HO8g" key="md_id" value="_17_0_4beta_8e10289_1358431760721_712682_3106"/>
+        </eAnnotations>
+      </defaultValue>
+    </ownedAttribute>
+    <ownedAttribute xmi:id="_17_0_3beta_8e10289_1348753189308_306094_3073" name="showInnerDependencies" visibility="private">
+      <eAnnotations xmi:id="_SP-KlkeEEeWlKfVTs-HO8g" source="MagicDraw">
+        <details xmi:id="_SP-Kl0eEEeWlKfVTs-HO8g" key="md_id" value="_17_0_3beta_8e10289_1348753189308_306094_3073"/>
+      </eAnnotations>
+      <ownedComment xmi:id="_17_0_3beta_8e10289_1348753189235_840423_2904" body="Set to true to show the number of dependencies in the owner element on cell." annotatedElement="_17_0_3beta_8e10289_1348753189308_306094_3073">
+        <eAnnotations xmi:id="_SP-KmkeEEeWlKfVTs-HO8g" source="MagicDraw">
+          <details xmi:id="_SP-Km0eEEeWlKfVTs-HO8g" key="md_id" value="_17_0_3beta_8e10289_1348753189235_840423_2904"/>
+        </eAnnotations>
+      </ownedComment>
+      <type xmi:type="uml:PrimitiveType" href="pathmap://UML2_LIBRARIES/UML2PrimitiveTypes.library.uml2#_IXfBUK86EdieaYgxtVWN8Q"/>
+      <upperValue xmi:type="uml:LiteralUnlimitedNatural" xmi:id="_17_0_3beta_8e10289_1348753189234_693282_2883" value="1">
+        <eAnnotations xmi:id="_SP-KnEeEEeWlKfVTs-HO8g" source="MagicDraw">
+          <details xmi:id="_SP-KnUeEEeWlKfVTs-HO8g" key="md_id" value="_17_0_3beta_8e10289_1348753189234_693282_2883"/>
+        </eAnnotations>
+      </upperValue>
+      <lowerValue xmi:type="uml:LiteralInteger" xmi:id="_17_0_3beta_8e10289_1348753189249_953212_2929" value="1">
+        <eAnnotations xmi:id="_SP-KmEeEEeWlKfVTs-HO8g" source="MagicDraw">
+          <details xmi:id="_SP-KmUeEEeWlKfVTs-HO8g" key="md_id" value="_17_0_3beta_8e10289_1348753189249_953212_2929"/>
+        </eAnnotations>
+      </lowerValue>
+      <defaultValue xmi:type="uml:LiteralBoolean" xmi:id="_17_0_3beta_8e10289_1348753189306_687498_3060" value="true">
+        <eAnnotations xmi:id="_SP-KnkeEEeWlKfVTs-HO8g" source="MagicDraw">
+          <details xmi:id="_SP-Kn0eEEeWlKfVTs-HO8g" key="md_id" value="_17_0_3beta_8e10289_1348753189306_687498_3060"/>
+        </eAnnotations>
+      </defaultValue>
+    </ownedAttribute>
+    <ownedAttribute xmi:id="_17_0_3beta_8e10289_1348753189316_438832_3087" name="showElements" visibility="private" type="_17_0_3beta_8e10289_1348753189307_866738_3062">
+      <eAnnotations xmi:id="_SP-KoEeEEeWlKfVTs-HO8g" source="MagicDraw">
+        <details xmi:id="_SP-KoUeEEeWlKfVTs-HO8g" key="md_id" value="_17_0_3beta_8e10289_1348753189316_438832_3087"/>
+      </eAnnotations>
+      <ownedComment xmi:id="_17_0_3beta_8e10289_1348753189272_564390_3004" body="Select All to show all elements from the selected scope. Select With relations to show the elements that have dependency criteria. Select Without relations to show the elements that have no dependency criteria." annotatedElement="_17_0_3beta_8e10289_1348753189316_438832_3087">
+        <eAnnotations xmi:id="_SP-KpEeEEeWlKfVTs-HO8g" source="MagicDraw">
+          <details xmi:id="_SP-KpUeEEeWlKfVTs-HO8g" key="md_id" value="_17_0_3beta_8e10289_1348753189272_564390_3004"/>
+        </eAnnotations>
+      </ownedComment>
+      <upperValue xmi:type="uml:LiteralUnlimitedNatural" xmi:id="_17_0_3beta_8e10289_1348753189265_372981_2977" value="1">
+        <eAnnotations xmi:id="_SP-KpkeEEeWlKfVTs-HO8g" source="MagicDraw">
+          <details xmi:id="_SP-Kp0eEEeWlKfVTs-HO8g" key="md_id" value="_17_0_3beta_8e10289_1348753189265_372981_2977"/>
+        </eAnnotations>
+      </upperValue>
+      <lowerValue xmi:type="uml:LiteralInteger" xmi:id="_17_0_3beta_8e10289_1348753189249_76504_2931" value="1">
+        <eAnnotations xmi:id="_SP-KokeEEeWlKfVTs-HO8g" source="MagicDraw">
+          <details xmi:id="_SP-Ko0eEEeWlKfVTs-HO8g" key="md_id" value="_17_0_3beta_8e10289_1348753189249_76504_2931"/>
+        </eAnnotations>
+      </lowerValue>
+      <defaultValue xmi:type="uml:InstanceValue" xmi:id="_17_0_3beta_8e10289_1348753189231_672971_2877" instance="_17_0_3beta_8e10289_1348753189275_708756_3021">
+        <eAnnotations xmi:id="_SP-KqEeEEeWlKfVTs-HO8g" source="MagicDraw">
+          <details xmi:id="_SP-KqUeEEeWlKfVTs-HO8g" key="md_id" value="_17_0_3beta_8e10289_1348753189231_672971_2877"/>
+        </eAnnotations>
+      </defaultValue>
+    </ownedAttribute>
+    <ownedAttribute xmi:id="_17_0_3beta_8e10289_1348753189264_979131_2971" name="columnHeaderHeight" visibility="private">
+      <eAnnotations xmi:id="_SP-KqkeEEeWlKfVTs-HO8g" source="MagicDraw">
+        <details xmi:id="_SP-Kq0eEEeWlKfVTs-HO8g" key="md_id" value="_17_0_3beta_8e10289_1348753189264_979131_2971"/>
+      </eAnnotations>
+      <ownedComment xmi:id="_17_0_3beta_8e10289_1348753189312_928504_3082" body="Specifies the height of the column header in pixels." annotatedElement="_17_0_3beta_8e10289_1348753189264_979131_2971">
+        <eAnnotations xmi:id="_SP-KrkeEEeWlKfVTs-HO8g" source="MagicDraw">
+          <details xmi:id="_SP-Kr0eEEeWlKfVTs-HO8g" key="md_id" value="_17_0_3beta_8e10289_1348753189312_928504_3082"/>
+        </eAnnotations>
+      </ownedComment>
+      <type xmi:type="uml:PrimitiveType" href="pathmap://UML2_LIBRARIES/JavaPrimitiveTypes.library.uml2#_TBlMg686EdieaYgxtVWN8Q"/>
+      <upperValue xmi:type="uml:LiteralUnlimitedNatural" xmi:id="_17_0_3beta_8e10289_1348753189249_920567_2930" value="1">
+        <eAnnotations xmi:id="_SP-KsEeEEeWlKfVTs-HO8g" source="MagicDraw">
+          <details xmi:id="_SP-KsUeEEeWlKfVTs-HO8g" key="md_id" value="_17_0_3beta_8e10289_1348753189249_920567_2930"/>
+        </eAnnotations>
+      </upperValue>
+      <lowerValue xmi:type="uml:LiteralInteger" xmi:id="_17_0_3beta_8e10289_1348753189249_151243_2925" value="1">
+        <eAnnotations xmi:id="_SP-KrEeEEeWlKfVTs-HO8g" source="MagicDraw">
+          <details xmi:id="_SP-KrUeEEeWlKfVTs-HO8g" key="md_id" value="_17_0_3beta_8e10289_1348753189249_151243_2925"/>
+        </eAnnotations>
+      </lowerValue>
+      <defaultValue xmi:type="uml:LiteralInteger" xmi:id="_17_0_3beta_8e10289_1348753189274_783729_3019" value="150">
+        <eAnnotations xmi:id="_SP-KskeEEeWlKfVTs-HO8g" source="MagicDraw">
+          <details xmi:id="_SP-Ks0eEEeWlKfVTs-HO8g" key="md_id" value="_17_0_3beta_8e10289_1348753189274_783729_3019"/>
+        </eAnnotations>
+      </defaultValue>
+    </ownedAttribute>
+    <ownedAttribute xmi:id="_17_0_3beta_8e10289_1348753189264_72200_2968" name="rowHeaderWidth" visibility="private">
+      <eAnnotations xmi:id="_SP-KtEeEEeWlKfVTs-HO8g" source="MagicDraw">
+        <details xmi:id="_SP-KtUeEEeWlKfVTs-HO8g" key="md_id" value="_17_0_3beta_8e10289_1348753189264_72200_2968"/>
+      </eAnnotations>
+      <ownedComment xmi:id="_17_0_4beta_8e10289_1363962482312_139788_3238" body="Specifies the width of the row header in pixels." annotatedElement="_17_0_3beta_8e10289_1348753189264_72200_2968">
+        <eAnnotations xmi:id="_SP-KuEeEEeWlKfVTs-HO8g" source="MagicDraw">
+          <details xmi:id="_SP-KuUeEEeWlKfVTs-HO8g" key="md_id" value="_17_0_4beta_8e10289_1363962482312_139788_3238"/>
+        </eAnnotations>
+      </ownedComment>
+      <type xmi:type="uml:PrimitiveType" href="pathmap://UML2_LIBRARIES/JavaPrimitiveTypes.library.uml2#_TBlMg686EdieaYgxtVWN8Q"/>
+      <upperValue xmi:type="uml:LiteralUnlimitedNatural" xmi:id="_17_0_3beta_8e10289_1348753189259_233848_2955" value="1">
+        <eAnnotations xmi:id="_SP-KukeEEeWlKfVTs-HO8g" source="MagicDraw">
+          <details xmi:id="_SP-Ku0eEEeWlKfVTs-HO8g" key="md_id" value="_17_0_3beta_8e10289_1348753189259_233848_2955"/>
+        </eAnnotations>
+      </upperValue>
+      <lowerValue xmi:type="uml:LiteralInteger" xmi:id="_17_0_3beta_8e10289_1348753189304_501504_3053" value="1">
+        <eAnnotations xmi:id="_SP-KtkeEEeWlKfVTs-HO8g" source="MagicDraw">
+          <details xmi:id="_SP-Kt0eEEeWlKfVTs-HO8g" key="md_id" value="_17_0_3beta_8e10289_1348753189304_501504_3053"/>
+        </eAnnotations>
+      </lowerValue>
+      <defaultValue xmi:type="uml:LiteralInteger" xmi:id="_17_0_3beta_8e10289_1348753189250_970064_2935" value="150">
+        <eAnnotations xmi:id="_SP-KvEeEEeWlKfVTs-HO8g" source="MagicDraw">
+          <details xmi:id="_SP-KvUeEEeWlKfVTs-HO8g" key="md_id" value="_17_0_3beta_8e10289_1348753189250_970064_2935"/>
+        </eAnnotations>
+      </defaultValue>
+    </ownedAttribute>
+    <ownedAttribute xmi:id="_17_0_3beta_8e10289_1348753189283_64144_3030" name="dependencyCriteria" visibility="private" isOrdered="true">
+      <eAnnotations xmi:id="_SP-KvkeEEeWlKfVTs-HO8g" source="MagicDraw">
+        <details xmi:id="_SP-Kv0eEEeWlKfVTs-HO8g" key="md_id" value="_17_0_3beta_8e10289_1348753189283_64144_3030"/>
+      </eAnnotations>
+      <ownedComment xmi:id="_17_0_4beta_8f90291_1361805198540_114997_3246" body="Select an expression type and specify the expression to be used as the relation criteria." annotatedElement="_17_0_3beta_8e10289_1348753189283_64144_3030">
+        <eAnnotations xmi:id="_SP-KwkeEEeWlKfVTs-HO8g" source="MagicDraw">
+          <details xmi:id="_SP-Kw0eEEeWlKfVTs-HO8g" key="md_id" value="_17_0_4beta_8f90291_1361805198540_114997_3246"/>
+        </eAnnotations>
+      </ownedComment>
+      <type xmi:type="uml:PrimitiveType" href="pathmap://UML2_LIBRARIES/UML2PrimitiveTypes.library.uml2#_IXlH8a86EdieaYgxtVWN8Q"/>
+      <upperValue xmi:type="uml:LiteralUnlimitedNatural" xmi:id="_17_0_3beta_8e10289_1348753189327_268378_3112" value="-1">
+        <eAnnotations xmi:id="_SP-KxEeEEeWlKfVTs-HO8g" source="MagicDraw">
+          <details xmi:id="_SP-KxUeEEeWlKfVTs-HO8g" key="md_id" value="_17_0_3beta_8e10289_1348753189327_268378_3112"/>
+        </eAnnotations>
+      </upperValue>
+      <lowerValue xmi:type="uml:LiteralInteger" xmi:id="_17_0_3beta_8e10289_1348753189226_331253_2865">
+        <eAnnotations xmi:id="_SP-KwEeEEeWlKfVTs-HO8g" source="MagicDraw">
+          <details xmi:id="_SP-KwUeEEeWlKfVTs-HO8g" key="md_id" value="_17_0_3beta_8e10289_1348753189226_331253_2865"/>
+        </eAnnotations>
+      </lowerValue>
+    </ownedAttribute>
+    <ownedAttribute xmi:id="_17_0_4beta_8e10289_1354780972723_850504_2972" name="base_Diagram" visibility="private" association="_17_0_4beta_8e10289_1354780972723_880239_2971">
+      <eAnnotations xmi:id="_SP-KxkeEEeWlKfVTs-HO8g" source="MagicDraw">
+        <details xmi:id="_SP-Kx0eEEeWlKfVTs-HO8g" key="md_id" value="_17_0_4beta_8e10289_1354780972723_850504_2972"/>
+      </eAnnotations>
+      <type xmi:type="uml:Class" href="pathmap://UML2_METAMODELS/UML2.metamodel.uml2#_m8qbC686EdiEh75YJ_3n8g"/>
+    </ownedAttribute>
+    <ownedAttribute xmi:id="_17_0_4beta_8e10289_1359443478322_371106_3007" name="columnCollapsedNodes" visibility="private">
+      <eAnnotations xmi:id="_SP-KyEeEEeWlKfVTs-HO8g" source="MagicDraw">
+        <details xmi:id="_SP-KyUeEEeWlKfVTs-HO8g" key="md_id" value="_17_0_4beta_8e10289_1359443478322_371106_3007"/>
+      </eAnnotations>
+      <ownedComment xmi:id="_17_0_4beta_8e10289_1363962552457_806400_3248" body="Specifies the collapsed nodes of the Dependency Matrix." annotatedElement="_17_0_4beta_8e10289_1359443478322_371106_3007">
+        <eAnnotations xmi:id="_SP-KzEeEEeWlKfVTs-HO8g" source="MagicDraw">
+          <details xmi:id="_SP-KzUeEEeWlKfVTs-HO8g" key="md_id" value="_17_0_4beta_8e10289_1363962552457_806400_3248"/>
+        </eAnnotations>
+      </ownedComment>
+      <type xmi:type="uml:PrimitiveType" href="pathmap://UML2_LIBRARIES/UML2PrimitiveTypes.library.uml2#_IXlH8a86EdieaYgxtVWN8Q"/>
+      <upperValue xmi:type="uml:LiteralUnlimitedNatural" xmi:id="_17_0_4beta_8e10289_1359443701459_800896_3013" value="-1">
+        <eAnnotations xmi:id="_SP-KzkeEEeWlKfVTs-HO8g" source="MagicDraw">
+          <details xmi:id="_SP-Kz0eEEeWlKfVTs-HO8g" key="md_id" value="_17_0_4beta_8e10289_1359443701459_800896_3013"/>
+        </eAnnotations>
+      </upperValue>
+      <lowerValue xmi:type="uml:LiteralInteger" xmi:id="_17_0_4beta_8e10289_1359443701459_144012_3012">
+        <eAnnotations xmi:id="_SP-KykeEEeWlKfVTs-HO8g" source="MagicDraw">
+          <details xmi:id="_SP-Ky0eEEeWlKfVTs-HO8g" key="md_id" value="_17_0_4beta_8e10289_1359443701459_144012_3012"/>
+        </eAnnotations>
+      </lowerValue>
+    </ownedAttribute>
+    <ownedAttribute xmi:id="_17_0_4beta_8e10289_1359443708558_424258_3014" name="rowCollapsedNodes" visibility="private">
+      <eAnnotations xmi:id="_SP-K0EeEEeWlKfVTs-HO8g" source="MagicDraw">
+        <details xmi:id="_SP-K0UeEEeWlKfVTs-HO8g" key="md_id" value="_17_0_4beta_8e10289_1359443708558_424258_3014"/>
+      </eAnnotations>
+      <ownedComment xmi:id="_17_0_4beta_8e10289_1363962545353_166867_3245" body="Specifies the collapsed nodes of the Dependency Matrix." annotatedElement="_17_0_4beta_8e10289_1359443708558_424258_3014">
+        <eAnnotations xmi:id="_SP-K1EeEEeWlKfVTs-HO8g" source="MagicDraw">
+          <details xmi:id="_SP-K1UeEEeWlKfVTs-HO8g" key="md_id" value="_17_0_4beta_8e10289_1363962545353_166867_3245"/>
+        </eAnnotations>
+      </ownedComment>
+      <type xmi:type="uml:PrimitiveType" href="pathmap://UML2_LIBRARIES/UML2PrimitiveTypes.library.uml2#_IXlH8a86EdieaYgxtVWN8Q"/>
+      <upperValue xmi:type="uml:LiteralUnlimitedNatural" xmi:id="_17_0_4beta_8e10289_1359443724641_101482_3017" value="-1">
+        <eAnnotations xmi:id="_SP-K1keEEeWlKfVTs-HO8g" source="MagicDraw">
+          <details xmi:id="_SP-K10eEEeWlKfVTs-HO8g" key="md_id" value="_17_0_4beta_8e10289_1359443724641_101482_3017"/>
+        </eAnnotations>
+      </upperValue>
+      <lowerValue xmi:type="uml:LiteralInteger" xmi:id="_17_0_4beta_8e10289_1359443724641_127436_3016">
+        <eAnnotations xmi:id="_SP-K0keEEeWlKfVTs-HO8g" source="MagicDraw">
+          <details xmi:id="_SP-K00eEEeWlKfVTs-HO8g" key="md_id" value="_17_0_4beta_8e10289_1359443724641_127436_3016"/>
+        </eAnnotations>
+      </lowerValue>
+    </ownedAttribute>
+    <ownedAttribute xmi:id="_17_0_4beta_8ca0285_1361197666671_94490_3026" name="rowOwnerDisplayMode" visibility="private" type="_17_0_4beta_8e10289_1358431599968_292291_2980">
+      <eAnnotations xmi:id="_SP-K2EeEEeWlKfVTs-HO8g" source="MagicDraw">
+        <details xmi:id="_SP-K2UeEEeWlKfVTs-HO8g" key="md_id" value="_17_0_4beta_8ca0285_1361197666671_94490_3026"/>
+      </eAnnotations>
+      <ownedComment xmi:id="_17_0_4beta_8ca0285_1361197666674_891254_3028" body="Select Compact tree mode to show only direct and common element owners in the nested mode. Select Complete tree to show all owners in the nested mode. Select Hidden or Full qualified name to shown a regular elements list." annotatedElement="_17_0_4beta_8ca0285_1361197666671_94490_3026">
+        <eAnnotations xmi:id="_SP-K3EeEEeWlKfVTs-HO8g" source="MagicDraw">
+          <details xmi:id="_SP-K3UeEEeWlKfVTs-HO8g" key="md_id" value="_17_0_4beta_8ca0285_1361197666674_891254_3028"/>
+        </eAnnotations>
+      </ownedComment>
+      <upperValue xmi:type="uml:LiteralUnlimitedNatural" xmi:id="_17_0_4beta_8ca0285_1361197666673_726558_3027" value="1">
+        <eAnnotations xmi:id="_SP-K3keEEeWlKfVTs-HO8g" source="MagicDraw">
+          <details xmi:id="_SP-K30eEEeWlKfVTs-HO8g" key="md_id" value="_17_0_4beta_8ca0285_1361197666673_726558_3027"/>
+        </eAnnotations>
+      </upperValue>
+      <lowerValue xmi:type="uml:LiteralInteger" xmi:id="_17_0_4beta_8ca0285_1361197666674_805494_3029" value="1">
+        <eAnnotations xmi:id="_SP-K2keEEeWlKfVTs-HO8g" source="MagicDraw">
+          <details xmi:id="_SP-K20eEEeWlKfVTs-HO8g" key="md_id" value="_17_0_4beta_8ca0285_1361197666674_805494_3029"/>
+        </eAnnotations>
+      </lowerValue>
+      <defaultValue xmi:type="uml:InstanceValue" xmi:id="_17_0_4beta_8ca0285_1361197666675_347162_3030" instance="_17_0_4beta_8e10289_1359443852996_130991_3007">
+        <eAnnotations xmi:id="_SP-K4EeEEeWlKfVTs-HO8g" source="MagicDraw">
+          <details xmi:id="_SP-K4UeEEeWlKfVTs-HO8g" key="md_id" value="_17_0_4beta_8ca0285_1361197666675_347162_3030"/>
+        </eAnnotations>
+      </defaultValue>
+    </ownedAttribute>
+    <ownedAttribute xmi:id="_17_0_4beta_8f90291_1361803516746_297162_3018" name="direction" visibility="private" type="_17_0_3beta_8e10289_1348753189274_953899_3014">
+      <eAnnotations xmi:id="_SP-K4keEEeWlKfVTs-HO8g" source="MagicDraw">
+        <details xmi:id="_SP-xgEeEEeWlKfVTs-HO8g" key="md_id" value="_17_0_4beta_8f90291_1361803516746_297162_3018"/>
+      </eAnnotations>
+      <ownedComment xmi:id="_17_0_4beta_8f90291_1361803825401_322284_3032" body="Select Row to column or Column to row to filter the displayed dependencies by direction. Select Both to show all dependencies." annotatedElement="_17_0_4beta_8f90291_1361803516746_297162_3018">
+        <eAnnotations xmi:id="_SP-xg0eEEeWlKfVTs-HO8g" source="MagicDraw">
+          <details xmi:id="_SP-xhEeEEeWlKfVTs-HO8g" key="md_id" value="_17_0_4beta_8f90291_1361803825401_322284_3032"/>
+        </eAnnotations>
+      </ownedComment>
+      <upperValue xmi:type="uml:LiteralUnlimitedNatural" xmi:id="_17_0_4beta_8f90291_1361803819211_792533_3030" value="1">
+        <eAnnotations xmi:id="_SP-xhUeEEeWlKfVTs-HO8g" source="MagicDraw">
+          <details xmi:id="_SP-xhkeEEeWlKfVTs-HO8g" key="md_id" value="_17_0_4beta_8f90291_1361803819211_792533_3030"/>
+        </eAnnotations>
+      </upperValue>
+      <lowerValue xmi:type="uml:LiteralInteger" xmi:id="_17_0_4beta_8f90291_1361803819211_103865_3029" value="1">
+        <eAnnotations xmi:id="_SP-xgUeEEeWlKfVTs-HO8g" source="MagicDraw">
+          <details xmi:id="_SP-xgkeEEeWlKfVTs-HO8g" key="md_id" value="_17_0_4beta_8f90291_1361803819211_103865_3029"/>
+        </eAnnotations>
+      </lowerValue>
+      <defaultValue xmi:type="uml:InstanceValue" xmi:id="_17_0_4beta_8f90291_1361810441821_81698_3061" instance="_17_0_3beta_8e10289_1348753189319_309731_3088">
+        <eAnnotations xmi:id="_SP-xh0eEEeWlKfVTs-HO8g" source="MagicDraw">
+          <details xmi:id="_SP-xiEeEEeWlKfVTs-HO8g" key="md_id" value="_17_0_4beta_8f90291_1361810441821_81698_3061"/>
+        </eAnnotations>
+      </defaultValue>
+    </ownedAttribute>
+    <ownedAttribute xmi:id="_17_0_4beta_8f90291_1361805357951_82494_3264" name="suppressCriteriaArea" visibility="private">
+      <eAnnotations xmi:id="_SP-xiUeEEeWlKfVTs-HO8g" source="MagicDraw">
+        <details xmi:id="_SP-xikeEEeWlKfVTs-HO8g" key="md_id" value="_17_0_4beta_8f90291_1361805357951_82494_3264"/>
+      </eAnnotations>
+      <ownedComment xmi:id="_17_0_4beta_8f90291_1361805396930_975316_3273" body="Set to false to show the Criteria area." annotatedElement="_17_0_4beta_8f90291_1361805357951_82494_3264">
+        <eAnnotations xmi:id="_SP-xjUeEEeWlKfVTs-HO8g" source="MagicDraw">
+          <details xmi:id="_SP-xjkeEEeWlKfVTs-HO8g" key="md_id" value="_17_0_4beta_8f90291_1361805396930_975316_3273"/>
+        </eAnnotations>
+      </ownedComment>
+      <type xmi:type="uml:PrimitiveType" href="pathmap://UML2_LIBRARIES/UML2PrimitiveTypes.library.uml2#_IXfBUK86EdieaYgxtVWN8Q"/>
+      <upperValue xmi:type="uml:LiteralUnlimitedNatural" xmi:id="_17_0_4beta_8f90291_1361805402360_214009_3279" value="1">
+        <eAnnotations xmi:id="_SP-xj0eEEeWlKfVTs-HO8g" source="MagicDraw">
+          <details xmi:id="_SP-xkEeEEeWlKfVTs-HO8g" key="md_id" value="_17_0_4beta_8f90291_1361805402360_214009_3279"/>
+        </eAnnotations>
+      </upperValue>
+      <lowerValue xmi:type="uml:LiteralInteger" xmi:id="_17_0_4beta_8f90291_1361805402360_234302_3278" value="1">
+        <eAnnotations xmi:id="_SP-xi0eEEeWlKfVTs-HO8g" source="MagicDraw">
+          <details xmi:id="_SP-xjEeEEeWlKfVTs-HO8g" key="md_id" value="_17_0_4beta_8f90291_1361805402360_234302_3278"/>
+        </eAnnotations>
+      </lowerValue>
+      <defaultValue xmi:type="uml:LiteralBoolean" xmi:id="_17_0_4beta_8f90291_1361805373593_270236_3270">
+        <eAnnotations xmi:id="_SP-xkUeEEeWlKfVTs-HO8g" source="MagicDraw">
+          <details xmi:id="_SP-xkkeEEeWlKfVTs-HO8g" key="md_id" value="_17_0_4beta_8f90291_1361805373593_270236_3270"/>
+        </eAnnotations>
+      </defaultValue>
+    </ownedAttribute>
+    <ownedAttribute xmi:id="_17_0_4beta_8f90291_1361805429858_801243_3284" name="descriptionArea" visibility="private">
+      <eAnnotations xmi:id="_SP-xk0eEEeWlKfVTs-HO8g" source="MagicDraw">
+        <details xmi:id="_SP-xlEeEEeWlKfVTs-HO8g" key="md_id" value="_17_0_4beta_8f90291_1361805429858_801243_3284"/>
+      </eAnnotations>
+      <ownedComment xmi:id="_17_0_4beta_8f90291_1361805635417_718870_3311" body="Specify the description of the Dependency Matrix." annotatedElement="_17_0_4beta_8f90291_1361805429858_801243_3284">
+        <eAnnotations xmi:id="_SP-xl0eEEeWlKfVTs-HO8g" source="MagicDraw">
+          <details xmi:id="_SP-xmEeEEeWlKfVTs-HO8g" key="md_id" value="_17_0_4beta_8f90291_1361805635417_718870_3311"/>
+        </eAnnotations>
+      </ownedComment>
+      <type xmi:type="uml:PrimitiveType" href="pathmap://UML2_LIBRARIES/UML2PrimitiveTypes.library.uml2#_IXlH8a86EdieaYgxtVWN8Q"/>
+      <upperValue xmi:type="uml:LiteralUnlimitedNatural" xmi:id="_17_0_4beta_8f90291_1361805471412_81738_3298" value="1">
+        <eAnnotations xmi:id="_SP-xmUeEEeWlKfVTs-HO8g" source="MagicDraw">
+          <details xmi:id="_SP-xmkeEEeWlKfVTs-HO8g" key="md_id" value="_17_0_4beta_8f90291_1361805471412_81738_3298"/>
+        </eAnnotations>
+      </upperValue>
+      <lowerValue xmi:type="uml:LiteralInteger" xmi:id="_17_0_4beta_8f90291_1361805471412_20598_3297">
+        <eAnnotations xmi:id="_SP-xlUeEEeWlKfVTs-HO8g" source="MagicDraw">
+          <details xmi:id="_SP-xlkeEEeWlKfVTs-HO8g" key="md_id" value="_17_0_4beta_8f90291_1361805471412_20598_3297"/>
+        </eAnnotations>
+      </lowerValue>
+      <defaultValue xmi:type="uml:LiteralString" xmi:id="_17_0_4beta_8f90291_1361805454580_328022_3294">
+        <eAnnotations xmi:id="_SP-xm0eEEeWlKfVTs-HO8g" source="MagicDraw">
+          <details xmi:id="_SP-xnEeEEeWlKfVTs-HO8g" key="md_id" value="_17_0_4beta_8f90291_1361805454580_328022_3294"/>
+        </eAnnotations>
+      </defaultValue>
+    </ownedAttribute>
+    <ownedAttribute xmi:id="_17_0_4beta_8f90291_1361805612723_667253_3304" name="hideTypes" visibility="private">
+      <eAnnotations xmi:id="_SP-xnUeEEeWlKfVTs-HO8g" source="MagicDraw">
+        <details xmi:id="_SP-xnkeEEeWlKfVTs-HO8g" key="md_id" value="_17_0_4beta_8f90291_1361805612723_667253_3304"/>
+      </eAnnotations>
+      <ownedComment xmi:id="_17_0_4beta_8f90291_1361805674041_560126_3323" body="Set to false to show the types filter." annotatedElement="_17_0_4beta_8f90291_1361805612723_667253_3304">
+        <eAnnotations xmi:id="_SP-xoUeEEeWlKfVTs-HO8g" source="MagicDraw">
+          <details xmi:id="_SP-xokeEEeWlKfVTs-HO8g" key="md_id" value="_17_0_4beta_8f90291_1361805674041_560126_3323"/>
+        </eAnnotations>
+      </ownedComment>
+      <type xmi:type="uml:PrimitiveType" href="pathmap://UML2_LIBRARIES/UML2PrimitiveTypes.library.uml2#_IXfBUK86EdieaYgxtVWN8Q"/>
+      <upperValue xmi:type="uml:LiteralUnlimitedNatural" xmi:id="_17_0_4beta_8f90291_1361805658430_291982_3321" value="1">
+        <eAnnotations xmi:id="_SP-xo0eEEeWlKfVTs-HO8g" source="MagicDraw">
+          <details xmi:id="_SP-xpEeEEeWlKfVTs-HO8g" key="md_id" value="_17_0_4beta_8f90291_1361805658430_291982_3321"/>
+        </eAnnotations>
+      </upperValue>
+      <lowerValue xmi:type="uml:LiteralInteger" xmi:id="_17_0_4beta_8f90291_1361805658430_523983_3320" value="1">
+        <eAnnotations xmi:id="_SP-xn0eEEeWlKfVTs-HO8g" source="MagicDraw">
+          <details xmi:id="_SP-xoEeEEeWlKfVTs-HO8g" key="md_id" value="_17_0_4beta_8f90291_1361805658430_523983_3320"/>
+        </eAnnotations>
+      </lowerValue>
+      <defaultValue xmi:type="uml:LiteralBoolean" xmi:id="_17_0_4beta_8f90291_1361805654500_256925_3317">
+        <eAnnotations xmi:id="_SP-xpUeEEeWlKfVTs-HO8g" source="MagicDraw">
+          <details xmi:id="_SP-xpkeEEeWlKfVTs-HO8g" key="md_id" value="_17_0_4beta_8f90291_1361805654500_256925_3317"/>
+        </eAnnotations>
+      </defaultValue>
+    </ownedAttribute>
+    <ownedAttribute xmi:id="_17_0_4beta_8f90291_1361805739775_551814_3329" name="hideScope" visibility="private">
+      <eAnnotations xmi:id="_SP-xp0eEEeWlKfVTs-HO8g" source="MagicDraw">
+        <details xmi:id="_SP-xqEeEEeWlKfVTs-HO8g" key="md_id" value="_17_0_4beta_8f90291_1361805739775_551814_3329"/>
+      </eAnnotations>
+      <ownedComment xmi:id="_17_0_4beta_8f90291_1361805840041_376892_3361" body="Set to false to show the scope filter." annotatedElement="_17_0_4beta_8f90291_1361805739775_551814_3329">
+        <eAnnotations xmi:id="_SP-xq0eEEeWlKfVTs-HO8g" source="MagicDraw">
+          <details xmi:id="_SP-xrEeEEeWlKfVTs-HO8g" key="md_id" value="_17_0_4beta_8f90291_1361805840041_376892_3361"/>
+        </eAnnotations>
+      </ownedComment>
+      <type xmi:type="uml:PrimitiveType" href="pathmap://UML2_LIBRARIES/UML2PrimitiveTypes.library.uml2#_IXfBUK86EdieaYgxtVWN8Q"/>
+      <upperValue xmi:type="uml:LiteralUnlimitedNatural" xmi:id="_17_0_4beta_8f90291_1361805759677_522087_3340" value="1">
+        <eAnnotations xmi:id="_SP-xrUeEEeWlKfVTs-HO8g" source="MagicDraw">
+          <details xmi:id="_SP-xrkeEEeWlKfVTs-HO8g" key="md_id" value="_17_0_4beta_8f90291_1361805759677_522087_3340"/>
+        </eAnnotations>
+      </upperValue>
+      <lowerValue xmi:type="uml:LiteralInteger" xmi:id="_17_0_4beta_8f90291_1361805759677_339898_3339" value="1">
+        <eAnnotations xmi:id="_SP-xqUeEEeWlKfVTs-HO8g" source="MagicDraw">
+          <details xmi:id="_SP-xqkeEEeWlKfVTs-HO8g" key="md_id" value="_17_0_4beta_8f90291_1361805759677_339898_3339"/>
+        </eAnnotations>
+      </lowerValue>
+      <defaultValue xmi:type="uml:LiteralBoolean" xmi:id="_17_0_4beta_8f90291_1361805753647_713157_3334">
+        <eAnnotations xmi:id="_SP-xr0eEEeWlKfVTs-HO8g" source="MagicDraw">
+          <details xmi:id="_SP-xsEeEEeWlKfVTs-HO8g" key="md_id" value="_17_0_4beta_8f90291_1361805753647_713157_3334"/>
+        </eAnnotations>
+      </defaultValue>
+    </ownedAttribute>
+    <ownedAttribute xmi:id="_17_0_4beta_8f90291_1361805778266_117541_3346" name="hideDependencyCriteria" visibility="private">
+      <eAnnotations xmi:id="_SP-xsUeEEeWlKfVTs-HO8g" source="MagicDraw">
+        <details xmi:id="_SP-xskeEEeWlKfVTs-HO8g" key="md_id" value="_17_0_4beta_8f90291_1361805778266_117541_3346"/>
+      </eAnnotations>
+      <ownedComment xmi:id="_17_0_4beta_8f90291_1361805819008_923261_3359" body="Set to false to show the Dependency Criteria filter." annotatedElement="_17_0_4beta_8f90291_1361805778266_117541_3346">
+        <eAnnotations xmi:id="_SP-xtUeEEeWlKfVTs-HO8g" source="MagicDraw">
+          <details xmi:id="_SP-xtkeEEeWlKfVTs-HO8g" key="md_id" value="_17_0_4beta_8f90291_1361805819008_923261_3359"/>
+        </eAnnotations>
+      </ownedComment>
+      <type xmi:type="uml:PrimitiveType" href="pathmap://UML2_LIBRARIES/UML2PrimitiveTypes.library.uml2#_IXfBUK86EdieaYgxtVWN8Q"/>
+      <upperValue xmi:type="uml:LiteralUnlimitedNatural" xmi:id="_17_0_4beta_8f90291_1361805801161_669482_3357" value="1">
+        <eAnnotations xmi:id="_SP-xt0eEEeWlKfVTs-HO8g" source="MagicDraw">
+          <details xmi:id="_SP-xuEeEEeWlKfVTs-HO8g" key="md_id" value="_17_0_4beta_8f90291_1361805801161_669482_3357"/>
+        </eAnnotations>
+      </upperValue>
+      <lowerValue xmi:type="uml:LiteralInteger" xmi:id="_17_0_4beta_8f90291_1361805801161_869687_3356" value="1">
+        <eAnnotations xmi:id="_SP-xs0eEEeWlKfVTs-HO8g" source="MagicDraw">
+          <details xmi:id="_SP-xtEeEEeWlKfVTs-HO8g" key="md_id" value="_17_0_4beta_8f90291_1361805801161_869687_3356"/>
+        </eAnnotations>
+      </lowerValue>
+      <defaultValue xmi:type="uml:LiteralBoolean" xmi:id="_17_0_4beta_8f90291_1361805794520_698480_3351">
+        <eAnnotations xmi:id="_SP-xuUeEEeWlKfVTs-HO8g" source="MagicDraw">
+          <details xmi:id="_SP-xukeEEeWlKfVTs-HO8g" key="md_id" value="_17_0_4beta_8f90291_1361805794520_698480_3351"/>
+        </eAnnotations>
+      </defaultValue>
+    </ownedAttribute>
+    <ownedAttribute xmi:id="_17_0_4beta_8f90291_1361806174665_674570_3425" name="rowSortingMode" visibility="private" type="_17_0_4beta_8f90291_1361806196409_193631_3432">
+      <eAnnotations xmi:id="_SP-xu0eEEeWlKfVTs-HO8g" source="MagicDraw">
+        <details xmi:id="_SP-xvEeEEeWlKfVTs-HO8g" key="md_id" value="_17_0_4beta_8f90291_1361806174665_674570_3425"/>
+      </eAnnotations>
+      <ownedComment xmi:id="_17_0_4beta_8f90291_1361806823460_137633_3498" body="Select Ascending or Descending to sort elements alphabetically. Select Custom sorting mode to use your own order." annotatedElement="_17_0_4beta_8f90291_1361806174665_674570_3425">
+        <eAnnotations xmi:id="_SP-xv0eEEeWlKfVTs-HO8g" source="MagicDraw">
+          <details xmi:id="_SP-xwEeEEeWlKfVTs-HO8g" key="md_id" value="_17_0_4beta_8f90291_1361806823460_137633_3498"/>
+        </eAnnotations>
+      </ownedComment>
+      <upperValue xmi:type="uml:LiteralUnlimitedNatural" xmi:id="_17_0_4beta_8f90291_1361806813587_595703_3496" value="1">
+        <eAnnotations xmi:id="_SP-xwUeEEeWlKfVTs-HO8g" source="MagicDraw">
+          <details xmi:id="_SP-xwkeEEeWlKfVTs-HO8g" key="md_id" value="_17_0_4beta_8f90291_1361806813587_595703_3496"/>
+        </eAnnotations>
+      </upperValue>
+      <lowerValue xmi:type="uml:LiteralInteger" xmi:id="_17_0_4beta_8f90291_1361806813587_581852_3495" value="1">
+        <eAnnotations xmi:id="_SP-xvUeEEeWlKfVTs-HO8g" source="MagicDraw">
+          <details xmi:id="_SP-xvkeEEeWlKfVTs-HO8g" key="md_id" value="_17_0_4beta_8f90291_1361806813587_581852_3495"/>
+        </eAnnotations>
+      </lowerValue>
+      <defaultValue xmi:type="uml:InstanceValue" xmi:id="_17_0_4beta_8f90291_1361806811667_789803_3493" instance="_17_0_4beta_8f90291_1361806210454_792762_3437">
+        <eAnnotations xmi:id="_SP-xw0eEEeWlKfVTs-HO8g" source="MagicDraw">
+          <details xmi:id="_SP-xxEeEEeWlKfVTs-HO8g" key="md_id" value="_17_0_4beta_8f90291_1361806811667_789803_3493"/>
+        </eAnnotations>
+      </defaultValue>
+    </ownedAttribute>
+    <ownedAttribute xmi:id="_17_0_4beta_8f90291_1361806780185_829302_3479" name="columnSortingMode" visibility="private" type="_17_0_4beta_8f90291_1361806196409_193631_3432">
+      <eAnnotations xmi:id="_SP-xxUeEEeWlKfVTs-HO8g" source="MagicDraw">
+        <details xmi:id="_SP-xxkeEEeWlKfVTs-HO8g" key="md_id" value="_17_0_4beta_8f90291_1361806780185_829302_3479"/>
+      </eAnnotations>
+      <ownedComment xmi:id="_17_0_4beta_8f90291_1361806825170_676257_3500" body="Select Ascending or Descending to sort elements alphabetically. Select Custom sorting mode to use your own order." annotatedElement="_17_0_4beta_8f90291_1361806780185_829302_3479">
+        <eAnnotations xmi:id="_SP-xyUeEEeWlKfVTs-HO8g" source="MagicDraw">
+          <details xmi:id="_SP-xykeEEeWlKfVTs-HO8g" key="md_id" value="_17_0_4beta_8f90291_1361806825170_676257_3500"/>
+        </eAnnotations>
+      </ownedComment>
+      <upperValue xmi:type="uml:LiteralUnlimitedNatural" xmi:id="_17_0_4beta_8f90291_1361806802669_881630_3489" value="1">
+        <eAnnotations xmi:id="_SP-xy0eEEeWlKfVTs-HO8g" source="MagicDraw">
+          <details xmi:id="_SP-xzEeEEeWlKfVTs-HO8g" key="md_id" value="_17_0_4beta_8f90291_1361806802669_881630_3489"/>
+        </eAnnotations>
+      </upperValue>
+      <lowerValue xmi:type="uml:LiteralInteger" xmi:id="_17_0_4beta_8f90291_1361806802669_543300_3488" value="1">
+        <eAnnotations xmi:id="_SP-xx0eEEeWlKfVTs-HO8g" source="MagicDraw">
+          <details xmi:id="_SP-xyEeEEeWlKfVTs-HO8g" key="md_id" value="_17_0_4beta_8f90291_1361806802669_543300_3488"/>
+        </eAnnotations>
+      </lowerValue>
+      <defaultValue xmi:type="uml:InstanceValue" xmi:id="_17_0_4beta_8f90291_1361806798916_556410_3486" instance="_17_0_4beta_8f90291_1361806210454_792762_3437">
+        <eAnnotations xmi:id="_SP-xzUeEEeWlKfVTs-HO8g" source="MagicDraw">
+          <details xmi:id="_SP-xzkeEEeWlKfVTs-HO8g" key="md_id" value="_17_0_4beta_8f90291_1361806798916_556410_3486"/>
+        </eAnnotations>
+      </defaultValue>
+    </ownedAttribute>
+    <ownedAttribute xmi:id="_17_0_4beta_8e10289_1361896019117_533508_3014" name="readOnly" visibility="private" isUnique="false">
+      <eAnnotations xmi:id="_SP-xz0eEEeWlKfVTs-HO8g" source="MagicDraw">
+        <details xmi:id="_SP-x0EeEEeWlKfVTs-HO8g" key="md_id" value="_17_0_4beta_8e10289_1361896019117_533508_3014"/>
+      </eAnnotations>
+      <ownedComment xmi:id="_17_0_4beta_8e10289_1363962600570_794816_3251" body="Set to true to treat Dependency Matrix cells as non editable." annotatedElement="_17_0_4beta_8e10289_1361896019117_533508_3014">
+        <eAnnotations xmi:id="_SP-x00eEEeWlKfVTs-HO8g" source="MagicDraw">
+          <details xmi:id="_SP-x1EeEEeWlKfVTs-HO8g" key="md_id" value="_17_0_4beta_8e10289_1363962600570_794816_3251"/>
+        </eAnnotations>
+      </ownedComment>
+      <type xmi:type="uml:PrimitiveType" href="pathmap://UML2_LIBRARIES/UML2PrimitiveTypes.library.uml2#_IXfBUK86EdieaYgxtVWN8Q"/>
+      <upperValue xmi:type="uml:LiteralUnlimitedNatural" xmi:id="_17_0_4beta_8e10289_1361896090770_653837_3034" value="1">
+        <eAnnotations xmi:id="_SP-x1UeEEeWlKfVTs-HO8g" source="MagicDraw">
+          <details xmi:id="_SP-x1keEEeWlKfVTs-HO8g" key="md_id" value="_17_0_4beta_8e10289_1361896090770_653837_3034"/>
+        </eAnnotations>
+      </upperValue>
+      <lowerValue xmi:type="uml:LiteralInteger" xmi:id="_17_0_4beta_8e10289_1361896090770_820181_3033" value="1">
+        <eAnnotations xmi:id="_SP-x0UeEEeWlKfVTs-HO8g" source="MagicDraw">
+          <details xmi:id="_SP-x0keEEeWlKfVTs-HO8g" key="md_id" value="_17_0_4beta_8e10289_1361896090770_820181_3033"/>
+        </eAnnotations>
+      </lowerValue>
+      <defaultValue xmi:type="uml:LiteralBoolean" xmi:id="_17_0_4beta_8e10289_1361896060483_35896_3028">
+        <eAnnotations xmi:id="_SP-x10eEEeWlKfVTs-HO8g" source="MagicDraw">
+          <details xmi:id="_SP-x2EeEEeWlKfVTs-HO8g" key="md_id" value="_17_0_4beta_8e10289_1361896060483_35896_3028"/>
+        </eAnnotations>
+      </defaultValue>
+    </ownedAttribute>
+    <ownedAttribute xmi:id="_17_0_4beta_8e10289_1362067034050_524960_3347" name="takeWholeModelAsScope" visibility="private">
+      <eAnnotations xmi:id="_SP-x2UeEEeWlKfVTs-HO8g" source="MagicDraw">
+        <details xmi:id="_SP-x2keEEeWlKfVTs-HO8g" key="md_id" value="_17_0_4beta_8e10289_1362067034050_524960_3347"/>
+      </eAnnotations>
+      <ownedComment xmi:id="_17_0_4beta_8e10289_1362067076944_99199_3359" body="Set to true to take whole model as default scope." annotatedElement="_17_0_4beta_8e10289_1362067034050_524960_3347">
+        <eAnnotations xmi:id="_SP-x3UeEEeWlKfVTs-HO8g" source="MagicDraw">
+          <details xmi:id="_SP-x3keEEeWlKfVTs-HO8g" key="md_id" value="_17_0_4beta_8e10289_1362067076944_99199_3359"/>
+        </eAnnotations>
+      </ownedComment>
+      <type xmi:type="uml:PrimitiveType" href="pathmap://UML2_LIBRARIES/UML2PrimitiveTypes.library.uml2#_IXfBUK86EdieaYgxtVWN8Q"/>
+      <upperValue xmi:type="uml:LiteralUnlimitedNatural" xmi:id="_17_0_4beta_8e10289_1362067059281_130653_3353" value="1">
+        <eAnnotations xmi:id="_SP-x30eEEeWlKfVTs-HO8g" source="MagicDraw">
+          <details xmi:id="_SP-x4EeEEeWlKfVTs-HO8g" key="md_id" value="_17_0_4beta_8e10289_1362067059281_130653_3353"/>
+        </eAnnotations>
+      </upperValue>
+      <lowerValue xmi:type="uml:LiteralInteger" xmi:id="_17_0_4beta_8e10289_1362067059280_587042_3352" value="1">
+        <eAnnotations xmi:id="_SP-x20eEEeWlKfVTs-HO8g" source="MagicDraw">
+          <details xmi:id="_SP-x3EeEEeWlKfVTs-HO8g" key="md_id" value="_17_0_4beta_8e10289_1362067059280_587042_3352"/>
+        </eAnnotations>
+      </lowerValue>
+      <defaultValue xmi:type="uml:LiteralBoolean" xmi:id="_17_0_4beta_8e10289_1362067063489_108246_3355" value="true">
+        <eAnnotations xmi:id="_SP-x4UeEEeWlKfVTs-HO8g" source="MagicDraw">
+          <details xmi:id="_SP-x4keEEeWlKfVTs-HO8g" key="md_id" value="_17_0_4beta_8e10289_1362067063489_108246_3355"/>
+        </eAnnotations>
+      </defaultValue>
+    </ownedAttribute>
+    <ownedAttribute xmi:id="_17_0_5beta_8e10289_1370856956242_284758_3129" name="columnCustomOrder" visibility="private" isOrdered="true" isUnique="false">
+      <eAnnotations xmi:id="_SP-x40eEEeWlKfVTs-HO8g" source="MagicDraw">
+        <details xmi:id="_SP-x5EeEEeWlKfVTs-HO8g" key="md_id" value="_17_0_5beta_8e10289_1370856956242_284758_3129"/>
+      </eAnnotations>
+      <ownedComment xmi:id="_17_0_5beta_8e10289_1370857328397_36465_3204" body="Contains Dependency Matrix column elements custom sorting order." annotatedElement="_17_0_5beta_8e10289_1370856956242_284758_3129">
+        <eAnnotations xmi:id="_SP-x50eEEeWlKfVTs-HO8g" source="MagicDraw">
+          <details xmi:id="_SP-x6EeEEeWlKfVTs-HO8g" key="md_id" value="_17_0_5beta_8e10289_1370857328397_36465_3204"/>
+        </eAnnotations>
+      </ownedComment>
+      <type xmi:type="uml:PrimitiveType" href="pathmap://UML2_LIBRARIES/UML2PrimitiveTypes.library.uml2#_IXlH8a86EdieaYgxtVWN8Q"/>
+      <upperValue xmi:type="uml:LiteralUnlimitedNatural" xmi:id="_17_0_5beta_8e10289_1370857040620_27327_3131" value="1">
+        <eAnnotations xmi:id="_SP-x6UeEEeWlKfVTs-HO8g" source="MagicDraw">
+          <details xmi:id="_SP-x6keEEeWlKfVTs-HO8g" key="md_id" value="_17_0_5beta_8e10289_1370857040620_27327_3131"/>
+        </eAnnotations>
+      </upperValue>
+      <lowerValue xmi:type="uml:LiteralInteger" xmi:id="_17_0_5beta_8e10289_1370857040620_369669_3130">
+        <eAnnotations xmi:id="_SP-x5UeEEeWlKfVTs-HO8g" source="MagicDraw">
+          <details xmi:id="_SP-x5keEEeWlKfVTs-HO8g" key="md_id" value="_17_0_5beta_8e10289_1370857040620_369669_3130"/>
+        </eAnnotations>
+      </lowerValue>
+    </ownedAttribute>
+    <ownedAttribute xmi:id="_17_0_5beta_8e10289_1370857054963_105141_3132" name="rowCustomOrder" visibility="private" isOrdered="true" isUnique="false">
+      <eAnnotations xmi:id="_SP-x60eEEeWlKfVTs-HO8g" source="MagicDraw">
+        <details xmi:id="_SP-x7EeEEeWlKfVTs-HO8g" key="md_id" value="_17_0_5beta_8e10289_1370857054963_105141_3132"/>
+      </eAnnotations>
+      <ownedComment xmi:id="_17_0_5beta_8e10289_1370857352635_128925_3205" body="Contains Dependency Matrix row elements custom sorting order." annotatedElement="_17_0_5beta_8e10289_1370857054963_105141_3132">
+        <eAnnotations xmi:id="_SP-x70eEEeWlKfVTs-HO8g" source="MagicDraw">
+          <details xmi:id="_SP-x8EeEEeWlKfVTs-HO8g" key="md_id" value="_17_0_5beta_8e10289_1370857352635_128925_3205"/>
+        </eAnnotations>
+      </ownedComment>
+      <type xmi:type="uml:PrimitiveType" href="pathmap://UML2_LIBRARIES/UML2PrimitiveTypes.library.uml2#_IXlH8a86EdieaYgxtVWN8Q"/>
+      <upperValue xmi:type="uml:LiteralUnlimitedNatural" xmi:id="_17_0_5beta_8e10289_1370857090320_718793_3134" value="1">
+        <eAnnotations xmi:id="_SP-x8UeEEeWlKfVTs-HO8g" source="MagicDraw">
+          <details xmi:id="_SP-x8keEEeWlKfVTs-HO8g" key="md_id" value="_17_0_5beta_8e10289_1370857090320_718793_3134"/>
+        </eAnnotations>
+      </upperValue>
+      <lowerValue xmi:type="uml:LiteralInteger" xmi:id="_17_0_5beta_8e10289_1370857090319_213398_3133">
+        <eAnnotations xmi:id="_SP-x7UeEEeWlKfVTs-HO8g" source="MagicDraw">
+          <details xmi:id="_SP-x7keEEeWlKfVTs-HO8g" key="md_id" value="_17_0_5beta_8e10289_1370857090319_213398_3133"/>
+        </eAnnotations>
+      </lowerValue>
+    </ownedAttribute>
+  </ownedMember>
+  <ownedMember xmi:type="uml:Extension" xmi:id="_17_0_4beta_8e10289_1354780972723_880239_2971" memberEnd="_17_0_4beta_8e10289_1354780972723_486633_2973 _17_0_4beta_8e10289_1354780972723_850504_2972">
+    <eAnnotations xmi:id="_SP-x9UeEEeWlKfVTs-HO8g" source="MagicDraw">
+      <details xmi:id="_SP-x9keEEeWlKfVTs-HO8g" key="md_id" value="_17_0_4beta_8e10289_1354780972723_880239_2971"/>
+    </eAnnotations>
+    <ownedEnd xmi:type="uml:ExtensionEnd" xmi:id="_17_0_4beta_8e10289_1354780972723_486633_2973" name="extension_DependencyMatrix" visibility="private" type="_17_0_3beta_8e10289_1348753189236_873942_2915" association="_17_0_4beta_8e10289_1354780972723_880239_2971" aggregation="composite">
+      <eAnnotations xmi:id="_SP-x90eEEeWlKfVTs-HO8g" source="MagicDraw">
+        <details xmi:id="_SP-x-EeEEeWlKfVTs-HO8g" key="md_id" value="_17_0_4beta_8e10289_1354780972723_486633_2973"/>
+      </eAnnotations>
+      <upperValue xmi:type="uml:LiteralUnlimitedNatural" xmi:id="_17_0_4beta_8e10289_1354780972724_193572_2975" value="1">
+        <eAnnotations xmi:id="_SP-x-0eEEeWlKfVTs-HO8g" source="MagicDraw">
+          <details xmi:id="_SP-x_EeEEeWlKfVTs-HO8g" key="md_id" value="_17_0_4beta_8e10289_1354780972724_193572_2975"/>
+        </eAnnotations>
+      </upperValue>
+      <lowerValue xmi:type="uml:LiteralInteger" xmi:id="_17_0_4beta_8e10289_1354780972724_452650_2974">
+        <eAnnotations xmi:id="_SP-x-UeEEeWlKfVTs-HO8g" source="MagicDraw">
+          <details xmi:id="_SP-x-keEEeWlKfVTs-HO8g" key="md_id" value="_17_0_4beta_8e10289_1354780972724_452650_2974"/>
+        </eAnnotations>
+      </lowerValue>
+    </ownedEnd>
+  </ownedMember>
+  <ownedMember xmi:type="uml:Stereotype" xmi:id="_17_0_3beta_8e10289_1348753189306_38038_3061" name="MatrixFilter">
+    <eAnnotations xmi:id="_SP-x_UeEEeWlKfVTs-HO8g" source="MagicDraw">
+      <details xmi:id="_SP-x_keEEeWlKfVTs-HO8g" key="md_id" value="_17_0_3beta_8e10289_1348753189306_38038_3061"/>
+    </eAnnotations>
+    <generalization xmi:id="_17_0_3beta_8e10289_1348753189304_492925_3052" isSubstitutable="true">
+      <eAnnotations xmi:id="_SP-yVUeEEeWlKfVTs-HO8g" source="MagicDraw">
+        <details xmi:id="_SP-yVkeEEeWlKfVTs-HO8g" key="md_id" value="_17_0_3beta_8e10289_1348753189304_492925_3052"/>
+      </eAnnotations>
+      <general xmi:type="uml:Stereotype" href="UML_Standard_Profile.MagicDraw_Profile.profile.uml2#_9_0_be00301_1108044721245_236588_411"/>
+    </generalization>
+    <ownedAttribute xmi:id="_17_0_3beta_8e10289_1348753189250_698438_2944" name="rowElementType" visibility="private">
+      <eAnnotations xmi:id="_SP-x_0eEEeWlKfVTs-HO8g" source="MagicDraw">
+        <details xmi:id="_SP-yAEeEEeWlKfVTs-HO8g" key="md_id" value="_17_0_3beta_8e10289_1348753189250_698438_2944"/>
+      </eAnnotations>
+      <ownedComment xmi:id="_17_0_4beta_8f90291_1361805953102_259146_3372" body="Select the type of the elements to be used to build the Dependency Matrix." annotatedElement="_17_0_3beta_8e10289_1348753189250_698438_2944">
+        <eAnnotations xmi:id="_SP-yA0eEEeWlKfVTs-HO8g" source="MagicDraw">
+          <details xmi:id="_SP-yBEeEEeWlKfVTs-HO8g" key="md_id" value="_17_0_4beta_8f90291_1361805953102_259146_3372"/>
+        </eAnnotations>
+      </ownedComment>
+      <type xmi:type="uml:PrimitiveType" href="pathmap://UML2_LIBRARIES/UML2PrimitiveTypes.library.uml2#_IXlH8a86EdieaYgxtVWN8Q"/>
+      <upperValue xmi:type="uml:LiteralUnlimitedNatural" xmi:id="_17_0_3beta_8e10289_1348753189221_225061_2851" value="-1">
+        <eAnnotations xmi:id="_SP-yBUeEEeWlKfVTs-HO8g" source="MagicDraw">
+          <details xmi:id="_SP-yBkeEEeWlKfVTs-HO8g" key="md_id" value="_17_0_3beta_8e10289_1348753189221_225061_2851"/>
+        </eAnnotations>
+      </upperValue>
+      <lowerValue xmi:type="uml:LiteralInteger" xmi:id="_17_0_3beta_8e10289_1348753189284_214330_3036">
+        <eAnnotations xmi:id="_SP-yAUeEEeWlKfVTs-HO8g" source="MagicDraw">
+          <details xmi:id="_SP-yAkeEEeWlKfVTs-HO8g" key="md_id" value="_17_0_3beta_8e10289_1348753189284_214330_3036"/>
+        </eAnnotations>
+      </lowerValue>
+    </ownedAttribute>
+    <ownedAttribute xmi:id="_17_0_3beta_8e10289_1348753189269_689567_2994" name="rowScope" visibility="private">
+      <eAnnotations xmi:id="_SP-yB0eEEeWlKfVTs-HO8g" source="MagicDraw">
+        <details xmi:id="_SP-yCEeEEeWlKfVTs-HO8g" key="md_id" value="_17_0_3beta_8e10289_1348753189269_689567_2994"/>
+      </eAnnotations>
+      <ownedComment xmi:id="_17_0_4beta_8f90291_1361806006247_750081_3385" body="Select the scope of the model to be used to build the Dependency Matrix." annotatedElement="_17_0_3beta_8e10289_1348753189269_689567_2994">
+        <eAnnotations xmi:id="_SP-yC0eEEeWlKfVTs-HO8g" source="MagicDraw">
+          <details xmi:id="_SP-yDEeEEeWlKfVTs-HO8g" key="md_id" value="_17_0_4beta_8f90291_1361806006247_750081_3385"/>
+        </eAnnotations>
+      </ownedComment>
+      <type xmi:type="uml:PrimitiveType" href="pathmap://UML2_LIBRARIES/UML2PrimitiveTypes.library.uml2#_IXlH8a86EdieaYgxtVWN8Q"/>
+      <upperValue xmi:type="uml:LiteralUnlimitedNatural" xmi:id="_17_0_3beta_8e10289_1348753189226_641991_2862" value="-1">
+        <eAnnotations xmi:id="_SP-yDUeEEeWlKfVTs-HO8g" source="MagicDraw">
+          <details xmi:id="_SP-yDkeEEeWlKfVTs-HO8g" key="md_id" value="_17_0_3beta_8e10289_1348753189226_641991_2862"/>
+        </eAnnotations>
+      </upperValue>
+      <lowerValue xmi:type="uml:LiteralInteger" xmi:id="_17_0_3beta_8e10289_1348753189312_136960_3080">
+        <eAnnotations xmi:id="_SP-yCUeEEeWlKfVTs-HO8g" source="MagicDraw">
+          <details xmi:id="_SP-yCkeEEeWlKfVTs-HO8g" key="md_id" value="_17_0_3beta_8e10289_1348753189312_136960_3080"/>
+        </eAnnotations>
+      </lowerValue>
+    </ownedAttribute>
+    <ownedAttribute xmi:id="_17_0_3beta_8e10289_1348753189234_132241_2888" name="removedRowElements" visibility="private">
+      <eAnnotations xmi:id="_SP-yD0eEEeWlKfVTs-HO8g" source="MagicDraw">
+        <details xmi:id="_SP-yEEeEEeWlKfVTs-HO8g" key="md_id" value="_17_0_3beta_8e10289_1348753189234_132241_2888"/>
+      </eAnnotations>
+      <ownedComment xmi:id="_17_0_4beta_8f90291_1361806076070_659356_3395" body="Select elements to exclude from the Dependency Matrix." annotatedElement="_17_0_3beta_8e10289_1348753189234_132241_2888">
+        <eAnnotations xmi:id="_SP-yE0eEEeWlKfVTs-HO8g" source="MagicDraw">
+          <details xmi:id="_SP-yFEeEEeWlKfVTs-HO8g" key="md_id" value="_17_0_4beta_8f90291_1361806076070_659356_3395"/>
+        </eAnnotations>
+      </ownedComment>
+      <type xmi:type="uml:PrimitiveType" href="pathmap://UML2_LIBRARIES/UML2PrimitiveTypes.library.uml2#_IXlH8a86EdieaYgxtVWN8Q"/>
+      <upperValue xmi:type="uml:LiteralUnlimitedNatural" xmi:id="_17_0_3beta_8e10289_1348753189222_109757_2852" value="-1">
+        <eAnnotations xmi:id="_SP-yFUeEEeWlKfVTs-HO8g" source="MagicDraw">
+          <details xmi:id="_SP-yFkeEEeWlKfVTs-HO8g" key="md_id" value="_17_0_3beta_8e10289_1348753189222_109757_2852"/>
+        </eAnnotations>
+      </upperValue>
+      <lowerValue xmi:type="uml:LiteralInteger" xmi:id="_17_0_3beta_8e10289_1348753189316_703824_3085">
+        <eAnnotations xmi:id="_SP-yEUeEEeWlKfVTs-HO8g" source="MagicDraw">
+          <details xmi:id="_SP-yEkeEEeWlKfVTs-HO8g" key="md_id" value="_17_0_3beta_8e10289_1348753189316_703824_3085"/>
+        </eAnnotations>
+      </lowerValue>
+    </ownedAttribute>
+    <ownedAttribute xmi:id="_17_0_3beta_8e10289_1348753189236_123477_2907" name="rowTypesIncludeSubtypes" visibility="private">
+      <eAnnotations xmi:id="_SP-yF0eEEeWlKfVTs-HO8g" source="MagicDraw">
+        <details xmi:id="_SP-yGEeEEeWlKfVTs-HO8g" key="md_id" value="_17_0_3beta_8e10289_1348753189236_123477_2907"/>
+      </eAnnotations>
+      <ownedComment xmi:id="_17_0_4beta_8e10289_1362133179171_20893_3345" body="Set to true to display subtypes of selected element types. For example, if a class is selected, then all its subtypes, such as component or custom subtypes like SysML block and requirement will be displayed." annotatedElement="_17_0_3beta_8e10289_1348753189236_123477_2907">
+        <eAnnotations xmi:id="_SP-yG0eEEeWlKfVTs-HO8g" source="MagicDraw">
+          <details xmi:id="_SP-yHEeEEeWlKfVTs-HO8g" key="md_id" value="_17_0_4beta_8e10289_1362133179171_20893_3345"/>
+        </eAnnotations>
+      </ownedComment>
+      <type xmi:type="uml:PrimitiveType" href="pathmap://UML2_LIBRARIES/UML2PrimitiveTypes.library.uml2#_IXfBUK86EdieaYgxtVWN8Q"/>
+      <upperValue xmi:type="uml:LiteralUnlimitedNatural" xmi:id="_17_0_4beta_8e10289_1362133157503_793861_3341" value="1">
+        <eAnnotations xmi:id="_SP-yHUeEEeWlKfVTs-HO8g" source="MagicDraw">
+          <details xmi:id="_SP-yHkeEEeWlKfVTs-HO8g" key="md_id" value="_17_0_4beta_8e10289_1362133157503_793861_3341"/>
+        </eAnnotations>
+      </upperValue>
+      <lowerValue xmi:type="uml:LiteralInteger" xmi:id="_17_0_4beta_8e10289_1362133157478_142003_3340" value="1">
+        <eAnnotations xmi:id="_SP-yGUeEEeWlKfVTs-HO8g" source="MagicDraw">
+          <details xmi:id="_SP-yGkeEEeWlKfVTs-HO8g" key="md_id" value="_17_0_4beta_8e10289_1362133157478_142003_3340"/>
+        </eAnnotations>
+      </lowerValue>
+      <defaultValue xmi:type="uml:LiteralBoolean" xmi:id="_17_0_3beta_8e10289_1348753189264_955826_2973" value="true">
+        <eAnnotations xmi:id="_SP-yH0eEEeWlKfVTs-HO8g" source="MagicDraw">
+          <details xmi:id="_SP-yIEeEEeWlKfVTs-HO8g" key="md_id" value="_17_0_3beta_8e10289_1348753189264_955826_2973"/>
+        </eAnnotations>
+      </defaultValue>
+    </ownedAttribute>
+    <ownedAttribute xmi:id="_17_0_3beta_8e10289_1348753189264_179517_2974" name="columnScope" visibility="private">
+      <eAnnotations xmi:id="_SP-yIUeEEeWlKfVTs-HO8g" source="MagicDraw">
+        <details xmi:id="_SP-yIkeEEeWlKfVTs-HO8g" key="md_id" value="_17_0_3beta_8e10289_1348753189264_179517_2974"/>
+      </eAnnotations>
+      <ownedComment xmi:id="_17_0_4beta_8f90291_1361806008541_645140_3387" body="Select the scope of the model to be used to build the Dependency Matrix." annotatedElement="_17_0_3beta_8e10289_1348753189264_179517_2974">
+        <eAnnotations xmi:id="_SP-yJUeEEeWlKfVTs-HO8g" source="MagicDraw">
+          <details xmi:id="_SP-yJkeEEeWlKfVTs-HO8g" key="md_id" value="_17_0_4beta_8f90291_1361806008541_645140_3387"/>
+        </eAnnotations>
+      </ownedComment>
+      <type xmi:type="uml:PrimitiveType" href="pathmap://UML2_LIBRARIES/UML2PrimitiveTypes.library.uml2#_IXlH8a86EdieaYgxtVWN8Q"/>
+      <upperValue xmi:type="uml:LiteralUnlimitedNatural" xmi:id="_17_0_3beta_8e10289_1348753189312_12620_3081" value="-1">
+        <eAnnotations xmi:id="_SP-yJ0eEEeWlKfVTs-HO8g" source="MagicDraw">
+          <details xmi:id="_SP-yKEeEEeWlKfVTs-HO8g" key="md_id" value="_17_0_3beta_8e10289_1348753189312_12620_3081"/>
+        </eAnnotations>
+      </upperValue>
+      <lowerValue xmi:type="uml:LiteralInteger" xmi:id="_17_0_3beta_8e10289_1348753189288_880063_3040">
+        <eAnnotations xmi:id="_SP-yI0eEEeWlKfVTs-HO8g" source="MagicDraw">
+          <details xmi:id="_SP-yJEeEEeWlKfVTs-HO8g" key="md_id" value="_17_0_3beta_8e10289_1348753189288_880063_3040"/>
+        </eAnnotations>
+      </lowerValue>
+    </ownedAttribute>
+    <ownedAttribute xmi:id="_17_0_3beta_8e10289_1348753189250_349424_2939" name="removedColumnElements" visibility="private">
+      <eAnnotations xmi:id="_SP-yKUeEEeWlKfVTs-HO8g" source="MagicDraw">
+        <details xmi:id="_SP-yKkeEEeWlKfVTs-HO8g" key="md_id" value="_17_0_3beta_8e10289_1348753189250_349424_2939"/>
+      </eAnnotations>
+      <ownedComment xmi:id="_17_0_4beta_8f90291_1361806077995_662295_3397" body="Select elements to exclude from the Dependency Matrix." annotatedElement="_17_0_3beta_8e10289_1348753189250_349424_2939">
+        <eAnnotations xmi:id="_SP-yLUeEEeWlKfVTs-HO8g" source="MagicDraw">
+          <details xmi:id="_SP-yLkeEEeWlKfVTs-HO8g" key="md_id" value="_17_0_4beta_8f90291_1361806077995_662295_3397"/>
+        </eAnnotations>
+      </ownedComment>
+      <type xmi:type="uml:PrimitiveType" href="pathmap://UML2_LIBRARIES/UML2PrimitiveTypes.library.uml2#_IXlH8a86EdieaYgxtVWN8Q"/>
+      <upperValue xmi:type="uml:LiteralUnlimitedNatural" xmi:id="_17_0_3beta_8e10289_1348753189284_838430_3038" value="-1">
+        <eAnnotations xmi:id="_SP-yL0eEEeWlKfVTs-HO8g" source="MagicDraw">
+          <details xmi:id="_SP-yMEeEEeWlKfVTs-HO8g" key="md_id" value="_17_0_3beta_8e10289_1348753189284_838430_3038"/>
+        </eAnnotations>
+      </upperValue>
+      <lowerValue xmi:type="uml:LiteralInteger" xmi:id="_17_0_3beta_8e10289_1348753189275_581022_3022">
+        <eAnnotations xmi:id="_SP-yK0eEEeWlKfVTs-HO8g" source="MagicDraw">
+          <details xmi:id="_SP-yLEeEEeWlKfVTs-HO8g" key="md_id" value="_17_0_3beta_8e10289_1348753189275_581022_3022"/>
+        </eAnnotations>
+      </lowerValue>
+    </ownedAttribute>
+    <ownedAttribute xmi:id="_17_0_3beta_8e10289_1348753189284_755266_3033" name="columnElementType" visibility="private">
+      <eAnnotations xmi:id="_SP-yMUeEEeWlKfVTs-HO8g" source="MagicDraw">
+        <details xmi:id="_SP-yMkeEEeWlKfVTs-HO8g" key="md_id" value="_17_0_3beta_8e10289_1348753189284_755266_3033"/>
+      </eAnnotations>
+      <ownedComment xmi:id="_17_0_4beta_8f90291_1361805959375_150559_3374" body="Select the type of the elements to be used to build the Dependency Matrix." annotatedElement="_17_0_3beta_8e10289_1348753189284_755266_3033">
+        <eAnnotations xmi:id="_SP-yNUeEEeWlKfVTs-HO8g" source="MagicDraw">
+          <details xmi:id="_SP-yNkeEEeWlKfVTs-HO8g" key="md_id" value="_17_0_4beta_8f90291_1361805959375_150559_3374"/>
+        </eAnnotations>
+      </ownedComment>
+      <type xmi:type="uml:PrimitiveType" href="pathmap://UML2_LIBRARIES/UML2PrimitiveTypes.library.uml2#_IXlH8a86EdieaYgxtVWN8Q"/>
+      <upperValue xmi:type="uml:LiteralUnlimitedNatural" xmi:id="_17_0_3beta_8e10289_1348753189306_747351_3058" value="-1">
+        <eAnnotations xmi:id="_SP-yN0eEEeWlKfVTs-HO8g" source="MagicDraw">
+          <details xmi:id="_SP-yOEeEEeWlKfVTs-HO8g" key="md_id" value="_17_0_3beta_8e10289_1348753189306_747351_3058"/>
+        </eAnnotations>
+      </upperValue>
+      <lowerValue xmi:type="uml:LiteralInteger" xmi:id="_17_0_3beta_8e10289_1348753189274_591030_3008">
+        <eAnnotations xmi:id="_SP-yM0eEEeWlKfVTs-HO8g" source="MagicDraw">
+          <details xmi:id="_SP-yNEeEEeWlKfVTs-HO8g" key="md_id" value="_17_0_3beta_8e10289_1348753189274_591030_3008"/>
+        </eAnnotations>
+      </lowerValue>
+    </ownedAttribute>
+    <ownedAttribute xmi:id="_17_0_3beta_8e10289_1348753189235_302185_2895" name="columnTypesIncludeSubtypes" visibility="private">
+      <eAnnotations xmi:id="_SP-yOUeEEeWlKfVTs-HO8g" source="MagicDraw">
+        <details xmi:id="_SP-yOkeEEeWlKfVTs-HO8g" key="md_id" value="_17_0_3beta_8e10289_1348753189235_302185_2895"/>
+      </eAnnotations>
+      <ownedComment xmi:id="_17_0_4beta_8e10289_1362133221432_956383_3356" body="Set to true to display subtypes of selected element types. For example, if a class is selected, then all its subtypes, such as component or custom subtypes like SysML block and requirement will be displayed." annotatedElement="_17_0_3beta_8e10289_1348753189235_302185_2895">
+        <eAnnotations xmi:id="_SP-yPUeEEeWlKfVTs-HO8g" source="MagicDraw">
+          <details xmi:id="_SP-yPkeEEeWlKfVTs-HO8g" key="md_id" value="_17_0_4beta_8e10289_1362133221432_956383_3356"/>
+        </eAnnotations>
+      </ownedComment>
+      <type xmi:type="uml:PrimitiveType" href="pathmap://UML2_LIBRARIES/UML2PrimitiveTypes.library.uml2#_IXfBUK86EdieaYgxtVWN8Q"/>
+      <upperValue xmi:type="uml:LiteralUnlimitedNatural" xmi:id="_17_0_4beta_8e10289_1362133213949_805976_3354" value="1">
+        <eAnnotations xmi:id="_SP-yP0eEEeWlKfVTs-HO8g" source="MagicDraw">
+          <details xmi:id="_SP-yQEeEEeWlKfVTs-HO8g" key="md_id" value="_17_0_4beta_8e10289_1362133213949_805976_3354"/>
+        </eAnnotations>
+      </upperValue>
+      <lowerValue xmi:type="uml:LiteralInteger" xmi:id="_17_0_4beta_8e10289_1362133213949_543989_3353" value="1">
+        <eAnnotations xmi:id="_SP-yO0eEEeWlKfVTs-HO8g" source="MagicDraw">
+          <details xmi:id="_SP-yPEeEEeWlKfVTs-HO8g" key="md_id" value="_17_0_4beta_8e10289_1362133213949_543989_3353"/>
+        </eAnnotations>
+      </lowerValue>
+      <defaultValue xmi:type="uml:LiteralBoolean" xmi:id="_17_0_3beta_8e10289_1348753189269_964315_2991" value="true">
+        <eAnnotations xmi:id="_SP-yQUeEEeWlKfVTs-HO8g" source="MagicDraw">
+          <details xmi:id="_SP-yQkeEEeWlKfVTs-HO8g" key="md_id" value="_17_0_3beta_8e10289_1348753189269_964315_2991"/>
+        </eAnnotations>
+      </defaultValue>
+    </ownedAttribute>
+    <ownedAttribute xmi:id="_17_0_3beta_8e10289_1348753189320_16317_3090" name="columnPropertyFilter" visibility="private">
+      <eAnnotations xmi:id="_SP-yQ0eEEeWlKfVTs-HO8g" source="MagicDraw">
+        <details xmi:id="_SP-yREeEEeWlKfVTs-HO8g" key="md_id" value="_17_0_3beta_8e10289_1348753189320_16317_3090"/>
+      </eAnnotations>
+      <ownedComment xmi:id="_17_0_4beta_8f90291_1361806032322_258565_3389" body="Select properties and values to filter elements included in the Dependency Matrix." annotatedElement="_17_0_3beta_8e10289_1348753189320_16317_3090">
+        <eAnnotations xmi:id="_SP-yR0eEEeWlKfVTs-HO8g" source="MagicDraw">
+          <details xmi:id="_SP-ySEeEEeWlKfVTs-HO8g" key="md_id" value="_17_0_4beta_8f90291_1361806032322_258565_3389"/>
+        </eAnnotations>
+      </ownedComment>
+      <type xmi:type="uml:PrimitiveType" href="pathmap://UML2_LIBRARIES/UML2PrimitiveTypes.library.uml2#_IXlH8a86EdieaYgxtVWN8Q"/>
+      <upperValue xmi:type="uml:LiteralUnlimitedNatural" xmi:id="_17_0_3beta_8e10289_1348753189254_527609_2952" value="-1">
+        <eAnnotations xmi:id="_SP-ySUeEEeWlKfVTs-HO8g" source="MagicDraw">
+          <details xmi:id="_SP-ySkeEEeWlKfVTs-HO8g" key="md_id" value="_17_0_3beta_8e10289_1348753189254_527609_2952"/>
+        </eAnnotations>
+      </upperValue>
+      <lowerValue xmi:type="uml:LiteralInteger" xmi:id="_17_0_3beta_8e10289_1348753189236_838683_2910">
+        <eAnnotations xmi:id="_SP-yRUeEEeWlKfVTs-HO8g" source="MagicDraw">
+          <details xmi:id="_SP-yRkeEEeWlKfVTs-HO8g" key="md_id" value="_17_0_3beta_8e10289_1348753189236_838683_2910"/>
+        </eAnnotations>
+      </lowerValue>
+    </ownedAttribute>
+    <ownedAttribute xmi:id="_17_0_3beta_8e10289_1348753189269_548324_2992" name="rowPropertyFilter" visibility="private">
+      <eAnnotations xmi:id="_SP-yS0eEEeWlKfVTs-HO8g" source="MagicDraw">
+        <details xmi:id="_SP-yTEeEEeWlKfVTs-HO8g" key="md_id" value="_17_0_3beta_8e10289_1348753189269_548324_2992"/>
+      </eAnnotations>
+      <ownedComment xmi:id="_17_0_4beta_8f90291_1361806034787_895573_3391" body="Select properties and values to filter elements included in the Dependency Matrix." annotatedElement="_17_0_3beta_8e10289_1348753189269_548324_2992">
+        <eAnnotations xmi:id="_SP-yT0eEEeWlKfVTs-HO8g" source="MagicDraw">
+          <details xmi:id="_SP-yUEeEEeWlKfVTs-HO8g" key="md_id" value="_17_0_4beta_8f90291_1361806034787_895573_3391"/>
+        </eAnnotations>
+      </ownedComment>
+      <type xmi:type="uml:PrimitiveType" href="pathmap://UML2_LIBRARIES/UML2PrimitiveTypes.library.uml2#_IXlH8a86EdieaYgxtVWN8Q"/>
+      <upperValue xmi:type="uml:LiteralUnlimitedNatural" xmi:id="_17_0_3beta_8e10289_1348753189265_388492_2982" value="-1">
+        <eAnnotations xmi:id="_SP-yUUeEEeWlKfVTs-HO8g" source="MagicDraw">
+          <details xmi:id="_SP-yUkeEEeWlKfVTs-HO8g" key="md_id" value="_17_0_3beta_8e10289_1348753189265_388492_2982"/>
+        </eAnnotations>
+      </upperValue>
+      <lowerValue xmi:type="uml:LiteralInteger" xmi:id="_17_0_3beta_8e10289_1348753189226_22282_2861">
+        <eAnnotations xmi:id="_SP-yTUeEEeWlKfVTs-HO8g" source="MagicDraw">
+          <details xmi:id="_SP-yTkeEEeWlKfVTs-HO8g" key="md_id" value="_17_0_3beta_8e10289_1348753189226_22282_2861"/>
+        </eAnnotations>
+      </lowerValue>
+    </ownedAttribute>
+    <ownedAttribute xmi:id="_17_0_4beta_8e10289_1354780981787_523611_2977" name="base_Diagram" visibility="private" association="_17_0_4beta_8e10289_1354780981787_543298_2976">
+      <eAnnotations xmi:id="_SP-yU0eEEeWlKfVTs-HO8g" source="MagicDraw">
+        <details xmi:id="_SP-yVEeEEeWlKfVTs-HO8g" key="md_id" value="_17_0_4beta_8e10289_1354780981787_523611_2977"/>
+      </eAnnotations>
+      <type xmi:type="uml:Class" href="pathmap://UML2_METAMODELS/UML2.metamodel.uml2#_m8qbC686EdiEh75YJ_3n8g"/>
+    </ownedAttribute>
+  </ownedMember>
+  <ownedMember xmi:type="uml:Extension" xmi:id="_17_0_4beta_8e10289_1354780981787_543298_2976" memberEnd="_17_0_4beta_8e10289_1354780981788_916861_2978 _17_0_4beta_8e10289_1354780981787_523611_2977">
+    <eAnnotations xmi:id="_SP_YkEeEEeWlKfVTs-HO8g" source="MagicDraw">
+      <details xmi:id="_SP_YkUeEEeWlKfVTs-HO8g" key="md_id" value="_17_0_4beta_8e10289_1354780981787_543298_2976"/>
+    </eAnnotations>
+    <ownedEnd xmi:type="uml:ExtensionEnd" xmi:id="_17_0_4beta_8e10289_1354780981788_916861_2978" name="extension_MatrixFilter" visibility="private" type="_17_0_3beta_8e10289_1348753189306_38038_3061" association="_17_0_4beta_8e10289_1354780981787_543298_2976" aggregation="composite">
+      <eAnnotations xmi:id="_SP_YkkeEEeWlKfVTs-HO8g" source="MagicDraw">
+        <details xmi:id="_SP_Yk0eEEeWlKfVTs-HO8g" key="md_id" value="_17_0_4beta_8e10289_1354780981788_916861_2978"/>
+      </eAnnotations>
+      <upperValue xmi:type="uml:LiteralUnlimitedNatural" xmi:id="_17_0_4beta_8e10289_1354780981788_229457_2980" value="1">
+        <eAnnotations xmi:id="_SP_YlkeEEeWlKfVTs-HO8g" source="MagicDraw">
+          <details xmi:id="_SP_Yl0eEEeWlKfVTs-HO8g" key="md_id" value="_17_0_4beta_8e10289_1354780981788_229457_2980"/>
+        </eAnnotations>
+      </upperValue>
+      <lowerValue xmi:type="uml:LiteralInteger" xmi:id="_17_0_4beta_8e10289_1354780981788_24808_2979">
+        <eAnnotations xmi:id="_SP_YlEeEEeWlKfVTs-HO8g" source="MagicDraw">
+          <details xmi:id="_SP_YlUeEEeWlKfVTs-HO8g" key="md_id" value="_17_0_4beta_8e10289_1354780981788_24808_2979"/>
+        </eAnnotations>
+      </lowerValue>
+    </ownedEnd>
+  </ownedMember>
+</uml:Profile>
